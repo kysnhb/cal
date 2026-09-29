@@ -1,0 +1,34 @@
+{
+  "D": {
+    "before": 1524,
+    "after": 1695
+  },
+  "A": {
+    "before": 1695,
+    "after": 1505
+  },
+  "W": 30,
+  "S": 40,
+  "attacks": {
+    "KeyK": {
+      "action": 40,
+      "pose": 150
+    },
+    "KeyL": {
+      "action": 40,
+      "pose": 378
+    },
+    "KeyO": {
+      "action": 40,
+      "pose": 278
+    }
+  },
+  "special": {
+    "before": 3,
+    "after": 2
+  },
+  "pauseMenuHelp": true,
+  "guidePauses": true,
+  "pageErrors": [],
+  "passed": true
+}

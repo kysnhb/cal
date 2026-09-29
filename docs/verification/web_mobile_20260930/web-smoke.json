@@ -1,0 +1,26 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "mobileEmulation": true,
+  "keyboardMove": {
+    "before": 1524,
+    "after": 1809
+  },
+  "helpPause": true,
+  "multiTouch": {
+    "touchX": 1822,
+    "heldX": 1974,
+    "continuedX": 2411,
+    "groundY": 409,
+    "jumpY": 353
+  },
+  "blurRelease": true,
+  "saveReload": true,
+  "dailyRewardNotRepeated": true,
+  "audio": [
+    "running"
+  ],
+  "portraitFits": true,
+  "heapBytes": 268435456,
+  "pageErrors": [],
+  "passed": true
+}
