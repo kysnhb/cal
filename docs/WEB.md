@@ -1,5 +1,7 @@
 # 웹 버전 빌드와 배포
 
+플레이: **https://kysnhb.github.io/cal/** · [웹 0.1 배포 ZIP](https://github.com/kysnhb/cal/releases/tag/web-v0.1.0)
+
 기존 R15의 C/C++ 전투 로직과 고딕 리소스를 WebAssembly + WebGL 2로 실행합니다. 별도의 웹 게임으로 다시 작성한 것이 아닙니다. Android/Windows 빌드는 기존 스크립트를 사용합니다.
 
 ## 개발 PC 준비
