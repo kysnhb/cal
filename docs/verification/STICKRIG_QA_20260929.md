@@ -16,7 +16,7 @@
 | Android 실행 | 같은4개 시나리오 통과. 정상 속도 전투 영상 보존 |
 | Android 홈/복귀 | 3초 후 같은 프로세스로 돌아와 재질 표시 확인. 강제GL context loss 검사는 아님 |
 
-[실제 화면과 영상](../art/stickman_redesign_20260929/index.html)을 확인하세요. 빌드 전 Windows 동일720틱 비교에서 R13의 광택 있는 재질이 R14의 무광 옷으로 바뀌는 것을 확인했습니다. 이전 LINEAR 필터 A/B와 CMake 의존성 검증은 별도 납품 검증자료에 보존했습니다. 원화·등록값 변경 후 최종 APK를 다시 실행했습니다.
+[실제 화면과 영상](../art/stickman_redesign_20260929/material_revision/index.html)을 확인하세요. 빌드 전 Windows 동일720틱 비교에서 R13의 광택 있는 재질이 R14의 무광 옷으로 바뀌는 것을 확인했습니다. 이전 LINEAR 필터 A/B와 CMake 의존성 검증은 별도 납품 검증자료에 보존했습니다. 원화·등록값 변경 후 최종 APK를 다시 실행했습니다.
 
 ## 해석과 한계
 

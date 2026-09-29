@@ -90,7 +90,12 @@ def main():
     assert 'bake(' not in draw and 'draw_offset(art->registration' in draw
     assert '*(float *)(rec + KS_W) = tex->getPixelsWide() / si->hd;' in engine
     assert '*(float *)(rec + KS_H) = tex->getPixelsHigh() / si->hd;' in engine
-    assert 'base==7 && c->values[4]==0' in adapter and 'torso_full' in adapter
+    silhouette = (ROOT / 'recomp/rt/rt_silhouette.h').read_text(encoding='utf-8')
+    assert 'aos5_silhouette::make(*mask,hat,head,density)' in adapter
+    assert 'aos5_silhouette::team(c->actor,c->friendlyLimit,c->ai)' in adapter
+    assert 'haloLayers.clear()' in engine and 'stickrig_runtime::halo(si,art,s)' in engine
+    assert 'friendlyLimit=*reinterpret_cast<const int *>(game+0x32c134)' in adapter
+    assert 'sample(original,(x+.5f)/density,(y+.5f)/density).a' in silhouette
     assert 'rgb[i] / maximum' not in art
     def rows(name):
         return [list(map(int, re.findall(r'-?\d+', line.split('//')[0]))) for line in
@@ -111,10 +116,10 @@ def main():
     result = dict(status='PASS', styled_mask_count=len(styled), original_mask_count=len(expected), formats=dict(formats),
                   original_byte_comparison=bool(args.original_root), logical_sizes_match=True,
                   animation_hashes=ANIMATION, lpimg_original_logic_sha256=sha(canonical.encode()),
-                  alpha='Original masks retained; R11 body caps and 50 conservative silhouettes tested separately',
+                  alpha='Original body alpha and geometry; retained hat silhouette; cached padded team halo',
                   human_retargeting=False, suppressed_records=0, cape_draw_calls=0,
                   head41_overlay='Suppressed only after successful base-head replacement in the same head record',
-                  torso_material_records=len(entries), extra_character_draw_calls=0,
+                  preserved_torso_records=len(entries), extra_character_draw_calls='one cached halo sprite per styled body/head draw',
                   bake_per_frame=False, exact_upload_dedup=True,
                   retired_assets=len(manifest['retired']), native_runtime_verified=False)
     report = json.dumps(result, indent=2)

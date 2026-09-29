@@ -46,8 +46,8 @@
   },
   {
     "path": "AOS5/CMakeLists.txt",
-    "bytes": 5845,
-    "sha256": "a12359f400a18cbf548fafcf35652276c1b5017778c1effcf8c6f2d0dcc72807"
+    "bytes": 5883,
+    "sha256": "e9a2a2c3c0b641b821aeb908e0133d630626ce8872eae77d6fafd058d3d68b77"
   },
   {
     "path": "AOS5/Content_gothic/aos5core/char_palette.tsv",
@@ -19547,7 +19547,7 @@
   {
     "path": "AOS5/proj.android/app/build.gradle",
     "bytes": 4383,
-    "sha256": "70ac631f6b6f84aedd87b97e0d7a5da331c83e1f09be13cc13ce76c5a1aa01d2"
+    "sha256": "e1e835c629802b940f1de1f74bf8b2c8055b5d9772ed95dd8e4af3610317c591"
   },
   {
     "path": "AOS5/proj.android/app/jni/main.cpp",
@@ -21352,8 +21352,8 @@
   },
   {
     "path": "recomp/rt/rt_engine.cpp",
-    "bytes": 94728,
-    "sha256": "f95734c4cbbf8fa02731c55c0a314a1c32486ae330d5b1448401dcbcc4c1f245"
+    "bytes": 94933,
+    "sha256": "f7fa168c22c338f9113de0d8d9888bad6ddc1b3d85521dd64e81990de7abff79"
   },
   {
     "path": "recomp/rt/rt_engine.h",
@@ -21364,6 +21364,11 @@
     "path": "recomp/rt/rt_human_rig.h",
     "bytes": 20523,
     "sha256": "6cfdf01ce31a31c521db598822cbd79cb9ce67427b0a456be3c1314dfa7991fc"
+  },
+  {
+    "path": "recomp/rt/rt_silhouette.h",
+    "bytes": 3837,
+    "sha256": "781ff23f9e785d48d53788ffc849897b454438e9aa3d43644baedfc496a67174"
   },
   {
     "path": "recomp/rt/rt_sprite_pool.h",
@@ -21392,13 +21397,13 @@
   },
   {
     "path": "recomp/rt/rt_stickrig_runtime.inc",
-    "bytes": 11626,
-    "sha256": "21593e20e4aa3a6c3149a3a5e45ce8bf53ecb05ec3c46e7b81dbf83c0dd00a26"
+    "bytes": 12150,
+    "sha256": "46baf6e031efc86ec374d90359cc1aa227a44dd26f4fcff7336977123e4a26d2"
   },
   {
     "path": "recomp/rt/rt_ui_text.h",
     "bytes": 16008,
-    "sha256": "c50954aa1d4d709be9bc41ec294adb6afac1f98669fda22faa22231f967049a8"
+    "sha256": "6f7c09e70d7b8cdccd6d681cd462073107e15cb7749ff0eb46e9abcf7827e34e"
   },
   {
     "path": "recomp/rt/rt_visual_policy.h",
@@ -21521,9 +21526,14 @@
     "sha256": "5d9f9fc72cc446d514b0bc312d1ae78b1f046c08e0bc18dd195a44a0ba89a8db"
   },
   {
+    "path": "scripts/test_silhouette.ps1",
+    "bytes": 682,
+    "sha256": "a8391772e63e94b747691ef5c973cb43ff771d82913ccf0dd4a8f97d0b662436"
+  },
+  {
     "path": "scripts/test_stickman_contract.py",
-    "bytes": 7694,
-    "sha256": "0d81306e5737da50d45cce491e2120b4f300cb583491cdfae3952070c1e206f0"
+    "bytes": 8143,
+    "sha256": "89a9d65cc2ba2b4e10541e8f32bd92dea1102605c4de92596769be61de683af1"
   },
   {
     "path": "scripts/test_ui_text.ps1",
@@ -21601,6 +21611,11 @@
     "sha256": "36a147d3de1aabf2868636a5b8922e83843a117b95d13cc12c3a3d3db8016027"
   },
   {
+    "path": "tests/silhouette_test.cpp",
+    "bytes": 1857,
+    "sha256": "a8c1e340f0ea765b5dd6d60d535b29960ad43acc339782b27afdb74d7a042a3d"
+  },
+  {
     "path": "tests/sprite_texture_probe.cpp",
     "bytes": 4138,
     "sha256": "375755ecd1a9c70b0236f2132eb3b4a4134accd62f2a5acbc4171c5e1211a61e"
@@ -21613,6 +21628,6 @@
   {
     "path": "tests/ui_text_policy_test.cpp",
     "bytes": 16836,
-    "sha256": "5f7743ed12d5506a9bcafdd91c8a1a74f149d367689d4dd8bdc0b2ecce302d7f"
+    "sha256": "4266eab89c82e3411a66bab85198745bb1c6fcee8cb38e17efdfb556e2a596fd"
   }
 ]

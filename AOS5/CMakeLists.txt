@@ -82,6 +82,7 @@ set(AOS5_ENGINE_INPUTS
   "${AOS5_RECOMP}/rt/rt_stickrig_json.h"
   "${AOS5_RECOMP}/rt/rt_stickrig_roles.h"
   "${AOS5_RECOMP}/rt/rt_stickrig_art.h"
+  "${AOS5_RECOMP}/rt/rt_silhouette.h"
   "${AOS5_RECOMP}/rt/rt_ads.inc"
   "${AOS5_RECOMP}/include/gh.h"
   "${AOS5_RECOMP}/include/aos5_image_layout.h"

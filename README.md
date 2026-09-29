@@ -1,13 +1,13 @@
 # 잔광의 도시 / CITY OF LAST LIGHT
 
-**현재 검수 빌드: 1.0.5 / R14, 2026-09-29.** `프로젝트복원_01` 인수 후 그래픽과 런타임 수정까지 포함한 공동 작업 소스입니다. APK·Windows 실행본은 저장소 밖에 별도로 제공합니다.
+**현재 검수 빌드: 1.0.6 / R15, 2026-09-29.** `프로젝트복원_01` 인수 후 그래픽과 런타임 수정까지 포함한 공동 작업 소스입니다. APK·Windows 실행본은 저장소 밖에 별도로 제공합니다.
 
-캐릭터는 원래 스틱 골격·동작을 유지하고 모자와 무광 의상을 적용했습니다. 망토, 금속 얼굴·렌즈, 반복되는 금속 패널·원통형 반사광을 제거했습니다. 팔·다리 중앙 폭 증가도 1.25에서 1.08로 줄였습니다. 모바일 HUD·무기/상점 UI 수정과 움직이는 구름·전투 효과는 유지합니다.
+캐릭터는 원래 검은 스틱 실루엣·골격·동작과 모자 윤곽을 유지합니다. 의상 질감과 망토를 없애고 아군·인질은 푸른 외곽광, 적은 붉은 외곽광으로 표시합니다. 코드에서 생성한 얇은 테두리와 부드러운 잔광을 캐릭터 뒤에 배치하고 은은하게 맥동시킵니다. 모바일 HUD·무기/상점 UI 수정과 움직이는 구름·전투 효과는 유지합니다.
 
 - [실제 화면·정상 속도 영상·질감 전후 비교](docs/art/stickman_redesign_20260929/index.html)
 - [다른 PC 설정과 빌드](docs/SETUP.md)
 - [인수인계와 변경 범위](docs/HANDOFF.md)
-- [검증 결과와 한계](docs/verification/STICKRIG_QA_20260929.md)
+- [검증 결과와 한계](docs/verification/SILHOUETTE_QA_20260929.md)
 - [GitHub 공동 작업](docs/GITHUB.md)
 
 ## 빠른 시작
@@ -22,6 +22,7 @@ python scripts/verify_package.py
 ./scripts/test_shop.ps1
 ./scripts/test_ads.ps1
 ./scripts/test_ui_text.ps1
+./scripts/test_silhouette.ps1
 python scripts/test_stickman_contract.py
 ./scripts/build_android.ps1
 ```
@@ -33,8 +34,8 @@ Android 빌드 경로는 짧은 영문 경로를 사용합니다. Windows 빌드
 | 경로 | 용도 |
 |---|---|
 | AOS5/Content_gothic | 이미지 2,110장 포함 실행 콘텐츠 2,208개 |
-| AOS5/Content_gothic/img/gothic/stickrig | 현재 머리·팔/다리·몸통 원화 |
-| AOS5/Content_gothic/aos5core/stickrig.json | 위 원화의 등록 범위·관절 기준·폭 설정 |
+| AOS5/Content_gothic/img/gothic/stickrig | 모자 원화와 이전 의상 원화 보존 |
+| AOS5/Content_gothic/aos5core/stickrig.json | 모자 등록값과 이전 의상 설정 보존 |
 | recomp/rt | Axmol 연결, UI, 표시·효과·캐릭터 렌더링 |
 | recomp/gen | 복원된 기존 게임 로직. 일반 빌드에 그대로 사용 |
 | scripts, tests | 빌드·무결성 검사·회귀 검사와 별도 QA 저장 데이터 |

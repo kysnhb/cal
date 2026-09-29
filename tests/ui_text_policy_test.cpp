@@ -114,7 +114,7 @@ int main(int argc, char **argv)
     assert(display_text("Anger of stick 2 ~ 5") == "CITY OF LAST LIGHT");
     assert(display_text("J-PARK / jpark") == "Development team / Development team");
     assert(display_text("앵어오브스틱5") == "잔광의 도시");
-    assert(display_text("V1.1.93") == "V1.0.5");
+    assert(display_text("V1.1.93") == "V1.0.6");
     assert(display_text("V1.1.930") == "V1.1.930");
     assert(display_text("Version V1.1.93") == "Version V1.1.93");
     // 30 coupon characters use ROM advances <=28. Both blinking cursor strokes

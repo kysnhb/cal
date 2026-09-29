@@ -37,7 +37,7 @@ inline void replace_text(std::string &text, const std::string &from, const std::
 // names or third-party licensing data in the original memory image.
 inline std::string display_text(std::string text)
 {
-    if (text == "V1.1.93") return "V1.0.5";
+    if (text == "V1.1.93") return "V1.0.6";
     for (const char *old : {"Anger of stick: war", "Anger of stick 2 ~ 5", "Anger of stick 5",
                             "AngerOfStick5", "Anger of stick", "AngerOfStick"})
         replace_text(text, old, "CITY OF LAST LIGHT");

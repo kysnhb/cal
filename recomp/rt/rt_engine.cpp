@@ -682,6 +682,7 @@ static void draw_sprite(A r, A g, A b, A a, A scale, A angle, A rec, A pos, A fl
     s->setPosition(Vec2(lx, kScreenH - ly));
     if (g_atmosphere.on && glyph == 92 && fabsf(pv[0]) < 1 && fabsf(pv[1]) < 1)
         g_atmosphere.effectsZ = ++g_zorder; // Reserve between the world and HUD.
+    if (art) stickrig_runtime::halo(si,art,s);
     s->setLocalZOrder(++g_zorder);
     if (spriteBox.hide) s->setVisible(false);
     if (g_atmosphere.on && layout_mode() == 17 && pv[1] >= 210 && pv[1] < 335) {
@@ -1836,6 +1837,8 @@ void Aos5Scene::tick(float dt)
         fi->used = 0;
     }
     g_zorder = 1;
+    stickrig_runtime::haloLayers.clear();
+    if(aos5_visual::sky_clouds_advance(layout_mode())) stickrig_runtime::auraSeconds+=aos5_visual::effect_step(dt);
     if (!stickrig_runtime::contexts.empty()) {
         rt_log("[stickrig] unbalanced record scope discarded at frame boundary");
         stickrig_runtime::contexts.clear();

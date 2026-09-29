@@ -1,0 +1,86 @@
+{
+  "revision": 15,
+  "purpose": "Original black silhouette, retained hat, cached blue ally/hostage and red opponent outer glow. Original gameplay and pose data retained.",
+  "files": [
+    {
+      "path": "AOS5/CMakeLists.txt",
+      "sha256": "e9a2a2c3c0b641b821aeb908e0133d630626ce8872eae77d6fafd058d3d68b77"
+    },
+    {
+      "path": "AOS5/Content_gothic/aos5core/stickrig.json",
+      "sha256": "7eb1d4769f83581a9973ece52c27a79b2c653d2f51cba85588cff9999a9950ec"
+    },
+    {
+      "path": "AOS5/Content_gothic/img/gothic/stickrig/limb.png",
+      "sha256": "6a85996c27da2a756260450575897315043b01556e5f70ab24df21c74c6b7a24"
+    },
+    {
+      "path": "AOS5/Content_gothic/img/gothic/stickrig/torso.png",
+      "sha256": "b2889b7bc677cfa96ef78713952f82798440081214fe57ba6bc64db9b543abf0"
+    },
+    {
+      "path": "AOS5/proj.android/app/build.gradle",
+      "sha256": "e1e835c629802b940f1de1f74bf8b2c8055b5d9772ed95dd8e4af3610317c591"
+    },
+    {
+      "path": "recomp/gen/bzStateGame/bzStateGame__LPimg_0041db74.c",
+      "sha256": "41febe4429e1806692bbd5dc31ec2dc6a571cb791733889f8358b7bfcac6a430"
+    },
+    {
+      "path": "recomp/rt/rt_engine.cpp",
+      "sha256": "f7fa168c22c338f9113de0d8d9888bad6ddc1b3d85521dd64e81990de7abff79"
+    },
+    {
+      "path": "recomp/rt/rt_silhouette.h",
+      "sha256": "781ff23f9e785d48d53788ffc849897b454438e9aa3d43644baedfc496a67174"
+    },
+    {
+      "path": "recomp/rt/rt_stickman_style.h",
+      "sha256": "d439d91fe2340d501b73ebf48cd5f7aa8f8a9224e289e7c9e4cfe467a80350ac"
+    },
+    {
+      "path": "recomp/rt/rt_stickrig_art.h",
+      "sha256": "e1bfc9242f0e815d6669a92c651ac6a2499e5a45fd572a05b0d2ab9dc2025711"
+    },
+    {
+      "path": "recomp/rt/rt_stickrig_json.h",
+      "sha256": "4489882ebcdd7641bb1ea25710a48ce7ecc3f33c5bba4ba7935b00277886e6d3"
+    },
+    {
+      "path": "recomp/rt/rt_stickrig_roles.h",
+      "sha256": "c47bd2bade9847782b44496837c3b88c638c4e8073cb2e29b8ffe57325195bed"
+    },
+    {
+      "path": "recomp/rt/rt_stickrig_runtime.inc",
+      "sha256": "46baf6e031efc86ec374d90359cc1aa227a44dd26f4fcff7336977123e4a26d2"
+    },
+    {
+      "path": "recomp/rt/rt_ui_text.h",
+      "sha256": "6f7c09e70d7b8cdccd6d681cd462073107e15cb7749ff0eb46e9abcf7827e34e"
+    },
+    {
+      "path": "recomp/tools/restore_human_context.py",
+      "sha256": "775c4e168e6bacf51fac642d2104b04fbaa84ed44ee2195ee0befcd6601f6b58"
+    },
+    {
+      "path": "scripts/test_silhouette.ps1",
+      "sha256": "a8391772e63e94b747691ef5c973cb43ff771d82913ccf0dd4a8f97d0b662436"
+    },
+    {
+      "path": "scripts/test_stickman_contract.py",
+      "sha256": "89a9d65cc2ba2b4e10541e8f32bd92dea1102605c4de92596769be61de683af1"
+    },
+    {
+      "path": "tests/silhouette_test.cpp",
+      "sha256": "a8c1e340f0ea765b5dd6d60d535b29960ad43acc339782b27afdb74d7a042a3d"
+    },
+    {
+      "path": "tests/stickrig_art_test.cpp",
+      "sha256": "8ece9428bfe77ed0936fca173c6fe4b1684b868d7a58e6f6ed81e2dbd47496c6"
+    },
+    {
+      "path": "tests/ui_text_policy_test.cpp",
+      "sha256": "4266eab89c82e3411a66bab85198745bb1c6fcee8cb38e17efdfb556e2a596fd"
+    }
+  ]
+}

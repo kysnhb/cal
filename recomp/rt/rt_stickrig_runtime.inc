@@ -2,16 +2,19 @@
 // initialization. draw_sprite only selects cached art and applies registration.
 #include "rt_stickrig_json.h"
 #include "rt_stickrig_roles.h"
+#include "rt_silhouette.h"
 
 namespace stickrig_runtime {
 using namespace aos5_stickrig;
-struct Art { Texture2D *texture=nullptr; Registration registration; int width=0,height=0; };
+struct Art { Texture2D *texture=nullptr,*halo=nullptr; Registration registration; int width=0,height=0; };
 struct Context {
-    int actor=-1,frame=-1,record=-1,values[7]={};
+    int actor=-1,frame=-1,record=-1,values[7]={},friendlyLimit=0,ai=0;
     float base[3]={};
     bool valid=false,baseKnown=false,headReplaced=false;
 };
 static std::vector<Context> contexts;
+static std::unordered_map<int,int> haloLayers;
+static float auraSeconds=0;
 static std::unordered_map<std::string,Bitmap> originals;
 static std::unordered_map<std::string,Art> cache;
 static Master masters[5]; // Role values 0..3; optional full torso at 4.
@@ -83,7 +86,7 @@ static void load() {
             throw std::runtime_error("Missing/invalid stickrig.json version, density or masters");
         density=doc["density"].GetInt();
         std::unordered_map<std::string,Bitmap> images;
-        for(int i=0;i<5;++i) {
+        for(int i=3;i<4;++i) { // Only the retained hat needs an authored master.
             try {
                 if(!doc["masters"].HasMember(names[i])) throw std::runtime_error("Missing master");
                 const auto spec=master_spec(doc["masters"][names[i]]);
@@ -109,43 +112,31 @@ static int fallback(int master) {
     if(available[master]) return master;
     return master!=int(Role::Head) && available[0]?0:-1;
 }
+static Texture2D *upload_padded(const Bitmap &image,const std::string &key) {
+    Bitmap pot;pot.width=pot.height=1;pot.premultiplied=true;
+    while(pot.width<image.width)pot.width*=2;
+    while(pot.height<image.height)pot.height*=2;
+    pot.rgba.resize(size_t(pot.width)*pot.height*4);
+    for(int y=0;y<image.height;++y)
+        std::copy_n(image.rgba.data()+size_t(y)*image.width*4,image.width*4,pot.rgba.data()+size_t(y)*pot.width*4);
+    auto *tex=upload(pot,key);if(tex) filters(tex);return tex;
+}
 static void initialize(const std::string &path,aos5_stickman::Part part) {
     if(part==aos5_stickman::Part::None) return;
     load();const auto *mask=original(path);if(!mask) return;
-    bool wanted[5]={};
-    const int id=image_id(path,"img/npc1/PCimg[%d].png%n");
-    const int base=id>=1 && id<=112?(id-1)%28+1:-1;
-    if(part==aos5_stickman::Part::Head) wanted[int(Role::Head)]=true;
-    else {
-        wanted[0]=true;
-        for(const auto &row:torso_records) if(base!=7 && base==row.values[0]) wanted[int(row.role)]=true;
-        if(base==7) wanted[4]=true;
-    }
-    for(int requested=0;requested<5;++requested) if(wanted[requested]) {
-        const int master=fallback(requested);if(master<0) continue;
-        for(int color=0;color<int(Palette::Count);++color) {
-            const auto palette=Palette(color);const auto idKey=key(path,master,palette);
-            if(cache.count(idKey)) continue;
-            Art art;
-            try {
-                const Role role=master==4?Role::TorsoUpper:Role(master);
-                const int head=image_id(path,"img/npc2/Headimg[%d].png%n");
-                const auto baked=bake(*mask,masters[master],role,head,palette,density,allow_width_growth(path));
-                Bitmap pot;pot.width=pot.height=1;pot.premultiplied=true;
-                while(pot.width<baked.image.width)pot.width*=2;
-                while(pot.height<baked.image.height)pot.height*=2;
-                pot.rgba.resize(size_t(pot.width)*pot.height*4);
-                for(int y=0;y<baked.image.height;++y)
-                    std::copy_n(baked.image.rgba.data()+size_t(y)*baked.image.width*4,baked.image.width*4,
-                        pot.rgba.data()+size_t(y)*pot.width*4);
-                art.texture=upload(pot,"aos5-stickrig:"+idKey);
-                if(!art.texture) throw std::runtime_error("Texture upload failed");
-                filters(art.texture);art.registration=baked.registration;
-                art.width=baked.image.width;art.height=baked.image.height;
-            } catch(const std::exception &e) {rt_log("[stickrig] asset=%s role=%s: %s; original fallback",path.c_str(),names[master],e.what());}
-            cache.emplace(idKey,art); // Including failed entries: never bake in draw.
-        }
-    }
+    if(cache.count(path)) return;
+    Art art;
+    try {
+        const int head=image_id(path,"img/npc2/Headimg[%d].png%n");
+        const Master *hat=part==aos5_stickman::Part::Head && available[3]?&masters[3]:nullptr;
+        const auto silhouette=aos5_silhouette::make(*mask,hat,head,density);
+        art.texture=upload_padded(silhouette.core.image,"aos5-silhouette:core:"+path);
+        art.halo=upload_padded(silhouette.halo,"aos5-silhouette:halo:"+path);
+        if(!art.texture || !art.halo) throw std::runtime_error("Silhouette texture upload failed");
+        art.registration=silhouette.core.registration;
+        art.width=silhouette.core.image.width;art.height=silhouette.core.image.height;
+    } catch(const std::exception &e) {rt_log("[stickrig] asset=%s: %s; original fallback",path.c_str(),e.what());}
+    cache.emplace(path,art); // Including failed entries: never bake in draw.
     rt_log("[stickrig-init] asset=%s cachedVariants=%zu uniqueTextures=%zu POT_RGBA_bytes=%zu retainedRGBA_bytes=%zu GPU_base_bytes=%zu density=%d filter=LINEAR mip=0; original W/H and ROM pivots retained",
         path.c_str(),cache.size(),uniqueTextures,uploadBytes,uploadBytes,uploadBytes,density);
 }
@@ -156,29 +147,37 @@ static bool suppress_overlay(const std::string &path) {
 }
 static const Art *select(const SpriteImpl *si,const float incoming[3],float modulation[3]) {
     if(restoreFilters) {
-        for(auto &entry:cache) if(entry.second.texture) filters(entry.second.texture);
+        for(auto &entry:cache) {if(entry.second.texture) filters(entry.second.texture);if(entry.second.halo) filters(entry.second.halo);}
         restoreFilters=false;
     }
     const auto *c=context();
-    int master=si->stick==aos5_stickman::Part::Head?int(Role::Head):0;
-    if(master==0 && c && c->valid) {
-        const int id=image_id(si->path,"img/npc1/PCimg[%d].png%n");
-        const int base=id>=1 && id<=112?(id-1)%28+1:-1;
-        if(base==c->values[0]) {
-            if(base==7 && c->values[4]==0) master=4;
-            else master=int(record_role(c->frame,c->record,c->values));
-        }
-    }
-    master=fallback(master);if(master<0) return nullptr;
-    const bool player=c && c->valid?c->actor==0:std::max({incoming[0],incoming[1],incoming[2]})<.003f;
     const float *base=c && c->baseKnown?c->base:incoming;
-    const auto palette=aos5_stickrig::palette(player,base);
-    const auto found=cache.find(key(si->path,master,palette));
+    const auto found=cache.find(si->path);
     if(found==cache.end() || !found->second.texture) return nullptr;
     bool effect=false;
     for(int i=0;i<3;++i) effect=effect || std::abs(incoming[i]-base[i])>1.5f/255;
-    for(int i=0;i<3;++i) modulation[i]=effect?incoming[i]:1.f;
+    // Preserve damage/status flashes without permanently recoloring the body.
+    for(int i=0;i<3;++i) modulation[i]=effect?.018f+.32f*std::clamp(incoming[i],0.f,1.f):.018f;
     return &found->second;
+}
+static void halo(SpriteImpl *si,const Art *art,Sprite *core) {
+    const auto *c=context();
+    if(!c || !c->valid || !art || !art->halo) return;
+    const auto team=aos5_silhouette::team(c->actor,c->friendlyLimit,c->ai);
+    if(team==aos5_silhouette::Team::Neutral) return;
+    auto *node=si->overrides.next(art->halo,g_scene->gameRoot());if(!node) return;
+    node->setTextureRect(core->getTextureRect());node->setAnchorPoint(core->getAnchorPoint());
+    node->setPosition(core->getPosition());node->setScaleX(core->getScaleX());node->setScaleY(core->getScaleY());
+    node->setRotation(core->getRotation());node->setFlippedX(core->isFlippedX());node->setFlippedY(false);
+    node->setColor(team==aos5_silhouette::Team::Friendly?Color3B(48,191,255):Color3B(255,57,67));
+    node->setOpacity(uint8_t(core->getOpacity()*(.91f+.06f*std::sin(auraSeconds*2.8f))));
+    node->setBlendFunc(BlendFunc::ALPHA_PREMULTIPLIED);node->setVisible(core->isVisible());
+    auto it=haloLayers.find(c->actor);
+    if(it==haloLayers.end()) it=haloLayers.emplace(c->actor,++g_zorder).first;
+    node->setLocalZOrder(it->second);
+    if(g_trace_draw && c->values[4]==2)
+        rt_log("[silhouette] actor=%d friendlyLimit=%d ai=%d team=%s haloZ=%d",c->actor,c->friendlyLimit,c->ai,
+            team==aos5_silhouette::Team::Friendly?"blue":"red",it->second);
 }
 static void mark_head(const SpriteImpl *si) {
     auto *c=context();if(c && c->valid && c->values[4]==2 && si->stick==aos5_stickman::Part::Head)c->headReplaced=true;
@@ -191,6 +190,8 @@ EXT void aos5_stickrig_begin(int actor,int frame,int record) {
     if(game && actor>=0 && actor<200 && frame>0 && frame<682 && record>=0 && record<7034) {
         std::copy_n(reinterpret_cast<const int *>(game+0xd00b8+record*28),7,c.values);
         c.valid=true;
+        c.friendlyLimit=*reinterpret_cast<const int *>(game+0x32c134);
+        c.ai=*reinterpret_cast<const int *>(game+0x8dd3c+actor*0x288);
         const int color=*reinterpret_cast<const int *>(game+0x8dd20+actor*0x288);
         // Color table occupies 0x8cb70..0x8cdef (40 RGBA integer records).
         if(color>=0 && color<40) {

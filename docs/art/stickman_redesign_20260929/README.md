@@ -1,7 +1,10 @@
-# 현재 캐릭터: R14 / 1.0.5
+# R15 / 1.0.6 검은 실루엣과 진영별 외곽광
 
-모자 머리와 무광 직물 의상입니다. 내장 image_gen으로 머리 및 몸의 원화를 만들었습니다. 제작 지시는 head_hat_generation.json 및 material_revision/generation_prompts.json에 보존했습니다. 사용 원화는 AOS5/Content_gothic/img/gothic/stickrig의 head.png·limb.png·torso.png입니다.
+현재 표시는 원본 몸체 마스크 + 기존 모자 윤곽 + 코드로 생성한 외곽광입니다. 이미지 원화를 새로 생성하거나 원본 마스크를 덮어쓰지 않았습니다. 원래 골격·관절 길이·피벗·액션·공격 판정을 유지합니다.
 
-원래 스틱 골격·마스크·관절 길이·액션을 보존합니다. 68개 직선 부품의 중앙 폭은 팔/다리1.08, 몸통1.15로 제한했습니다. 50개 특수/짧은/발 마스크는 기존 외곽을 유지합니다. 원화 등록값은 aos5core/stickrig.json입니다. 같은 머리 그림 쌍도 원래 ROM 피벗은 서로 다르므로 등록 좌표를 피벗으로 중복 보정하지 마세요.
+- `recomp/rt/rt_silhouette.h`: 원본 알파의 4배 샘플링, 검은 몸체용 마스크, 거리 기반 테두리·잔광 생성 및 진영 판정.
+- `recomp/rt/rt_stickrig_runtime.inc`: 텍스처 캐시, 푸른/붉은 색, 잔광 맥동, 캐릭터별 외곽광 그리기 순서.
+- `AOS5/Content_gothic/aos5core/stickrig.json`: 기존 모자 등록값. 몸통/팔다리 원화 항목은 이전 작업 보존용이며 현재 실루엣에는 사용하지 않습니다.
+- `silhouette_revision/index.html`: 실제 1.0.6 APK 영상/캡처와 이전 의상 비교.
 
-material_revision/index.html에 Windows 전후 비교와 최종 APK의 실제 Android 화면·영상이 있습니다. registered_pose_preview.png는 C++ 생성 함수로 만든 정적 자세 검토이며 실제 실행과 구분합니다. 이전 광택 재질은 현재 적용본이 아닙니다.
+기존 원화와 image_gen 제작 지시는 이전 비교 폴더에 남겨두었습니다. 원작 마스크는 수정하지 말고 `test_stickman_contract.py`, `test_silhouette.ps1`을 함께 실행하세요.

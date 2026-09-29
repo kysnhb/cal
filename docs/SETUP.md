@@ -42,6 +42,7 @@ python scripts/verify_package.py
 ./scripts/test_shop.ps1
 ./scripts/test_ads.ps1
 ./scripts/test_ui_text.ps1
+./scripts/test_silhouette.ps1
 python scripts/test_stickman_contract.py
 python scripts/test_font_asset.py
 ```
