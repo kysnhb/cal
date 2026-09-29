@@ -45,7 +45,11 @@
 using namespace ax;
 
 // 원작 AOS5: 설계 해상도 960x640, 렌더 30fps (AppDelegate::applicationDidFinishLaunching @0x39aa54)
+#ifdef __EMSCRIPTEN__
+static ax::Size designResolutionSize = ax::Size(640.0f * 13.0f / 6.0f, 640);
+#else
 static ax::Size designResolutionSize = ax::Size(960, 640);
+#endif
 
 AppDelegate::AppDelegate() {}
 

@@ -1,5 +1,8 @@
 /* bzStateGame::GameUIImg_0041aa04 @ 0x0041aa04 — 원작 역변환, fixdecomp.py 자동 변환 */
 #include "aos5_protos.h"
+#ifdef __EMSCRIPTEN__
+#define bzStateGame__GameUIImg_0041aa04 aos5_original_GameUIImg
+#endif
 #undef joyY2
 #define joyY2 (*(undefined4 *)IMG(0x00d23c58))
 #undef DAT_00d40300

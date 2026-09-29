@@ -10,7 +10,9 @@
     :root{color-scheme:dark;font-family:system-ui,sans-serif;background:#06090c;color:#e7e4d9;--bar-height:calc(32px + env(safe-area-inset-top));--play-height:calc(100dvh - var(--bar-height) - env(safe-area-inset-bottom));--play-width:calc(100vw - env(safe-area-inset-left) - env(safe-area-inset-right))}
     *{box-sizing:border-box}body{margin:0;overflow:hidden;overscroll-behavior:none}
     #stage{position:fixed;top:var(--bar-height);left:env(safe-area-inset-left);right:env(safe-area-inset-right);bottom:env(safe-area-inset-bottom);display:grid;place-items:center;background:#06090c}
-    #canvas{display:block;width:min(var(--play-width),calc(var(--play-height)*1.5));height:min(var(--play-height),calc(var(--play-width)/1.5));border:0;outline:none;touch-action:none}
+    #canvas{display:block;width:min(var(--play-width),calc(var(--play-height)*13/6));height:min(var(--play-height),calc(var(--play-width)*6/13));border:0;outline:none;touch-action:none}
+    #safe-area{position:fixed;visibility:hidden;pointer-events:none;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+    .mobile{--bar-height:0px;--play-height:100dvh;--play-width:100vw}.mobile #stage{inset:0}
     #bar{position:fixed;top:env(safe-area-inset-top);left:max(8px,env(safe-area-inset-left));right:max(8px,env(safe-area-inset-right));height:32px;z-index:3;display:flex;align-items:center;justify-content:flex-end;gap:5px;opacity:.85;transition:opacity .2s}
     #bar span{margin-right:auto;font-size:10px;letter-spacing:.15em;color:#9d9a86}
     #bar:hover,#bar:focus-within{opacity:1}button{font:inherit;color:#e7e4d9;border:1px solid #675e44;border-radius:7px;background:#111c21;padding:9px 13px;cursor:pointer;touch-action:manipulation}
@@ -51,7 +53,8 @@
   </style>
 </head>
 <body>
-  <main id="stage"><canvas id="canvas" width="960" height="640" tabindex="0" aria-label="잔광의 도시 게임 화면"></canvas></main>
+  <div id="safe-area" aria-hidden="true"></div>
+  <main id="stage"><canvas id="canvas" width="1560" height="720" tabindex="0" aria-label="잔광의 도시 게임 화면 · 19.5:9 가로"></canvas></main>
   <nav id="bar" aria-label="웹 게임 메뉴" hidden><span>CITY OF LAST LIGHT</span><button id="fullscreen" type="button">전체 화면</button><button id="help-open" type="button">조작법</button></nav>
   <div id="pause-tools" hidden><button id="pause-guide" type="button"><svg viewBox="0 0 30 22" aria-hidden="true"><rect x="1" y="2" width="28" height="18" rx="3"/><path d="M5 7h3m3 0h3m3 0h3m3 0h2M5 11h3m3 0h3m3 0h3m3 0h2M8 15h14"/></svg><span class="desktop-only">키 설명 <small>KEYBOARD</small></span><span class="mobile-only">조작법</span></button><button id="pause-fullscreen" class="mobile-only" type="button">전체 화면</button></div>
   <section class="veil" id="loading"><div class="panel launch"><div class="launch-intro">
@@ -114,20 +117,23 @@
   function fail(message){if(failed)return;failed=true;rotate.hidden=true;help.hidden=true;document.getElementById('pause-tools').hidden=true;loading.hidden=false;status.textContent=message;progress.hidden=true;start.disabled=false;start.textContent='다시 불러오기';start.onclick=()=>location.reload();console.error(message);}
   function call(name,types=[],args=[]){return Module.ccall(name,null,types,args);}
   function unlockSound(){if(typeof AL!=='undefined')for(const ctx of Object.values(AL.contexts))if(ctx.audioCtx?.state==='suspended')ctx.audioCtx.resume().catch(console.warn);}
-  function pointer(p,phase,count){if(ready&&playing&&!paused)call('aos5_web_pointer',['number','number','number','number'],[p.x,p.y,phase,count]);}
+  function pointer(p,phase,count){return ready&&playing&&!paused&&Module.ccall('aos5_web_pointer','number',['number','number','number','number'],[p.x,p.y,phase,count]);}
   function releaseAll(){for(const p of pointers.values())pointer(p,2,1);for(const p of keys.values())pointer(p,2,1);pointers.clear();keys.clear();}
   function flushSave(){if(!ready||!saveAvailable||syncing)return;call('aos5_web_flush');syncing=true;FS.syncfs(false,e=>{syncing=false;if(e){console.error(e);notice('자동 저장에 실패했습니다. 브라우저 저장 공간을 확인해 주세요.');}});}
   function setPaused(value){if(!ready||paused===value)return;releaseAll();paused=value;call('aos5_web_pause',['number'],[value?1:0]);if(value)flushSave();}
   // Pointer Events are the only input path. Suppress the engine's legacy
   // mouse/touch handlers, which otherwise duplicate taps and release all fingers.
   for(const type of ['mousedown','mouseup','mousemove','touchstart','touchend','touchmove','touchcancel'])window.addEventListener(type,e=>{if(e.target===canvas){e.preventDefault();e.stopImmediatePropagation();}},{capture:true,passive:false});
-  function point(e){const r=canvas.getBoundingClientRect();return{x:(e.clientX-r.left)*960/r.width,y:(e.clientY-r.top)*640/r.height};}
+  const viewWidth=640*13/6,viewHeight=640;
+  function point(e){const r=canvas.getBoundingClientRect();return{x:(e.clientX-r.left)*viewWidth/r.width,y:(e.clientY-r.top)*viewHeight/r.height};}
+  function projectPoint(x,y){return{x:Module.ccall('aos5_web_project','number',['number','number','number'],[x,y,0]),y:Module.ccall('aos5_web_project','number',['number','number','number'],[x,y,1])};}
+  function syncSafeArea(){if(!window.aos5Ready)return;const r=canvas.getBoundingClientRect(),s=getComputedStyle(document.getElementById('safe-area'));const left=Math.max(0,parseFloat(s.paddingLeft)-r.left),right=Math.max(0,parseFloat(s.paddingRight)-(innerWidth-r.right)),top=Math.max(0,parseFloat(s.paddingTop)-r.top),bottom=Math.max(0,parseFloat(s.paddingBottom)-(innerHeight-r.bottom));call('aos5_web_safearea',['number','number','number','number'],[left*viewWidth/r.width,top*viewHeight/r.height,right*viewWidth/r.width,bottom*viewHeight/r.height]);}
   canvas.addEventListener('contextmenu',e=>e.preventDefault());
-  canvas.addEventListener('pointerdown',e=>{if(!playing||paused)return;e.preventDefault();canvas.focus({preventScroll:true});canvas.setPointerCapture(e.pointerId);const p=point(e);pointers.set(e.pointerId,p);pointer(p,0,pointers.size);unlockSound();});
+  canvas.addEventListener('pointerdown',e=>{if(!playing||paused)return;e.preventDefault();canvas.focus({preventScroll:true});canvas.setPointerCapture(e.pointerId);const p=point(e);pointers.set(e.pointerId,p);if(!pointer(p,0,pointers.size))pointers.delete(e.pointerId);unlockSound();});
   canvas.addEventListener('pointermove',e=>{if(!pointers.has(e.pointerId))return;e.preventDefault();const p=point(e);pointers.set(e.pointerId,p);pointer(p,1,pointers.size);});
   function endPointer(e){const p=pointers.get(e.pointerId);if(!p)return;pointer(p,2,pointers.size);pointers.delete(e.pointerId);}
   for(const event of ['pointerup','pointercancel','lostpointercapture'])canvas.addEventListener(event,endPointer);
-  function keyPoint(code){const action=actions[bindings[code]];if(!action||!action.combat)return null;const mode=Module.ccall('aos5_web_state','number',['number'],[0]);if(mode!==11&&mode!==9)return null;const p=mode===9?action.tutorial:action.combat;return{x:p[0],y:p[1]};}
+  function keyPoint(code){const action=actions[bindings[code]];if(!action||!action.combat)return null;const mode=Module.ccall('aos5_web_state','number',['number'],[0]);if(mode!==11&&mode!==9)return null;const p=mode===9?action.tutorial:action.combat;return projectPoint(p[0],p[1]);}
   window.addEventListener('keydown',e=>{if(!ready||!playing||paused||e.target.closest('button'))return;if(e.code==='Escape'||e.code==='KeyM'){if(e.code==='KeyM'&&![11,22,13,70].includes(Module.ccall('aos5_web_state','number',['number'],[0])))return;e.preventDefault();if(!e.repeat){releaseAll();call('aos5_web_back');}return;}const p=keyPoint(e.code);if(!p)return;e.preventDefault();if(!keys.has(e.code)){keys.set(e.code,p);pointer(p,0,keys.size);}});
   window.addEventListener('keyup',e=>{const p=keys.get(e.code);if(!p)return;e.preventDefault();pointer(p,2,keys.size);keys.delete(e.code);});
   window.addEventListener('blur',()=>{releaseAll();clearHighlights();});
@@ -146,13 +152,13 @@
   pauseGuide.onclick=openHelp;
   document.getElementById('help-close').onclick=()=>{help.hidden=true;clearHighlights();syncPlayState();canvas.focus();syncPauseGuide();};
   setInterval(syncPauseGuide,100);
-  window.addEventListener('resize',()=>{syncPlayState();syncPauseGuide();});
-  document.addEventListener('fullscreenchange',()=>{syncPlayState();syncPauseGuide();});
+  window.addEventListener('resize',()=>{releaseAll();syncSafeArea();syncPlayState();syncPauseGuide();});
+  document.addEventListener('fullscreenchange',()=>{syncSafeArea();syncPlayState();syncPauseGuide();});
   async function enterLandscape(){const root=document.documentElement;try{if(!document.fullscreenElement&&!document.webkitFullscreenElement){if(root.requestFullscreen)await root.requestFullscreen({navigationUI:'hide'});else if(root.webkitRequestFullscreen)await root.webkitRequestFullscreen();}}catch(e){/* Rotation guidance remains available without fullscreen permission. */}try{if(screen.orientation?.lock)await screen.orientation.lock('landscape');}catch(e){/* Some browsers require the user to rotate the device. */}syncPlayState();}
   document.getElementById('fullscreen').onclick=async()=>{if(document.fullscreenElement)await document.exitFullscreen().catch(()=>{});else await enterLandscape();canvas.focus();};
   document.getElementById('pause-fullscreen').onclick=()=>{enterLandscape();canvas.focus();};
   document.getElementById('rotate-retry').onclick=()=>enterLandscape();
-  start.onclick=()=>{if(!window.aos5Ready||failed)return;playing=true;loading.hidden=true;document.getElementById('bar').hidden=mobile;unlockSound();syncPlayState();canvas.focus();if(mobile)enterLandscape();};
+  start.onclick=()=>{if(!window.aos5Ready||failed)return;playing=true;loading.hidden=true;document.getElementById('bar').hidden=mobile;unlockSound();syncSafeArea();syncPlayState();canvas.focus();if(mobile)enterLandscape();};
   var Module={canvas,preRun:[function(){
     ENV.AOS5_SAVE_DIR='/axmolPersistPath/city-last-light/';
     addRunDependency('saved-game');

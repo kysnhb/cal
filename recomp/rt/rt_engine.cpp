@@ -21,6 +21,7 @@
 #include "rt_visual_policy.h"
 #include "rt_stickman_style.h"
 #include "rt_sprite_pool.h"
+#include "rt_wide_view.h"
 #include "platform/GL.h"
 
 extern "C" {
@@ -69,6 +70,51 @@ static int g_zorder = 1;
 static int g_cnt_sprite, g_cnt_label, g_cnt_rect, g_tick;
 static bool g_trace_draw = false;
 static Aos5Scene *g_scene = nullptr;
+
+#ifdef __EMSCRIPTEN__
+static aos5_wide::Insets g_safe_area;
+static bool g_wide_hud = false, g_wide_timer = false;
+static int wide_mode() { return g_scene && g_scene->game() ? *(int *)(g_scene->game() + 0x1ae8) : 0; }
+static void wide_dimensions(uint8_t *game) {
+    const bool world = aos5_wide::world(*(int *)(game + 0x1ae8));
+    *(int *)(game + 0x1158) = world ? int(aos5_wide::width) : 960;
+    *(int *)(game + 0x1160) = *(int *)(game + 0x1158) / 2;
+}
+// UI and hit logic retain their original coordinate system; the world camera,
+// actors and map culling receive the wider viewport dimensions.
+struct OriginalUiScope {
+    uint8_t *game; int width, center; bool hud, timer;
+    OriginalUiScope(uint8_t *g, bool drawHud = false, bool drawTimer = false) : game(g),
+        width(*(int *)(g + 0x1158)), center(*(int *)(g + 0x1160)), hud(g_wide_hud), timer(g_wide_timer) {
+        *(int *)(g + 0x1158) = 960; *(int *)(g + 0x1160) = 480;
+        g_wide_hud = drawHud; g_wide_timer = drawTimer;
+    }
+    ~OriginalUiScope() { *(int *)(game + 0x1158) = width; *(int *)(game + 0x1160) = center; g_wide_hud = hud; g_wide_timer = timer; }
+};
+static void wide_project(float &x, float &y) {
+    aos5_wide::Point p{x,y};
+    if (g_wide_hud) p = (wide_mode() == 9 || wide_mode() == 8 || wide_mode() == 24)
+        ? aos5_wide::menu(p) : aos5_wide::hud(p, g_safe_area, g_wide_timer);
+    else if (!aos5_wide::world(wide_mode())) p = aos5_wide::menu(p);
+    x = p.x; y = p.y;
+}
+EXT gh_long aos5_original_GameUIImg(A, A);
+EXT gh_long aos5_original_ImgNumber(A,A,A,A,A,A,A,A,A,A,A);
+EXT gh_long bzStateGame__GameUIImg_0041aa04(A game, A offset) {
+    OriginalUiScope scope(P<uint8_t>(game), true);
+    return aos5_original_GameUIImg(game, offset);
+}
+EXT gh_long bzStateGame__ImgNumber_003b376c(A game,A type,A style,A value,A x,A y,A r,A g,A b,A alpha,A scale) {
+    if (!g_wide_hud && aos5_wide::world(wide_mode()) && I(type) == 2 && I(y) == 80) {
+        x = (A)(I(x) - (*(int *)(P<uint8_t>(game) + 0x1160) - 480));
+        OriginalUiScope scope(P<uint8_t>(game), true, true);
+        return aos5_original_ImgNumber(game,type,style,value,x,y,r,g,b,alpha,scale);
+    }
+    return aos5_original_ImgNumber(game,type,style,value,x,y,r,g,b,alpha,scale);
+}
+#else
+static void wide_project(float &, float &) {}
+#endif
 
 extern "C" void aos5_log(const char *fmt, ...);
 extern "C" void aos5_diag_install(void);
@@ -279,7 +325,12 @@ EXT void aos5_buy_store_context(int type) {
     if (type > 0) g_shop_items.clear();
 }
 static int layout_mode() {
-    const int mode = g_scene && g_scene->game() ? *(int *)(g_scene->game() + 0x1ae8) : -1;
+    int mode = g_scene && g_scene->game() ? *(int *)(g_scene->game() + 0x1ae8) : -1;
+#ifdef __EMSCRIPTEN__
+    // A goal/results overlay still draws the same combat HUD underneath.
+    // Keep each icon, caption and touch-layout group together in those frames.
+    if (g_wide_hud && aos5_wide::world(mode)) mode = 11;
+#endif
     return aos5_ui::presentation_mode(mode, g_buy_store_context);
 }
 static int weapon_page() { return g_scene && g_scene->game() ? *(int *)(g_scene->game() + 0x32c994) : -1; }
@@ -679,11 +730,47 @@ static void draw_sprite(A r, A g, A b, A a, A scale, A angle, A rec, A pos, A fl
         lx += offset.x; ly += offset.y;
         s->setScale(logicalScale / art->registration.density);
     }
+    wide_project(lx, ly);
+#ifdef __EMSCRIPTEN__
+    if (si->path == "img/bg/bg_1.png" || si->path == "img/bg/bg_4.png" ||
+        si->path == "img/bg/bg_6.png" || si->path == "img/bg/bg_7.png") {
+        const float fit = std::max(aos5_wide::width / s->getContentSize().width,
+                                   kScreenH / s->getContentSize().height);
+        s->setScale(fit); lx = 0; ly = 0;
+    }
+    // The tutorial image contains instructions. Fit it intact in the center,
+    // with the existing sky filling the side areas instead of cropping text.
+    if (si->path == "img/bg/bg_3.png" || si->path == "img/bg/bg_8.png") {
+        static Texture2D *sky = nullptr;
+        if (!sky) { sky = Director::getInstance()->getTextureCache()->addImage("img/bg/bg_7.png"); if (sky) sky->retain(); }
+        if (sky) {
+            auto *back = si->overrides.next(sky, g_scene->gameRoot());
+            back->setVisible(true); back->setAnchorPoint(Vec2(0,1));
+            back->setScale(std::max(aos5_wide::width / sky->getPixelsWide(), kScreenH / sky->getPixelsHigh()));
+            back->setColor(Color3B(95,115,115)); back->setPosition(Vec2(0,kScreenH)); back->setLocalZOrder(++g_zorder);
+        }
+    }
+    if (!g_wide_hud && aos5_wide::world(wide_mode()) && glyph == 34) {
+        lx += pv[0] > aos5_wide::width/2 ? -g_safe_area.right : g_safe_area.left;
+        ly += pv[1] >= 330 ? -g_safe_area.bottom : g_safe_area.top;
+    }
+#endif
     s->setPosition(Vec2(lx, kScreenH - ly));
     if (g_atmosphere.on && glyph == 92 && fabsf(pv[0]) < 1 && fabsf(pv[1]) < 1)
         g_atmosphere.effectsZ = ++g_zorder; // Reserve between the world and HUD.
     if (art) stickrig_runtime::halo(si,art,s);
     s->setLocalZOrder(++g_zorder);
+#ifdef __EMSCRIPTEN__
+    if ((si->path == "img/bg/bg_2.png" || si->path == "img/bg/bg_5.png") && lx >= 0) {
+        const float width = s->getContentSize().width * s->getScaleX();
+        if (width > 0 && lx + width < aos5_wide::width) {
+            auto *extra = sprite_next_instance(si);
+            extra->setVisible(true); extra->setAnchorPoint(s->getAnchorPoint());
+            extra->setScale(s->getScaleX()); extra->setColor(s->getColor()); extra->setOpacity(s->getOpacity());
+            extra->setPosition(Vec2(lx + width, kScreenH - ly)); extra->setLocalZOrder(++g_zorder);
+        }
+    }
+#endif
     if (spriteBox.hide) s->setVisible(false);
     if (g_atmosphere.on && layout_mode() == 17 && pv[1] >= 210 && pv[1] < 335) {
         if (glyph >= 173 && glyph <= 178) g_shop_items.push_back({s, glyph - 173});
@@ -962,6 +1049,10 @@ EXT gh_long kDraw__drawRect_00479ae8(A r, A g, A b, A a, A draw, A rect)
         s->setColor(Color3B(181, 158, 113));
     }
     float ls = layout_apply(lx, ly);
+#ifdef __EMSCRIPTEN__
+    if (rc[0] <= 0 && rc[2] >= 950) { lx = 0; rw = aos5_wide::width; }
+    else wide_project(lx, ly);
+#endif
     s->setScale(rw * ls / bw, rh * ls / bh);   // 원작: box.png(100x100) 를 폭/100, 높이/100 으로 늘림
     s->setPosition(Vec2(lx, kScreenH - ly));
     s->setLocalZOrder(++g_zorder);
@@ -1135,6 +1226,7 @@ static int draw_label(A r, A g, A b, A a, A font, A text, A pos, int width, int 
     float fit = 1.0f;
     if (box.width > 0 && textSize.width > box.width) fit = std::min(fit, box.width / textSize.width);
     if (box.height > 0 && textSize.height > box.height) fit = std::min(fit, box.height / textSize.height);
+    wide_project(lx, ly);
     l->setScale(textScale * fit); // Uniform scale preserves glyph proportions.
     l->setPosition(Vec2(lx, kScreenH - ly));
     l->setLocalZOrder(++g_zorder);
@@ -1819,20 +1911,36 @@ void Aos5Scene::sendTouches(const std::vector<Touch *> &touches, int phase)
 // Browser Pointer Events preserve each finger independently. All coordinates
 // still pass through the same layout mapping as the Android touch path.
 #include <emscripten/emscripten.h>
-extern "C" EMSCRIPTEN_KEEPALIVE void aos5_web_pointer(float x, float y, int phase, int count)
+extern "C" EMSCRIPTEN_KEEPALIVE int aos5_web_pointer(float x, float y, int phase, int count)
 {
-    if (!g_scene || !g_scene->game() || phase < 0 || phase > 2) return;
-    if (!layout_touch(x, y, phase)) return;
+    if (!g_scene || !g_scene->game() || phase < 0 || phase > 2) return 0;
+    aos5_wide::Point p{x,y};
+    if (!aos5_wide::unproject(p, g_safe_area, wide_mode(), phase)) return 0;
+    x = p.x; y = p.y;
+    if (!layout_touch(x, y, phase)) return 0;
+    OriginalUiScope scope(g_scene->game());
     struct { int32_t type, pad; float x, y; int32_t count, pad2; int32_t phase, pad3; } ev{};
     ev.x = x * 0.5f; ev.y = y * 0.5f;
     ev.count = std::max(1, count); ev.phase = phase;
     bzStateGame__handleEvent((uint64_t)(uintptr_t)g_scene->game(), (uint64_t)(uintptr_t)&ev);
+    return 1;
 }
 extern "C" EMSCRIPTEN_KEEPALIVE void aos5_web_back()
 {
     if (!g_scene || !g_scene->game()) return;
+    OriginalUiScope scope(g_scene->game());
     uint32_t ev[8] = {4};
     bzStateGame__handleEvent((uint64_t)(uintptr_t)g_scene->game(), (uint64_t)(uintptr_t)ev);
+}
+extern "C" EMSCRIPTEN_KEEPALIVE float aos5_web_project(float x, float y, int axis)
+{
+    auto p = aos5_wide::controls(wide_mode()) ? aos5_wide::hud({x,y},g_safe_area) : aos5_wide::menu({x,y});
+    return axis == 0 ? p.x : p.y;
+}
+extern "C" EMSCRIPTEN_KEEPALIVE void aos5_web_safearea(float left, float top, float right, float bottom)
+{
+    g_safe_area = {std::clamp(left,0.0f,130.0f),std::clamp(top,0.0f,70.0f),
+                   std::clamp(right,0.0f,130.0f),std::clamp(bottom,0.0f,80.0f)};
 }
 extern "C" EMSCRIPTEN_KEEPALIVE int aos5_web_state(int key)
 {
@@ -1849,6 +1957,8 @@ extern "C" EMSCRIPTEN_KEEPALIVE int aos5_web_state(int key)
     case 7: return *(int *)(g + 0x8dac8) + *(int *)(g + 0x32ba20); // hero world x (camera scroll included)
     case 8: return *(int *)(g + 0x8daf0); // current pose; different attacks can share a state
     case 9: return *(int *)(g + 0x32c150); // remaining special attacks
+    case 10: return *(int *)(g + 0x1158); // logical world width
+    case 11: return *(int *)(g + 0x32ba20); // camera scroll
     default: return -1;
     }
 }
@@ -1876,6 +1986,9 @@ void Aos5Scene::fastTick(float dt)
 
 void Aos5Scene::tick(float dt)
 {
+#ifdef __EMSCRIPTEN__
+    wide_dimensions(_game);
+#endif
     g_buy_store_context = 0;
     // 원작 kScene::updateScene: 모든 게임 노드를 숨기고 zorder 를 1 로 되돌린 뒤 drawScene
     for (auto *si : g_sprites) {

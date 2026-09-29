@@ -1,5 +1,8 @@
 /* bzStateGame::ImgNumber_003b376c @ 0x003b376c — 원작 역변환, fixdecomp.py 자동 변환 */
 #include "aos5_protos.h"
+#ifdef __EMSCRIPTEN__
+#define bzStateGame__ImgNumber_003b376c aos5_original_ImgNumber
+#endif
 gh_long bzStateGame__ImgNumber_003b376c(uint64_t gh_a0, uint64_t gh_a1, uint64_t gh_a2, uint64_t gh_a3, uint64_t gh_a4, uint64_t gh_a5, uint64_t gh_a6, uint64_t gh_a7, uint64_t gh_a8, uint64_t gh_a9, uint64_t gh_a10)
 {
   undefined * self = (undefined *)(uintptr_t)gh_a0;

@@ -1,0 +1,34 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "device": "Pixel 7 emulation",
+  "orientationAPIs": "Rejection fallback; physical phone rotation simulated by viewport resize",
+  "startRequests": [
+    {
+      "api": "fullscreen",
+      "options": {
+        "navigationUI": "hide"
+      },
+      "active": true
+    },
+    {
+      "api": "orientation",
+      "value": "landscape"
+    }
+  ],
+  "canvas": {
+    "x": 0,
+    "y": 0.234375,
+    "width": 844,
+    "height": 389.53125
+  },
+  "rotatePauseRelease": true,
+  "pauseHelp": true,
+  "shortViewport": {
+    "x": 75.328125,
+    "y": 0,
+    "width": 693.328125,
+    "height": 320
+  },
+  "pageErrors": [],
+  "passed": true
+}

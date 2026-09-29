@@ -11,7 +11,7 @@ const out=path.resolve(process.argv[3]||'build/controls-qa');fs.mkdirSync(out,{r
   page.on('pageerror',e=>errors.push(e.message));
   const state=k=>page.evaluate(k=>Module.ccall('aos5_web_state','number',['number'],[k]),k);
   const mode=n=>page.waitForFunction(n=>Module.ccall('aos5_web_state','number',['number'],[0])===n,n,{timeout:20000});
-  const tap=async(x,y)=>{const r=await page.locator('#canvas').boundingBox();await page.mouse.click(r.x+x*r.width/960,r.y+y*r.height/640,{delay:90});await page.waitForTimeout(300);};
+  const tap=async(x,y)=>{const r=await page.locator('#canvas').boundingBox(),p=await page.evaluate(([x,y])=>projectPoint(x,y),[x,y]);await page.mouse.click(r.x+p.x*r.width/(640*13/6),r.y+p.y*r.height/640,{delay:90});await page.waitForTimeout(300);};
   const hold=async(code,ms)=>{await page.keyboard.down(code);await page.waitForTimeout(ms);const result=await state(5);await page.keyboard.up(code);return result;};
   const idle=()=>page.waitForFunction(()=>Module.ccall('aos5_web_state','number',['number'],[5])===0,null,{timeout:8000});
   const fits=async root=>assert(await page.locator(root).evaluate(el=>{const r=el.getBoundingClientRect();return r.left>=0&&r.right<=innerWidth&&el.scrollWidth<=el.clientWidth+1;}),'Guide must fit without horizontal clipping');

@@ -1,0 +1,72 @@
+{
+  "engine": "Chromium",
+  "profiles": "iPhone 15 Pro / Galaxy S25-S26 CSS sizes; simulated insets, not physical hardware",
+  "iPhoneCanvas": {
+    "x": 0.25,
+    "y": 0,
+    "width": 851.5,
+    "height": 393
+  },
+  "iPhoneSafeTargets": {
+    "left": {
+      "x": 105.05468804836272,
+      "y": 327.78749198913573
+    },
+    "right": {
+      "x": 187.95313491821287,
+      "y": 327.78749198913573
+    },
+    "crouch": {
+      "x": 154.17968804836272,
+      "y": 259.62655448913574
+    },
+    "kick": {
+      "x": 648.69527759552,
+      "y": 330.85780448913573
+    },
+    "punch": {
+      "x": 740.80465259552,
+      "y": 321.03280448913574
+    },
+    "action": {
+      "x": 660.97652759552,
+      "y": 255.32811698913574
+    },
+    "jump": {
+      "x": 750.01559009552,
+      "y": 230.76561698913574
+    },
+    "special": {
+      "x": 578.07809009552,
+      "y": 329.01561698913576
+    },
+    "weapon": {
+      "x": 510.53121509552,
+      "y": 335.15624198913576
+    },
+    "pause": {
+      "x": 765.36715259552,
+      "y": 17.19375
+    }
+  },
+  "camera": {
+    "before": {
+      "world": 1600,
+      "camera": 1108
+    },
+    "after": {
+      "world": 2417,
+      "camera": 1697,
+      "screen": 720
+    }
+  },
+  "safeMultitouch": true,
+  "galaxyCanvas": {
+    "x": 0,
+    "y": 0,
+    "width": 780,
+    "height": 360
+  },
+  "pageErrors": [],
+  "passed": true
+}

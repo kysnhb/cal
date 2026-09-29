@@ -78,6 +78,7 @@ set(AOS5_ENGINE_INPUTS
   "${AOS5_RECOMP}/rt/rt_visual_policy.h"
   "${AOS5_RECOMP}/rt/rt_stickman_style.h"
   "${AOS5_RECOMP}/rt/rt_sprite_pool.h"
+  "${AOS5_RECOMP}/rt/rt_wide_view.h"
   "${AOS5_RECOMP}/rt/rt_stickrig_runtime.inc"
   "${AOS5_RECOMP}/rt/rt_stickrig_json.h"
   "${AOS5_RECOMP}/rt/rt_stickrig_roles.h"
