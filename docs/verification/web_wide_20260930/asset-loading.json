@@ -1,0 +1,22 @@
+{
+  "assetRequests": [
+    "http://127.0.0.1:8081/AOS5.js?v=d02afd9de07420e2",
+    "http://127.0.0.1:8081/AOS5.wasm?v=d3d892bbe6357ed1",
+    "http://127.0.0.1:8081/AOS5.data?v=3eb479e0da7b480d"
+  ],
+  "url": "http://127.0.0.1:8081/",
+  "httpStatus": 200,
+  "verifiedMs": 15354,
+  "ready": true,
+  "publishedManifestMatches": true,
+  "canvas": {
+    "x": 0,
+    "y": 0.234375,
+    "width": 844,
+    "height": 389.53125
+  },
+  "portraitPauses": true,
+  "touchHelp": true,
+  "pausePreserved": true,
+  "errors": []
+}

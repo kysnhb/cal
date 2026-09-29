@@ -30,7 +30,7 @@ python scripts/serve_web.py dist/web --port 8080
 
 ## 공유할 파일
 
-`dist/web`의 `index.html`, `AOS5.js`, `AOS5.wasm`, `AOS5.data`, `.nojekyll`, `build-manifest.json`을 함께 배포합니다. SDK, 빌드 캐시, 개인 저장 데이터는 배포하지 않습니다. `.data`가 GitHub 단일 파일 제한보다 크므로 빌드 결과를 소스 Git에 직접 커밋하지 않습니다. 배포 ZIP/Pages artifact로 전달합니다.
+`dist/web`의 `index.html`, `AOS5.js`, `AOS5.wasm`, `AOS5.data`, `.nojekyll`, `build-manifest.json`을 함께 배포합니다. 내보내기 스크립트는 JS·Wasm·데이터 URL에 각 파일의 내용 해시를 붙여 브라우저 캐시에 남은 이전 실행 파일이 섞이지 않게 합니다. SDK, 빌드 캐시, 개인 저장 데이터는 배포하지 않습니다. `.data`가 GitHub 단일 파일 제한보다 크므로 빌드 결과를 소스 Git에 직접 커밋하지 않습니다. 배포 ZIP/Pages artifact로 전달합니다.
 
 ## 조작과 저장
 

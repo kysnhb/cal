@@ -27,6 +27,18 @@ def main():
     subprocess.run([str(args.wasm_opt), str(source / 'AOS5.wasm'),
                     '--enable-bulk-memory', '--enable-mutable-globals', '--enable-sign-ext',
                     '--strip-debug', '--strip-dwarf', '-o', str(out / 'AOS5.wasm')], check=True)
+    # A fresh HTML page must not pair with an older JS/Wasm file from the
+    # browser's cache. Unchanged game data can retain its cached hash URL.
+    versions = {name: hashlib.sha256((out / name).read_bytes()).hexdigest()[:16]
+                for name in ('AOS5.js', 'AOS5.wasm', 'AOS5.data')}
+    html = (out / 'index.html').read_text(encoding='utf-8')
+    script = '<script async type="text/javascript" src="AOS5.js"></script>'
+    if html.count(script) != 1:
+        raise ValueError('Expected exactly one Emscripten script entry')
+    loader = '<script>Module.locateFile=function(file,prefix){const versions=' + json.dumps(versions) + \
+             ';return (prefix||"")+file+(versions[file]?"?v="+versions[file]:"");};</script>\n'
+    html = html.replace(script, loader + script.replace('AOS5.js"', 'AOS5.js?v=' + versions['AOS5.js'] + '"'))
+    (out / 'index.html').write_text(html, encoding='utf-8', newline='\n')
     (out / '.nojekyll').write_text('', encoding='utf-8')
     manifest = {}
     for name in ('index.html', 'AOS5.js', 'AOS5.wasm', 'AOS5.data'):
