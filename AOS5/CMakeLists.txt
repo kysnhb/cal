@@ -104,6 +104,11 @@ endif()
 
 set(AOS5_CONTENT_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Content" CACHE PATH "Game resource folder")
 set(content_folder "${AOS5_CONTENT_DIR}")
+if(EMSCRIPTEN)
+  # ax_setup_app_config preloads this directory at the browser filesystem root.
+  set(_APP_RES_FOLDER "${AOS5_CONTENT_DIR}")
+  set(AX_WASM_SHELL_FILE "${CMAKE_CURRENT_SOURCE_DIR}/proj.wasm/shell.html" CACHE STRING "Web game shell" FORCE)
+endif()
 
 if(APPLE)
   ax_mark_multi_resources(common_content_files RES_TO "Resources" FOLDERS ${content_folder})
@@ -152,6 +157,9 @@ include(AXGameTargetSetup)
 
 # mark app resources, resource will be copy auto after mark
 ax_setup_app_config(${APP_NAME})
+if(EMSCRIPTEN)
+  set_property(TARGET ${APP_NAME} APPEND PROPERTY LINK_DEPENDS "${AX_WASM_SHELL_FILE}")
+endif()
 
 if(_AX_TESTS)
   ax_setup_app_config(${TEST_TARGET_NAME} CONSOLE)

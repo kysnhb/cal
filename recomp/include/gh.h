@@ -23,7 +23,12 @@ extern "C" {
 
 typedef int64_t gh_long;
 typedef uint64_t gh_ulong;
+#ifdef __EMSCRIPTEN__
+/* musl names unsigned long ulong; uint64_t is unsigned long long on wasm64. */
+typedef unsigned long ulong;
+#else
 typedef uint64_t ulong;
+#endif
 typedef uint32_t uint;
 typedef uint16_t ushort;
 typedef uint8_t uchar;
@@ -61,7 +66,12 @@ extern uint8_t *g_aos5_img;              /* 원작 주소 IMG_BASE 에 대응하
 /* ---- 스택 보호 (tpidr_el0 + 0x28 canary) ---- */
 extern uint8_t g_aos5_tls[0x100];
 #define tpidr_el0 ((gh_long)(uintptr_t)g_aos5_tls)
+#ifdef __EMSCRIPTEN__
+void aos5_web_stack_fail(void);
+#define __stack_chk_fail(...) aos5_web_stack_fail()
+#else
 void __stack_chk_fail();
+#endif
 
 /* ---- COW std::string 참조카운트 원자 연산 (단일 스레드 실행) ---- */
 #define ExclusiveMonitorPass(p, sz) (1)

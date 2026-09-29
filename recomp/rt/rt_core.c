@@ -19,7 +19,9 @@ void FUN_009d4eac(undefined8 *out, char *s);
 uint8_t *g_aos5_img;
 uint8_t g_aos5_tls[0x100];
 
+#ifndef __EMSCRIPTEN__
 void __stack_chk_fail() { fprintf(stderr, "aos5: stack check failed\n"); abort(); }
+#endif
 
 void *operator_new(gh_ulong n) { void *p = malloc(n ? n : 1); if (!p) abort(); return p; }
 void *operator_new_nothrow(gh_ulong n, void *tag) { (void)tag; return calloc(1, n ? n : 1); }
@@ -211,6 +213,19 @@ void FUN_009d1e68(char *fmt, ...)
     fprintf(stderr, "aos5: std::out_of_range %s\n", fmt);
     abort();
 }
+
+#ifdef __EMSCRIPTEN__
+_Static_assert(sizeof(void *) == 8 && sizeof(Rep) == 24, "Restored ARM64 layout requires LP64");
+void aos5_web_stack_fail(void) { fprintf(stderr, "aos5: stack check failed\n"); abort(); }
+gh_long aos5_web_throw_range(uint64_t a, uint64_t b) { (void)b; FUN_009d1e68((char *)(uintptr_t)a); return 0; }
+gh_long aos5_web_string_create(uint64_t a, uint64_t b, uint64_t c, uint64_t d, uint64_t e, uint64_t f, uint64_t g, uint64_t h)
+{ FUN_009d4eac((undefined8 *)(uintptr_t)a, (char *)(uintptr_t)b); return 0; }
+gh_long aos5_web_string_reserve(uint64_t a, uint64_t b) { FUN_009d537c((gh_long *)(uintptr_t)a, b); return 0; }
+gh_long aos5_web_string_swap(uint64_t a, uint64_t b) { FUN_009d5ec8((gh_long *)(uintptr_t)a, (gh_long *)(uintptr_t)b); return 0; }
+gh_long aos5_web_string_compare(uint64_t a, uint64_t b, uint64_t c) { (void)c; return FUN_009d6cd4((undefined8 *)(uintptr_t)a, (char *)(uintptr_t)b); }
+gh_long aos5_web_string_leak(uint64_t a) { FUN_009d719c((undefined8 *)(uintptr_t)a); return 0; }
+gh_long aos5_web_string_copy(uint64_t a, uint64_t b) { FUN_009d881c((gh_long *)(uintptr_t)a, (gh_long *)(uintptr_t)b); return 0; }
+#endif
 
 /* 원작 cocos2d::Size::ZERO (게임 코드가 주소만 넘긴다) */
 uint8_t cocos2d__Size__ZERO[8];

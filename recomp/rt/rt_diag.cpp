@@ -36,6 +36,14 @@ extern "C" void aos5_log(const char *fmt, ...)
         g_log = fopen("aos5_run.log", "w");
         if (!g_log) return;
     }
+#ifdef __EMSCRIPTEN__
+    // MEMFS lives in browser memory. Keep diagnostics bounded during long runs.
+    if (ftell(g_log) > 4 * 1024 * 1024) {
+        fclose(g_log);
+        g_log = fopen("aos5_run.log", "w");
+        if (!g_log) return;
+    }
+#endif
     va_list ap;
     va_start(ap, fmt);
     vfprintf(g_log, fmt, ap);

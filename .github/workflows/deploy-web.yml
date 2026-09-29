@@ -1,0 +1,38 @@
+name: Deploy tested web game
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Release containing city-last-light-web.zip
+        required: true
+        type: string
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download tested build
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.release_tag }}
+        run: |
+          gh release download "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern city-last-light-web.zip --dir artifact
+          python -m zipfile -e artifact/city-last-light-web.zip web
+          python scripts/verify_web_export.py web
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v4

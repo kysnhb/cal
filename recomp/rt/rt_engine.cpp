@@ -1772,6 +1772,7 @@ bool Aos5Scene::init()
     bzStateGame__startState((uint64_t)(uintptr_t)_game);
     rt_log("startState done");
 
+#ifndef __EMSCRIPTEN__
     auto touch = EventListenerTouchAllAtOnce::create();
     touch->onTouchesBegan = [this](const std::vector<Touch *> &t, Event *) { sendTouches(t, 0); };
     touch->onTouchesMoved = [this](const std::vector<Touch *> &t, Event *) { sendTouches(t, 1); };
@@ -1786,6 +1787,7 @@ bool Aos5Scene::init()
         }
     };
     _eventDispatcher->addEventListenerWithSceneGraphPriority(key, this);
+#endif
 
     // 원작: Director 30fps + 게임 틱 0.06초 (kScene::init schedule)
     // 진단용: AOS5_FAST=N 이면 매 프레임 게임 틱을 N번 돌린다 (창이 가려져 프레임이 늦춰져도 자동 테스트가 진행되게)
@@ -1812,6 +1814,57 @@ void Aos5Scene::sendTouches(const std::vector<Touch *> &touches, int phase)
         bzStateGame__handleEvent((uint64_t)(uintptr_t)_game, (uint64_t)(uintptr_t)&ev);
     }
 }
+
+#ifdef __EMSCRIPTEN__
+// Browser Pointer Events preserve each finger independently. All coordinates
+// still pass through the same layout mapping as the Android touch path.
+#include <emscripten/emscripten.h>
+extern "C" EMSCRIPTEN_KEEPALIVE void aos5_web_pointer(float x, float y, int phase, int count)
+{
+    if (!g_scene || !g_scene->game() || phase < 0 || phase > 2) return;
+    if (!layout_touch(x, y, phase)) return;
+    struct { int32_t type, pad; float x, y; int32_t count, pad2; int32_t phase, pad3; } ev{};
+    ev.x = x * 0.5f; ev.y = y * 0.5f;
+    ev.count = std::max(1, count); ev.phase = phase;
+    bzStateGame__handleEvent((uint64_t)(uintptr_t)g_scene->game(), (uint64_t)(uintptr_t)&ev);
+}
+extern "C" EMSCRIPTEN_KEEPALIVE void aos5_web_back()
+{
+    if (!g_scene || !g_scene->game()) return;
+    uint32_t ev[8] = {4};
+    bzStateGame__handleEvent((uint64_t)(uintptr_t)g_scene->game(), (uint64_t)(uintptr_t)ev);
+}
+extern "C" EMSCRIPTEN_KEEPALIVE int aos5_web_state(int key)
+{
+    if (!g_scene || !g_scene->game()) return -1;
+    auto g = g_scene->game();
+    switch (key) {
+    case 0: return *(int *)(g + 0x1ae8); // screen mode
+    case 1: return g_tick;
+    case 2: return *(int *)(g + 0x8dac8); // hero x
+    case 3: return *(int *)(g + 0x8dacc); // hero y
+    case 4: return *(int *)(g + 0x8daec); // hero HP
+    case 5: return *(int *)(g + 0x8dae0); // hero animation state
+    case 6: return *(int *)(g + 0x32ab00); // original staged resource loading
+    case 7: return *(int *)(g + 0x8dac8) + *(int *)(g + 0x32ba20); // hero world x (camera scroll included)
+    default: return -1;
+    }
+}
+extern "C" EMSCRIPTEN_KEEPALIVE void aos5_web_flush()
+{
+    UserDefault::getInstance()->flush();
+}
+extern "C" EMSCRIPTEN_KEEPALIVE void aos5_web_pause(int hidden)
+{
+    if (hidden) {
+        Director::getInstance()->stopAnimation();
+        AudioEngine::pauseAll();
+    } else {
+        Director::getInstance()->startAnimation();
+        AudioEngine::resumeAll();
+    }
+}
+#endif
 
 void Aos5Scene::fastTick(float dt)
 {

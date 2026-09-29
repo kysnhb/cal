@@ -1,5 +1,6 @@
 /* bzStateGame::handleEvent @ 0x0043b690 — 원작 역변환, fixdecomp.py 자동 변환 */
 #include "aos5_protos.h"
+#include <time.h>
 #undef DAT_00a4f4e0
 #define DAT_00a4f4e0 (*(undefined1 *)IMG(0x00a4f4e0))
 #undef DAT_00a50a25

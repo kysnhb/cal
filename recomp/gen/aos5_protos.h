@@ -1,6 +1,17 @@
 /* 자동 생성: fixdecomp.py — 재컴파일 함수 원형 (전 인자 uint64 규약) */
 #pragma once
 #include "aos5_types.h"
+#ifdef __EMSCRIPTEN__
+// Wasm validates direct-call signatures. The generated ARM64 register ABI
+// needs adapters for runtime functions with native pointer/void signatures.
+#define FUN_009d1e68 aos5_web_throw_range
+#define FUN_009d4eac aos5_web_string_create
+#define FUN_009d537c aos5_web_string_reserve
+#define FUN_009d5ec8 aos5_web_string_swap
+#define FUN_009d6cd4 aos5_web_string_compare
+#define FUN_009d719c aos5_web_string_leak
+#define FUN_009d881c aos5_web_string_copy
+#endif
 #include "aos5_ext_manual.h"
 #include "aos5_ext.h"
 gh_long PurchaseStruct__PurchaseStruct_00477efc(uint64_t, uint64_t);

@@ -1,5 +1,6 @@
 /* bzStateGame::initResource_003a291c @ 0x003a291c — 원작 역변환, fixdecomp.py 자동 변환 */
 #include "aos5_protos.h"
+#include <time.h>
 #undef DAT_00a4daff
 #define DAT_00a4daff (*(undefined1 *)IMG(0x00a4daff))
 #undef DAT_00a4db20
