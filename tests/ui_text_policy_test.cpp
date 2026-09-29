@@ -17,6 +17,8 @@ int main(int argc, char **argv)
 {
     using namespace aos5_ui;
     using aos5_stickman::Part;
+    assert(presentation_mode(13, 0) == presentation_mode(11, 0));
+    assert(presentation_mode(13, 1) == buy_store_mode);
     int styled = 0, rgba = 0;
     for (int i = 0; i < 400; ++i) for (const char *prefix : {"img/npc1/PCimg[", "img/npc2/Headimg[", "img/out/ImF["}) {
         const std::string path = std::string(prefix) + std::to_string(i) + "].png";

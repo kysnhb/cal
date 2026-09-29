@@ -1,6 +1,6 @@
 # 잔광의 도시 / CITY OF LAST LIGHT
 
-**웹 버전:** [브라우저에서 바로 플레이](https://kysnhb.github.io/cal/) · [배포 ZIP](https://github.com/kysnhb/cal/releases/tag/web-v0.1.0) · [웹 빌드·조작·저장·배포 안내](docs/WEB.md)
+**웹 버전:** [브라우저에서 바로 플레이](https://kysnhb.github.io/cal/) · [배포 ZIP](https://github.com/kysnhb/cal/releases/tag/web-v0.1.1) · [웹 빌드·조작·저장·배포 안내](docs/WEB.md)
 
 **현재 검수 빌드: 1.0.6 / R15, 2026-09-29.** `프로젝트복원_01` 인수 후 그래픽과 런타임 수정까지 포함한 공동 작업 소스입니다. APK·Windows 실행본은 저장소 밖에 별도로 제공합니다.
 

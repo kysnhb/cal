@@ -31,7 +31,7 @@ let activePage;
  await tap(885,610);if(await state(0)===21)await tap(692,160);await mode(11);
  const before=await state(7);await page.keyboard.down('ArrowRight');await page.waitForTimeout(900);await page.keyboard.up('ArrowRight');
  const after=await state(7);assert(after>before,'Keyboard must move hero right');report.keyboardMove={before,after};
- await page.keyboard.down('KeyS');await page.waitForTimeout(500);await page.keyboard.up('KeyS');
+ await page.keyboard.down('KeyK');await page.waitForTimeout(500);await page.keyboard.up('KeyK');
  await page.locator('#help-open').click();const stopped=await state(1);await page.waitForTimeout(800);assert.equal(await state(1),stopped,'Help must pause combat');await page.locator('#help-close').click();await page.waitForTimeout(500);assert((await state(1))>stopped,'Closing help must resume combat');report.helpPause=true;
  await page.screenshot({path:path.join(out,'desktop-combat.png')});
  await page.setViewportSize({width:844,height:390});const r=await page.locator('#canvas').boundingBox();assert(r.y>=31,'Web toolbar must not cover HP');assert(Math.abs(r.width/r.height-1.5)<0.01,'Game must preserve 3:2 aspect ratio');

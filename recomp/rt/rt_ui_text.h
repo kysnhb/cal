@@ -5,7 +5,9 @@
 namespace aos5_ui {
 constexpr int buy_store_mode = 1017, special_buy_store_mode = 1018;
 inline int presentation_mode(int gameMode, int storeContext) {
-    if (storeContext <= 0) return gameMode;
+    // Pause draws the same combat HUD beneath its sound/main-menu panel.
+    // Keep that HUD in the combat layout instead of jumping to ROM positions.
+    if (storeContext <= 0) return gameMode == 13 ? 11 : gameMode;
     return storeContext == 11 || storeContext == 12 || storeContext == 13 ? special_buy_store_mode : buy_store_mode;
 }
 inline int buy_store_item_card(int glyph) {

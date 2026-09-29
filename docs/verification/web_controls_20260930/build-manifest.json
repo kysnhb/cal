@@ -1,0 +1,18 @@
+{
+  "index.html": {
+    "bytes": 20396,
+    "sha256": "5f31769ebfa8476c58f89f3ba405994a699efc69606af7450e2c79c099473e1c"
+  },
+  "AOS5.js": {
+    "bytes": 862669,
+    "sha256": "4858fba3b30f5691cf5bf8a04b07b04486428ba68bc63f898995b78501776a35"
+  },
+  "AOS5.wasm": {
+    "bytes": 4844160,
+    "sha256": "a6fc0936760b81da2c17a2cc990d10d778dc8d058c0b483e316c0d8465cc15ad"
+  },
+  "AOS5.data": {
+    "bytes": 157631265,
+    "sha256": "3eb479e0da7b480def46cdf4d896ce60526db93ca466da2bf8a06fed468cc81b"
+  }
+}

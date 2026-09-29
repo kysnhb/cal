@@ -16,11 +16,25 @@
     #bar:hover,#bar:focus-within{opacity:1}button{font:inherit;color:#e7e4d9;border:1px solid #675e44;border-radius:7px;background:#111c21;padding:9px 13px;cursor:pointer;touch-action:manipulation}
     button:hover{background:#23353c}button:focus-visible{outline:2px solid #7ac7df;outline-offset:3px}button:disabled{opacity:.45;cursor:wait}
     #bar button{font-size:12px;padding:5px 8px;background:#091217df}
-    .veil{position:fixed;inset:0;z-index:5;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 40%,#193237,#090e12 70%);padding:24px}
-    .panel{max-width:510px;width:100%;text-align:center}h1{font-family:Georgia,serif;font-size:clamp(32px,7vw,52px);font-weight:normal;letter-spacing:.11em;color:#dec88c;margin:12px 0}
+    #pause-guide{position:fixed;z-index:4;transform:translateX(-50%);min-height:44px;max-width:80vw;border:1px solid #a28c60;border-radius:9px;background:linear-gradient(#263a3d,#0f1b20);box-shadow:0 3px 0 #080f12,0 0 0 3px #453e2b;color:#f1dfb5;display:flex;align-items:center;justify-content:center;gap:12px;font-weight:600}
+    #pause-guide svg{width:30px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5}#pause-guide small{font-size:10px;color:#b9b09b;letter-spacing:.08em}
+    .veil{position:fixed;inset:0;z-index:5;display:flex;overflow-y:auto;overscroll-behavior:contain;background:radial-gradient(ellipse at 50% 40%,#193237,#090e12 70%);padding:max(24px,env(safe-area-inset-top)) max(20px,env(safe-area-inset-right)) max(24px,env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left))}
+    .panel{max-width:650px;width:100%;text-align:center;margin:auto}.launch{max-width:1080px}h1{font-family:Georgia,serif;font-size:clamp(32px,5vw,48px);font-weight:normal;letter-spacing:.11em;color:#dec88c;margin:12px 0}
     .eyebrow{font-size:10px;letter-spacing:.35em;color:#91a8ab}.sub{color:#9faeb0;font-size:14px;line-height:1.7;margin:20px 0}
     progress{width:100%;height:4px;accent-color:#c7ac6b;border:0;margin:22px 0 8px}#start{width:100%;padding:14px;margin-top:22px;border-color:#b7985d;background:#243637;color:#f3dfb0;font-weight:600}
-    #status{font-size:13px;color:#adbdc0;min-height:22px}#help{background:#060c10ed}#help p{line-height:1.9;font-size:14px}kbd{display:inline-block;min-width:25px;border:1px solid #556369;border-radius:4px;padding:0 5px;font-size:12px;background:#142329}
+    #status{font-size:13px;color:#adbdc0;min-height:22px}#help{background:#060c10f5}#help h1{font-size:30px}#help-close{margin-top:18px;width:100%;padding:13px}kbd{font-family:inherit}
+    .controls{margin-top:26px;text-align:left}.controls h2{margin:0;font-size:20px;color:#eee6cf}.controls-intro{margin:9px 0 18px;font-size:14px;color:#b8c6c7;line-height:1.7}.controls-intro strong{color:#f0d4a6}
+    .keyboard{padding:18px;border:1px solid #49544f;border-radius:14px;background:linear-gradient(145deg,#243237,#10191e);box-shadow:0 7px 0 #070f13,0 12px 28px #0004}
+    .key-groups{display:grid;grid-template-columns:1fr 1fr;gap:28px}.key-group-title{margin:0 0 10px;font-size:12px;letter-spacing:.1em;color:#a6c7cc}.attack .key-group-title{color:#e4be91}
+    .key-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-bottom:7px}.key-row.stagger{transform:translateX(6px)}
+    .keycap{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-width:0;height:62px;border:1px solid #547077;border-bottom:4px solid #1c3c43;border-radius:7px;background:linear-gradient(#30464c,#1d3037);color:#d8f4f4;box-shadow:0 2px 2px #0005;transition:transform .08s,background .08s}
+    .keycap kbd{font-size:21px;line-height:1.1;font-weight:650}.keycap span{font-size:11px;white-space:nowrap}.attack .keycap{border-color:#85674b;border-bottom-color:#443120;background:linear-gradient(#514233,#332a25);color:#ffe2b9}
+    .keycap.ghost{opacity:.22;border-color:#607075;border-bottom-color:#152127;background:#28353b;color:#a5b7ba}.keycap.space{margin:14px auto 0;width:78%;height:54px;flex-direction:row;gap:20px;border-color:#a38c5c;border-bottom-color:#554329;background:linear-gradient(#534a34,#332d22);color:#ffe4a4}.keycap.space kbd{font-size:18px}.keycap.space span{font-size:14px;font-weight:650}
+    .keyboard-bottom{display:flex;gap:12px;align-items:center;margin-top:14px}.keyboard-bottom .keycap.space{margin:0;flex:1;width:auto}.keycap.utility{width:20%;height:54px}
+    .keycap.pressed{transform:translateY(3px);border-bottom-width:1px;background:#536e73;box-shadow:0 0 14px #93e5f34d}.attack .keycap.pressed,.keycap.space.pressed{background:#796447;box-shadow:0 0 14px #edc47b4d}
+    .control-notes{display:grid;gap:9px;margin-top:20px;color:#b9c5c6;font-size:12px;line-height:1.6}.control-notes p{margin:0}.inline-key{display:inline-block;min-width:26px;padding:1px 6px;border:1px solid #52656a;border-bottom-width:3px;border-radius:4px;background:#1b2a30;text-align:center;color:#f0e9d5;font-size:12px}.mobile-tip{padding-top:10px;border-top:1px solid #35454a}.guide-tip{color:#d0bd94}
+    @media(min-width:900px){.launch{display:grid;grid-template-columns:.8fr 1.3fr;gap:48px;align-items:center}.launch .controls{margin-top:0}}
+    @media(max-width:480px){.veil{padding:20px 14px}.eyebrow{font-size:9px;letter-spacing:.2em}.keyboard{padding:13px 12px}.key-groups{gap:20px}.keycap{height:56px}.keycap span{font-size:10px}.controls h2{font-size:18px}.controls-intro{font-size:13px}.keycap.space{width:88%}}
     #notice{position:fixed;bottom:max(12px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);z-index:6;max-width:90vw;background:#1a282deb;color:#e7dcc0;border:1px solid #665c43;border-radius:6px;padding:9px 14px;font-size:12px;text-align:center}
     [hidden]{display:none!important}
     @media(orientation:portrait){#bar{opacity:.8}.sub{font-size:13px}}
@@ -29,17 +43,17 @@
 <body>
   <main id="stage"><canvas id="canvas" width="960" height="640" tabindex="0" aria-label="잔광의 도시 게임 화면"></canvas></main>
   <nav id="bar" aria-label="웹 게임 메뉴" hidden><span>CITY OF LAST LIGHT</span><button id="fullscreen" type="button">전체 화면</button><button id="help-open" type="button">조작법</button></nav>
-  <section class="veil" id="loading"><div class="panel">
+  <button id="pause-guide" type="button" hidden><svg viewBox="0 0 30 22" aria-hidden="true"><rect x="1" y="2" width="28" height="18" rx="3"/><path d="M5 7h3m3 0h3m3 0h3m3 0h2M5 11h3m3 0h3m3 0h3m3 0h2M8 15h14"/></svg><span>키 설명 <small>KEYBOARD</small></span></button>
+  <section class="veil" id="loading"><div class="panel launch"><div class="launch-intro">
     <div class="eyebrow">CITY OF LAST LIGHT · WEB EDITION</div><h1>잔광의 도시</h1>
     <p class="sub">빛이 사라진 도시, 마지막 전투가 시작된다.<br>모바일은 가로 화면으로 플레이하세요.</p>
     <progress id="progress" aria-label="게임 불러오기"></progress><div id="status" role="status">게임을 불러오는 중…</div>
     <button id="start" type="button" disabled>게임 준비 중</button>
-    <p class="sub">화면의 버튼으로 이동하고 공격합니다.<br>PC에서는 방향키와 A · S · W · E · Space를 사용할 수 있습니다.</p>
-  </div></section>
-  <section class="veil" id="help" hidden><div class="panel"><h1 style="font-size:30px">조작법</h1>
-    <p>모바일: 화면의 방향키와 공격 버튼을 터치하세요.<br>이동하면서 다른 손가락으로 공격할 수 있습니다.</p>
-    <p><kbd>←</kbd> <kbd>→</kbd> 이동 · <kbd>↓</kbd> 앉기 · <kbd>E</kbd> 점프<br><kbd>S</kbd> 주먹 · <kbd>A</kbd> 발차기 · <kbd>W</kbd> 행동<br><kbd>Space</kbd> 필살기 · <kbd>Q</kbd> 무기 변경<br><kbd>Esc</kbd> 뒤로 / 일시정지</p>
-    <p class="sub">진행 상황은 현재 브라우저에 자동 저장됩니다.</p><button id="help-close">게임으로 돌아가기</button>
+    <p class="sub">메뉴는 마우스로 선택하세요.<br>플레이 중에도 상단의 ‘조작법’을 열 수 있습니다.</p>
+  </div><div class="controls" data-controls></div></div></section>
+  <section class="veil" id="help" role="dialog" aria-modal="true" aria-labelledby="help-title" hidden><div class="panel"><h1 id="help-title">조작법</h1>
+    <div class="controls" data-controls></div>
+    <button id="help-close" type="button">게임으로 돌아가기</button>
   </div></section>
   <div id="notice" role="status" hidden></div>
   <script>
@@ -47,6 +61,31 @@
   const canvas=document.getElementById('canvas'), loading=document.getElementById('loading'), start=document.getElementById('start'), status=document.getElementById('status'), progress=document.getElementById('progress'), help=document.getElementById('help');
   let ready=false, playing=false, failed=false, paused=false, saveAvailable=false, syncing=false;
   const pointers=new Map(), keys=new Map();
+  // These actions drive both the keyboard drawing and the actual touch targets.
+  const actions={
+    right:{label:'오른쪽 →',combat:[210,568],tutorial:[260,500]},
+    left:{label:'← 왼쪽',combat:[75,568],tutorial:[95,500]},
+    jump:{label:'점프',combat:[890,410],tutorial:[893,380]},
+    crouch:{label:'앉기',combat:[155,457],tutorial:[67,355]},
+    punch:{label:'주먹',combat:[875,557],tutorial:[850,500]},
+    action:{label:'행동',combat:[745,450],tutorial:[755,380]},
+    kick:{label:'발차기',combat:[725,573],tutorial:[710,500]},
+    special:{label:'필살기',combat:[610,570],tutorial:[415,505]},
+    weapon:{label:'무기 변경',combat:[500,580],tutorial:[540,505]},
+    pause:{label:'일시정지'}
+  };
+  const bindings={KeyA:'left',KeyD:'right',KeyW:'jump',KeyS:'crouch',KeyK:'kick',KeyL:'punch',KeyO:'action',Space:'special',KeyZ:'weapon',KeyM:'pause',ArrowLeft:'left',ArrowRight:'right',ArrowUp:'jump',ArrowDown:'crouch'};
+  function keycap(code,extra=''){const action=actions[bindings[code]],name=code==='Space'?'Space':code.slice(3);return `<div class="keycap ${action?'':'ghost'} ${extra}" ${action?`data-key="${code}"`: 'aria-hidden="true"'}><kbd>${name}</kbd>${action?`<span>${action.label}</span>`:''}</div>`;}
+  const guide=`<h2>키보드 조작 안내</h2><p class="controls-intro"><strong>K 발차기 · L 주먹 · O 상황별 행동</strong><br>왼손으로 이동하고, 오른손으로 공격하세요.</p>
+    <div class="keyboard" role="group" aria-label="게임에 사용하는 키보드 배치">
+      <div class="key-groups"><div><p class="key-group-title">이동 · 자세</p><div class="key-row">${['KeyQ','KeyW','KeyE'].map(k=>keycap(k)).join('')}</div><div class="key-row stagger">${['KeyA','KeyS','KeyD'].map(k=>keycap(k)).join('')}</div></div>
+      <div class="attack"><p class="key-group-title">공격</p><div class="key-row">${['KeyI','KeyO','KeyP'].map(k=>keycap(k)).join('')}</div><div class="key-row stagger">${['KeyJ','KeyK','KeyL'].map(k=>keycap(k)).join('')}</div></div></div><div class="keyboard-bottom">${keycap('KeyZ','utility')}${keycap('Space','space')}${keycap('KeyM','utility')}</div>
+    </div><div class="control-notes"><p class="guide-tip">이 안내 화면에서 키를 눌러 위치를 확인해 보세요.</p><p><kbd class="inline-key">A</kbd> 왼쪽 · <kbd class="inline-key">D</kbd> 오른쪽으로 누르는 동안 이동합니다.<br>방향키도 사용 가능: ← → 이동 · ↑ 점프 · ↓ 앉기</p><p><kbd class="inline-key">O</kbd> 상황별 행동 — 화면의 주황색 버튼과 같습니다.<br>평상시: 별도 공격 동작 · 문 앞: 출입<br>사용 가능한 장비 앞: 탑승·사용 · 장착 무기에 따라 동작 변경<br><kbd class="inline-key">Space</kbd> 남은 횟수를 사용해 필살기 발동<br><kbd class="inline-key">Esc</kbd> 뒤로 / 일시정지</p><p class="mobile-tip">모바일에서는 화면 버튼을 터치하세요.<br>이동과 공격을 두 손가락으로 함께 조작할 수 있습니다.</p></div>`;
+  document.querySelectorAll('[data-controls]').forEach(el=>{el.innerHTML=guide;});
+  function highlightKey(code,on){const action=bindings[code];if(!action)return;document.querySelectorAll('[data-key]').forEach(el=>{if(bindings[el.dataset.key]===action)el.classList.toggle('pressed',on);});}
+  function clearHighlights(){document.querySelectorAll('.keycap.pressed').forEach(el=>el.classList.remove('pressed'));}
+  window.addEventListener('keydown',e=>{if((!loading.hidden||!help.hidden)&&bindings[e.code]&&!e.target.closest('button')){e.preventDefault();highlightKey(e.code,true);}});
+  window.addEventListener('keyup',e=>highlightKey(e.code,false));
   function notice(message){const el=document.getElementById('notice');el.textContent=message;el.hidden=false;}
   function fail(message){if(failed)return;failed=true;loading.hidden=false;status.textContent=message;progress.hidden=true;start.disabled=false;start.textContent='다시 불러오기';start.onclick=()=>location.reload();console.error(message);}
   function call(name,types=[],args=[]){return Module.ccall(name,null,types,args);}
@@ -64,15 +103,21 @@
   canvas.addEventListener('pointermove',e=>{if(!pointers.has(e.pointerId))return;e.preventDefault();const p=point(e);pointers.set(e.pointerId,p);pointer(p,1,pointers.size);});
   function endPointer(e){const p=pointers.get(e.pointerId);if(!p)return;pointer(p,2,pointers.size);pointers.delete(e.pointerId);}
   for(const event of ['pointerup','pointercancel','lostpointercapture'])canvas.addEventListener(event,endPointer);
-  function keyPoint(code){const mode=Module.ccall('aos5_web_state','number',['number'],[0]);if(mode!==11&&mode!==9)return null;const combat={ArrowLeft:[75,568],ArrowRight:[210,568],ArrowDown:[148,477],KeyE:[890,410],ArrowUp:[890,410],KeyS:[875,557],KeyA:[725,573],KeyW:[745,450],Space:[610,570],KeyQ:[500,580]};const tutorial={ArrowLeft:[95,500],ArrowRight:[260,500],ArrowDown:[67,355],KeyE:[893,380],ArrowUp:[893,380],KeyS:[850,500],KeyA:[710,500],KeyW:[755,380],Space:[415,505],KeyQ:[540,505]};const p=(mode===9?tutorial:combat)[code];return p?{x:p[0],y:p[1]}:null;}
-  window.addEventListener('keydown',e=>{if(!ready||!playing||paused||e.target.closest('button'))return;if(e.code==='Escape'){e.preventDefault();if(!e.repeat){releaseAll();call('aos5_web_back');}return;}const p=keyPoint(e.code);if(!p)return;e.preventDefault();if(!keys.has(e.code)){keys.set(e.code,p);pointer(p,0,keys.size);}});
+  function keyPoint(code){const action=actions[bindings[code]];if(!action||!action.combat)return null;const mode=Module.ccall('aos5_web_state','number',['number'],[0]);if(mode!==11&&mode!==9)return null;const p=mode===9?action.tutorial:action.combat;return{x:p[0],y:p[1]};}
+  window.addEventListener('keydown',e=>{if(!ready||!playing||paused||e.target.closest('button'))return;if(e.code==='Escape'||e.code==='KeyM'){if(e.code==='KeyM'&&![11,22,13,70].includes(Module.ccall('aos5_web_state','number',['number'],[0])))return;e.preventDefault();if(!e.repeat){releaseAll();call('aos5_web_back');}return;}const p=keyPoint(e.code);if(!p)return;e.preventDefault();if(!keys.has(e.code)){keys.set(e.code,p);pointer(p,0,keys.size);}});
   window.addEventListener('keyup',e=>{const p=keys.get(e.code);if(!p)return;e.preventDefault();pointer(p,2,keys.size);keys.delete(e.code);});
-  window.addEventListener('blur',()=>{releaseAll();});
+  window.addEventListener('blur',()=>{releaseAll();clearHighlights();});
   document.addEventListener('visibilitychange',()=>{if(window.aos5Ready)setPaused(document.hidden||!playing||!help.hidden);});
   window.addEventListener('pagehide',flushSave);
   canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();setPaused(true);fail('그래픽 연결이 끊겼습니다. 게임을 다시 불러와 주세요.');});
-  document.getElementById('help-open').onclick=()=>{setPaused(true);help.hidden=false;};
-  document.getElementById('help-close').onclick=()=>{help.hidden=true;setPaused(false);canvas.focus();};
+  const pauseGuide=document.getElementById('pause-guide');
+  function syncPauseGuide(){const visible=ready&&playing&&!paused&&help.hidden&&Module.ccall('aos5_web_state','number',['number'],[0])===13;pauseGuide.hidden=!visible;if(visible){const r=canvas.getBoundingClientRect();pauseGuide.style.left=(r.x+r.width/2)+'px';pauseGuide.style.top=(r.y+r.height*0.61)+'px';pauseGuide.style.width=Math.max(180,r.width*0.265)+'px';}}
+  function openHelp(){const fromPause=Module.ccall('aos5_web_state','number',['number'],[0])===13;setPaused(true);clearHighlights();help.hidden=false;help.scrollTop=0;pauseGuide.hidden=true;document.getElementById('help-close').textContent=fromPause?'일시정지 메뉴로 돌아가기':'게임으로 돌아가기';document.activeElement.blur();}
+  document.getElementById('help-open').onclick=openHelp;
+  pauseGuide.onclick=openHelp;
+  document.getElementById('help-close').onclick=()=>{help.hidden=true;clearHighlights();setPaused(false);canvas.focus();syncPauseGuide();};
+  setInterval(syncPauseGuide,100);
+  window.addEventListener('resize',syncPauseGuide);
   document.getElementById('fullscreen').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else if(document.documentElement.requestFullscreen){await document.documentElement.requestFullscreen();if(screen.orientation?.lock)await screen.orientation.lock('landscape').catch(()=>{});}else notice('이 브라우저에서는 가로 화면으로 기기를 돌려 플레이하세요.');}catch(e){notice('전체 화면을 열 수 없습니다. 가로 화면으로 플레이하세요.');}canvas.focus();};
   start.onclick=()=>{if(!ready||failed)return;playing=true;loading.hidden=true;document.getElementById('bar').hidden=false;unlockSound();setPaused(false);canvas.focus();};
   var Module={canvas,preRun:[function(){

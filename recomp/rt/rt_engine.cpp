@@ -1847,6 +1847,8 @@ extern "C" EMSCRIPTEN_KEEPALIVE int aos5_web_state(int key)
     case 5: return *(int *)(g + 0x8dae0); // hero animation state
     case 6: return *(int *)(g + 0x32ab00); // original staged resource loading
     case 7: return *(int *)(g + 0x8dac8) + *(int *)(g + 0x32ba20); // hero world x (camera scroll included)
+    case 8: return *(int *)(g + 0x8daf0); // current pose; different attacks can share a state
+    case 9: return *(int *)(g + 0x32c150); // remaining special attacks
     default: return -1;
     }
 }
