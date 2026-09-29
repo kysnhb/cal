@@ -1,0 +1,2261 @@
+{
+  "revision": 10,
+  "restored_at": "2026-09-29T05:45:23.422535+00:00",
+  "files": [
+    {
+      "path": "img/npc1/PCimg[100].png",
+      "role": "body_limb",
+      "r9_sha256": "1e807f4c38b6d9ce0dccd98cf61e4e68711ee71b3d0974e1c9e865b21dfe91c6",
+      "r9_canvas": [
+        44,
+        70
+      ],
+      "sha256": "7e2f0d7ffd4e4beeff1f7e22d32cf02c5b3e5a8b5ab8bb6597a54d878cffa494",
+      "canvas": [
+        22,
+        35
+      ],
+      "bytes": 3201,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[101].png",
+      "role": "human_hand",
+      "r9_sha256": "cbf92d1a93653506379611910abeb1c6a80e91226aae6267d3853318e5d7dbc1",
+      "r9_canvas": [
+        32,
+        32
+      ],
+      "sha256": "81c7e4930589052690dca79569666e1b69d7b65729c291a7fc70db63208011ce",
+      "canvas": [
+        16,
+        16
+      ],
+      "bytes": 3073,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[102].png",
+      "role": "human_hand",
+      "r9_sha256": "940fc3778aad65edad1be9cb91b4fa5883894a70e6636f0a079d263a92f61855",
+      "r9_canvas": [
+        44,
+        58
+      ],
+      "sha256": "24f094d88512d15a6b200835aea79ae0f7b0de651599caefd6959cc42a68aa9d",
+      "canvas": [
+        22,
+        29
+      ],
+      "bytes": 3222,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[103].png",
+      "role": "body_limb",
+      "r9_sha256": "1e807f4c38b6d9ce0dccd98cf61e4e68711ee71b3d0974e1c9e865b21dfe91c6",
+      "r9_canvas": [
+        44,
+        70
+      ],
+      "sha256": "9f3c766cedc17e86b102c654fe6a6b870c9e22051019989fa2da577af0051194",
+      "canvas": [
+        22,
+        35
+      ],
+      "bytes": 3201,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[104].png",
+      "role": "human_hand",
+      "r9_sha256": "cbf92d1a93653506379611910abeb1c6a80e91226aae6267d3853318e5d7dbc1",
+      "r9_canvas": [
+        32,
+        32
+      ],
+      "sha256": "ed29c0aeb21e2729c8a0c838aa7257c5305b05018c683902c8112c91bb35d019",
+      "canvas": [
+        16,
+        16
+      ],
+      "bytes": 3073,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[105].png",
+      "role": "human_hand",
+      "r9_sha256": "940fc3778aad65edad1be9cb91b4fa5883894a70e6636f0a079d263a92f61855",
+      "r9_canvas": [
+        44,
+        58
+      ],
+      "sha256": "d70d79524dce6ee33f793f67c28214af3bb6abeca9ad2dbd4e5925b7e5274263",
+      "canvas": [
+        22,
+        29
+      ],
+      "bytes": 3222,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[106].png",
+      "role": "body_limb",
+      "r9_sha256": "1e807f4c38b6d9ce0dccd98cf61e4e68711ee71b3d0974e1c9e865b21dfe91c6",
+      "r9_canvas": [
+        44,
+        70
+      ],
+      "sha256": "11f3017f301419a76ba0d37a573811d1f37b4530d5c195e4220c778a8883993a",
+      "canvas": [
+        22,
+        35
+      ],
+      "bytes": 3201,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[107].png",
+      "role": "human_hand",
+      "r9_sha256": "cbf92d1a93653506379611910abeb1c6a80e91226aae6267d3853318e5d7dbc1",
+      "r9_canvas": [
+        32,
+        32
+      ],
+      "sha256": "d71015bd2da9e26698627fc90064a19434bf5f6df744c8cb9a3866323c98ea2f",
+      "canvas": [
+        16,
+        16
+      ],
+      "bytes": 3073,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[108].png",
+      "role": "human_hand",
+      "r9_sha256": "940fc3778aad65edad1be9cb91b4fa5883894a70e6636f0a079d263a92f61855",
+      "r9_canvas": [
+        44,
+        58
+      ],
+      "sha256": "97205c6296c70d7d792ba527bc59f408d88e678bc4a59b2f39cfbd1e7ded6fb4",
+      "canvas": [
+        22,
+        29
+      ],
+      "bytes": 3222,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[109].png",
+      "role": "body_limb",
+      "r9_sha256": "1e807f4c38b6d9ce0dccd98cf61e4e68711ee71b3d0974e1c9e865b21dfe91c6",
+      "r9_canvas": [
+        44,
+        70
+      ],
+      "sha256": "211d39699a5814c77038f4c2ed88b7cb8204b1fa9d9f307e3719f8424df68d0f",
+      "canvas": [
+        22,
+        35
+      ],
+      "bytes": 3201,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[10].png",
+      "role": "body_boot",
+      "r9_sha256": "74f4a1b594b843fcf19f45ed519414c39b1bf37132c21832af525f5fc082582f",
+      "r9_canvas": [
+        24,
+        68
+      ],
+      "sha256": "e724f3286c478dff1dde861d9bbd317787feb7b362deb01ac881c70f07bd0d19",
+      "canvas": [
+        12,
+        34
+      ],
+      "bytes": 3195,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[110].png",
+      "role": "human_hand",
+      "r9_sha256": "cbf92d1a93653506379611910abeb1c6a80e91226aae6267d3853318e5d7dbc1",
+      "r9_canvas": [
+        32,
+        32
+      ],
+      "sha256": "d3cdd07d42b49784270d90a1e586e6731ba72bf558b32266d2dc05b2fce9e285",
+      "canvas": [
+        16,
+        16
+      ],
+      "bytes": 3073,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[111].png",
+      "role": "human_hand",
+      "r9_sha256": "940fc3778aad65edad1be9cb91b4fa5883894a70e6636f0a079d263a92f61855",
+      "r9_canvas": [
+        44,
+        58
+      ],
+      "sha256": "b0e1727bf60b9ec830980490af9d6befcc2bfe274ffe3feb90cab7ff71470d1d",
+      "canvas": [
+        22,
+        29
+      ],
+      "bytes": 3222,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[112].png",
+      "role": "body_limb",
+      "r9_sha256": "1e807f4c38b6d9ce0dccd98cf61e4e68711ee71b3d0974e1c9e865b21dfe91c6",
+      "r9_canvas": [
+        44,
+        70
+      ],
+      "sha256": "eb3bc40b88e8c679934346d0f5ccefa54832267c88cf1c9f33e9724334078e18",
+      "canvas": [
+        22,
+        35
+      ],
+      "bytes": 3201,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[11].png",
+      "role": "body_boot",
+      "r9_sha256": "edca427744f4b3956b8ca41d413fe8ef5a00d20e5d3274976d25ab0ceb5afb00",
+      "r9_canvas": [
+        22,
+        80
+      ],
+      "sha256": "a311683546d52bf955f6aea2392a09c206560298efc50ee3e9eb60025ab36fa3",
+      "canvas": [
+        11,
+        40
+      ],
+      "bytes": 3206,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[12].png",
+      "role": "body_boot",
+      "r9_sha256": "7080b9dc722cad8166803e82de07395b2aef1bb5246e0f014bda5b29389f750d",
+      "r9_canvas": [
+        22,
+        98
+      ],
+      "sha256": "76507e309abb0deb13a603628b17065f81466d927c351170d5588e6fcaf57107",
+      "canvas": [
+        11,
+        49
+      ],
+      "bytes": 3225,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[13].png",
+      "role": "human_hand",
+      "r9_sha256": "e8ddd22845a19eea54affc91ad6e8df9095f69dd6bf7fb548f1991c083c3a2c7",
+      "r9_canvas": [
+        18,
+        24
+      ],
+      "sha256": "fb06260b554151c14277de6ddbc79fa164b1bef3d8cf58da65938456f7fe8fdd",
+      "canvas": [
+        9,
+        12
+      ],
+      "bytes": 3037,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[14].png",
+      "role": "body_limb",
+      "r9_sha256": "52fabf8407b58663ad777a2bd13c2a0d91fc7590c7d6c539b16d4b3c93bffe3b",
+      "r9_canvas": [
+        18,
+        56
+      ],
+      "sha256": "3413069cccec53d31e701cfbcbc6f7b2dc553756b6b1b35d4c70223c6493de4e",
+      "canvas": [
+        9,
+        28
+      ],
+      "bytes": 3096,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[15].png",
+      "role": "body_limb",
+      "r9_sha256": "29e70a0721f79128277ff4b0af820ab7b5bb0f752b618afcf5ebce6dd5eaf521",
+      "r9_canvas": [
+        18,
+        70
+      ],
+      "sha256": "75b2a32b78a0806e8be93062ba57c79ed5f3d4269d3313ab3b44eb588a9b5a5a",
+      "canvas": [
+        9,
+        35
+      ],
+      "bytes": 3111,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[16].png",
+      "role": "body_limb",
+      "r9_sha256": "29e70a0721f79128277ff4b0af820ab7b5bb0f752b618afcf5ebce6dd5eaf521",
+      "r9_canvas": [
+        18,
+        70
+      ],
+      "sha256": "2f127067d7aa3b76ac7fa8598b0a0f74ddbf779c2363c69b81c657a3cf657104",
+      "canvas": [
+        9,
+        35
+      ],
+      "bytes": 3111,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[17].png",
+      "role": "human_hand",
+      "r9_sha256": "e8ddd22845a19eea54affc91ad6e8df9095f69dd6bf7fb548f1991c083c3a2c7",
+      "r9_canvas": [
+        18,
+        24
+      ],
+      "sha256": "7b2106f9b5604f908efc73b1444721cdc0af705d755967821ed7b782784baa92",
+      "canvas": [
+        9,
+        12
+      ],
+      "bytes": 3037,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[18].png",
+      "role": "body_limb",
+      "r9_sha256": "52fabf8407b58663ad777a2bd13c2a0d91fc7590c7d6c539b16d4b3c93bffe3b",
+      "r9_canvas": [
+        18,
+        56
+      ],
+      "sha256": "5eb74b8c0db25997a0fbc8c889d577154106babc0ed43e962cac3d044b912d6f",
+      "canvas": [
+        9,
+        28
+      ],
+      "bytes": 3096,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[19].png",
+      "role": "body_limb",
+      "r9_sha256": "29e70a0721f79128277ff4b0af820ab7b5bb0f752b618afcf5ebce6dd5eaf521",
+      "r9_canvas": [
+        18,
+        70
+      ],
+      "sha256": "8fa36e6d6e457ca261da3634d4d9979b0a08a4fa7b425df175efacae3ddbfdff",
+      "canvas": [
+        9,
+        35
+      ],
+      "bytes": 3111,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[1].png",
+      "role": "human_hand",
+      "r9_sha256": "e8ddd22845a19eea54affc91ad6e8df9095f69dd6bf7fb548f1991c083c3a2c7",
+      "r9_canvas": [
+        18,
+        24
+      ],
+      "sha256": "3de8097c738b8260c2fd1b7d55fed8e3a5b67132e996d2a93c4861db58ad4326",
+      "canvas": [
+        9,
+        12
+      ],
+      "bytes": 3037,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[203].png",
+      "role": "body_limb",
+      "r9_sha256": "db0410bdea4bd551e74ed1e9f68652fddfccfdbae35018881a39c2c1599709ec",
+      "r9_canvas": [
+        14,
+        106
+      ],
+      "sha256": "7b85dd8fc7c0f662da89cea6c0ac0a159363d5c74ad5487dd4446991c3188d27",
+      "canvas": [
+        7,
+        53
+      ],
+      "bytes": 3111,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[204].png",
+      "role": "body_limb",
+      "r9_sha256": "f4dd7a3b105b94800dc3e6ba2cc1fc239b234203b732fa51148b09097d46526c",
+      "r9_canvas": [
+        10,
+        106
+      ],
+      "sha256": "fd5bbd391ddde6d25c859fc50fd205e2307cbf41309f485da419a03fdc3a382b",
+      "canvas": [
+        5,
+        53
+      ],
+      "bytes": 3063,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[20].png",
+      "role": "human_hand",
+      "r9_sha256": "e8ddd22845a19eea54affc91ad6e8df9095f69dd6bf7fb548f1991c083c3a2c7",
+      "r9_canvas": [
+        18,
+        24
+      ],
+      "sha256": "c96e9df3091429f81f1b173e64ccd413683f81241d3c675cfef21ee57ed57d38",
+      "canvas": [
+        9,
+        12
+      ],
+      "bytes": 3037,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[21].png",
+      "role": "body_limb",
+      "r9_sha256": "52fabf8407b58663ad777a2bd13c2a0d91fc7590c7d6c539b16d4b3c93bffe3b",
+      "r9_canvas": [
+        18,
+        56
+      ],
+      "sha256": "a55d198543131cd0ff137a5eb5a1d24ac048b73a67a21cb12a3377facd957713",
+      "canvas": [
+        9,
+        28
+      ],
+      "bytes": 3096,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[22].png",
+      "role": "body_limb",
+      "r9_sha256": "29e70a0721f79128277ff4b0af820ab7b5bb0f752b618afcf5ebce6dd5eaf521",
+      "r9_canvas": [
+        18,
+        70
+      ],
+      "sha256": "489a1a944ec0ce39852d07b89c84bf6c565fb23d142dd7659129b7dd2cde75ea",
+      "canvas": [
+        9,
+        35
+      ],
+      "bytes": 3111,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[23].png",
+      "role": "human_hand",
+      "r9_sha256": "e8ddd22845a19eea54affc91ad6e8df9095f69dd6bf7fb548f1991c083c3a2c7",
+      "r9_canvas": [
+        18,
+        24
+      ],
+      "sha256": "c8bc32d897c6e9296546d33302000fd2f56532bc528147433ea5ccbe1aae9048",
+      "canvas": [
+        9,
+        12
+      ],
+      "bytes": 3037,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[24].png",
+      "role": "body_limb",
+      "r9_sha256": "52fabf8407b58663ad777a2bd13c2a0d91fc7590c7d6c539b16d4b3c93bffe3b",
+      "r9_canvas": [
+        18,
+        56
+      ],
+      "sha256": "4eceb90523e19479596abb9d58bdfe4c25eaba482ce34d0e5f7f6621630dd5b2",
+      "canvas": [
+        9,
+        28
+      ],
+      "bytes": 3096,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[25].png",
+      "role": "body_limb",
+      "r9_sha256": "29e70a0721f79128277ff4b0af820ab7b5bb0f752b618afcf5ebce6dd5eaf521",
+      "r9_canvas": [
+        18,
+        70
+      ],
+      "sha256": "9167d8aa2046d701b60deff70478dfd2ecd2c07a98e1ef1ec1fae94637a8149f",
+      "canvas": [
+        9,
+        35
+      ],
+      "bytes": 3111,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[26].png",
+      "role": "human_hand",
+      "r9_sha256": "e8ddd22845a19eea54affc91ad6e8df9095f69dd6bf7fb548f1991c083c3a2c7",
+      "r9_canvas": [
+        18,
+        24
+      ],
+      "sha256": "f8fcf0162c12706dd4fb9103b4c22883658a323b674ae0238c4d1d4cdabc8388",
+      "canvas": [
+        9,
+        12
+      ],
+      "bytes": 3037,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[27].png",
+      "role": "body_limb",
+      "r9_sha256": "52fabf8407b58663ad777a2bd13c2a0d91fc7590c7d6c539b16d4b3c93bffe3b",
+      "r9_canvas": [
+        18,
+        56
+      ],
+      "sha256": "62bde6ca3e82cfe9c09418c30b146e96e29bebd9439d546d0b2cbf28633a8c33",
+      "canvas": [
+        9,
+        28
+      ],
+      "bytes": 3096,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[28].png",
+      "role": "body_limb",
+      "r9_sha256": "29e70a0721f79128277ff4b0af820ab7b5bb0f752b618afcf5ebce6dd5eaf521",
+      "r9_canvas": [
+        18,
+        70
+      ],
+      "sha256": "4643a5e12e3ae65daae916e5ad2f751008a995b3ddc93d0ea3899f52d8754c35",
+      "canvas": [
+        9,
+        35
+      ],
+      "bytes": 3111,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[29].png",
+      "role": "human_hand",
+      "r9_sha256": "d2818718196e85909da9bdc7a59cd4be0a873ee209e24437f51256730032e02b",
+      "r9_canvas": [
+        24,
+        24
+      ],
+      "sha256": "730fbc8bb94f014945e5b9ff45ccf395c3e0b734a344db6a4a891f9bd560647e",
+      "canvas": [
+        12,
+        12
+      ],
+      "bytes": 3055,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[2].png",
+      "role": "body_limb",
+      "r9_sha256": "f01511f66042a28078cf22e23fdd08e4f8214190b5a7b1a57ff6f07bb90f64f6",
+      "r9_canvas": [
+        18,
+        30
+      ],
+      "sha256": "5f77dd81656f5c5cef1709661988aa18d373ca83c4a4e4e068c474bb820eda9b",
+      "canvas": [
+        9,
+        15
+      ],
+      "bytes": 3042,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[30].png",
+      "role": "human_hand",
+      "r9_sha256": "46e29143b0d767d5199c392835d93902c3145fcf58b528d654794885c6cbca14",
+      "r9_canvas": [
+        24,
+        30
+      ],
+      "sha256": "82d85b46f6ddd00cd75d2e71b504bc49a4573cc91428d570e152424dca71d54f",
+      "canvas": [
+        12,
+        15
+      ],
+      "bytes": 3046,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[31].png",
+      "role": "body_limb",
+      "r9_sha256": "da98627abc8741d1aac06392da4f7e12575fdae4704bcd701754169086da929c",
+      "r9_canvas": [
+        24,
+        50
+      ],
+      "sha256": "bceb19a205af014ae04aaaa96b8820bb5be6228fd1c73b141e9d02e1acf8c644",
+      "canvas": [
+        12,
+        25
+      ],
+      "bytes": 3123,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[32].png",
+      "role": "body_limb",
+      "r9_sha256": "05c237f98a06da3fd40a98162d8be376c412427f78643987e5f60c9cd80770ed",
+      "r9_canvas": [
+        26,
+        56
+      ],
+      "sha256": "ba0ca759b92effc65ed684543c774022ec23dca135501a1b383f4785c99e6bba",
+      "canvas": [
+        13,
+        28
+      ],
+      "bytes": 3140,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[33].png",
+      "role": "body_limb",
+      "r9_sha256": "9b8a53f0d6b1ec73548f793f893b82ef99de0aff6167c3fa9e7be33de6b73373",
+      "r9_canvas": [
+        24,
+        70
+      ],
+      "sha256": "c23a9c797990130122fd3a30d1b8ad550b22998403f7cd973e1926f8aa807dc2",
+      "canvas": [
+        12,
+        35
+      ],
+      "bytes": 3134,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[34].png",
+      "role": "body_limb",
+      "r9_sha256": "891660d0a6d5f34bdd5ba2450cfad95ccedb788f5ca345dcf5d828bbe42935fc",
+      "r9_canvas": [
+        24,
+        86
+      ],
+      "sha256": "86caa3ec6d394e40401b0f9043491e7748f9b178251bab966ccccef3404b58b3",
+      "canvas": [
+        12,
+        43
+      ],
+      "bytes": 3152,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[35].png",
+      "role": "body_limb",
+      "r9_sha256": "bd1ed9bfd53ce98998c120c542eeeaa3707f5f17ed19af37cfe7d22ece1e317b",
+      "r9_canvas": [
+        24,
+        106
+      ],
+      "sha256": "5cbbad139146d2752d3ddd192ff1256e37a319e096b2fb6c1f5e40d3e95de3b7",
+      "canvas": [
+        12,
+        53
+      ],
+      "bytes": 3222,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[36].png",
+      "role": "body_boot",
+      "r9_sha256": "dc306e1ed7ec3d136a2e3b9cca43981e9ec0220e16805e13ae0b5c2c4849a29b",
+      "r9_canvas": [
+        40,
+        42
+      ],
+      "sha256": "4e5758f53cbcc52e7873ebdbccf97399b375f939bca528c7c36ce8a45377d545",
+      "canvas": [
+        20,
+        21
+      ],
+      "bytes": 3173,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[37].png",
+      "role": "body_boot",
+      "r9_sha256": "fc052f2624caa712c6b7c41a108de09634fc8bcc288f0c219da516c05b498b17",
+      "r9_canvas": [
+        32,
+        52
+      ],
+      "sha256": "ad2f1bd7c3264f3fcc58bd89ed77c7a34aaf2a1b644ed275bbbff27b3f58e00e",
+      "canvas": [
+        16,
+        26
+      ],
+      "bytes": 3176,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[38].png",
+      "role": "body_boot",
+      "r9_sha256": "8c13ff9c6eb5002526c4fac56766e928872d3456947a2c96799ee8fafb8364c2",
+      "r9_canvas": [
+        32,
+        68
+      ],
+      "sha256": "52bc802cf5cccf4dffe1fa8a9cb0a13ae8209cfac57b5180c7af4dfe1ad52873",
+      "canvas": [
+        16,
+        34
+      ],
+      "bytes": 3232,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[39].png",
+      "role": "body_boot",
+      "r9_sha256": "b232f489363ed952d348c19308438b0728eda6040c5971bece147f0e5db2be5e",
+      "r9_canvas": [
+        32,
+        80
+      ],
+      "sha256": "d23e7e380f25670383a82d89940d7b0187219893551fd6309bbf38650012a974",
+      "canvas": [
+        16,
+        40
+      ],
+      "bytes": 3270,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[3].png",
+      "role": "body_limb",
+      "r9_sha256": "000979cb5fcf5536057205afe942f027f9ed9b1654890260d8b486e569ed9dfe",
+      "r9_canvas": [
+        18,
+        50
+      ],
+      "sha256": "b100b8744a9cf3fd8d7ee41d6548965cb560fe0659a38a6b63f4c92dbc3cb1b8",
+      "canvas": [
+        9,
+        25
+      ],
+      "bytes": 3099,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[40].png",
+      "role": "body_boot",
+      "r9_sha256": "d63a55fa86849a7a7a9bf6d91f94312510ca2c9b48f705c890ebf9eac2ab094e",
+      "r9_canvas": [
+        32,
+        98
+      ],
+      "sha256": "9237b75ce882defa5ecb92bc9ccdb2c38595d8366143bc44c67620c737791973",
+      "canvas": [
+        16,
+        49
+      ],
+      "bytes": 3303,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[41].png",
+      "role": "human_hand",
+      "r9_sha256": "d2818718196e85909da9bdc7a59cd4be0a873ee209e24437f51256730032e02b",
+      "r9_canvas": [
+        24,
+        24
+      ],
+      "sha256": "ce2d963dcbde4a918a580649db5e5fa7e6fd717d14b2d73c5b7843aacfb68ccb",
+      "canvas": [
+        12,
+        12
+      ],
+      "bytes": 3055,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[42].png",
+      "role": "body_limb",
+      "r9_sha256": "05c237f98a06da3fd40a98162d8be376c412427f78643987e5f60c9cd80770ed",
+      "r9_canvas": [
+        26,
+        56
+      ],
+      "sha256": "fb375faa45b9d2244806a06ce1f05b125c3f745fedda239b1430db88ee7ffbf3",
+      "canvas": [
+        13,
+        28
+      ],
+      "bytes": 3140,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[43].png",
+      "role": "body_limb",
+      "r9_sha256": "9b8a53f0d6b1ec73548f793f893b82ef99de0aff6167c3fa9e7be33de6b73373",
+      "r9_canvas": [
+        24,
+        70
+      ],
+      "sha256": "48daf9af51f6cda31d60e72814b710e949cec530664a60842b90cdda9b49c45e",
+      "canvas": [
+        12,
+        35
+      ],
+      "bytes": 3134,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[44].png",
+      "role": "body_limb",
+      "r9_sha256": "9b8a53f0d6b1ec73548f793f893b82ef99de0aff6167c3fa9e7be33de6b73373",
+      "r9_canvas": [
+        24,
+        70
+      ],
+      "sha256": "ee437914ba2bd142b223d896f7d6113979d6bea0c66ce0a0fa1ebb51cc44192b",
+      "canvas": [
+        12,
+        35
+      ],
+      "bytes": 3134,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[45].png",
+      "role": "human_hand",
+      "r9_sha256": "d2818718196e85909da9bdc7a59cd4be0a873ee209e24437f51256730032e02b",
+      "r9_canvas": [
+        24,
+        24
+      ],
+      "sha256": "2aea864c9b19eb0478f2d5ef3c098d60dbf60280c4c8441cf8b6b33ebce654d8",
+      "canvas": [
+        12,
+        12
+      ],
+      "bytes": 3055,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[46].png",
+      "role": "body_limb",
+      "r9_sha256": "05c237f98a06da3fd40a98162d8be376c412427f78643987e5f60c9cd80770ed",
+      "r9_canvas": [
+        26,
+        56
+      ],
+      "sha256": "e9b0b145ff0757400783b10b0999b45c997721f00ef0784afc2391d33562dd69",
+      "canvas": [
+        13,
+        28
+      ],
+      "bytes": 3140,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[47].png",
+      "role": "body_limb",
+      "r9_sha256": "9b8a53f0d6b1ec73548f793f893b82ef99de0aff6167c3fa9e7be33de6b73373",
+      "r9_canvas": [
+        24,
+        70
+      ],
+      "sha256": "ac6e5ac6e4825c885ee99712d69a2328c6a7c8a5e183380c87dac451d32ef5ab",
+      "canvas": [
+        12,
+        35
+      ],
+      "bytes": 3134,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[48].png",
+      "role": "human_hand",
+      "r9_sha256": "d2818718196e85909da9bdc7a59cd4be0a873ee209e24437f51256730032e02b",
+      "r9_canvas": [
+        24,
+        24
+      ],
+      "sha256": "cf6b89867f048c98647f05b88f7f4b82ac6c4285eaf953a701eae1952308d3b8",
+      "canvas": [
+        12,
+        12
+      ],
+      "bytes": 3055,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[49].png",
+      "role": "body_limb",
+      "r9_sha256": "05c237f98a06da3fd40a98162d8be376c412427f78643987e5f60c9cd80770ed",
+      "r9_canvas": [
+        26,
+        56
+      ],
+      "sha256": "936d9b73725a18587319aa878b98162e9f646e34c7ad749bb09af3bb4454aa61",
+      "canvas": [
+        13,
+        28
+      ],
+      "bytes": 3140,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[4].png",
+      "role": "body_limb",
+      "r9_sha256": "52fabf8407b58663ad777a2bd13c2a0d91fc7590c7d6c539b16d4b3c93bffe3b",
+      "r9_canvas": [
+        18,
+        56
+      ],
+      "sha256": "5a90f8f609a907380008e269b52f072d8e67daf5aa2bd96ff8e4422bad9daa06",
+      "canvas": [
+        9,
+        28
+      ],
+      "bytes": 3096,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[50].png",
+      "role": "body_limb",
+      "r9_sha256": "9b8a53f0d6b1ec73548f793f893b82ef99de0aff6167c3fa9e7be33de6b73373",
+      "r9_canvas": [
+        24,
+        70
+      ],
+      "sha256": "c9991b6747810693c749ef806bd52bc8dae841e9d52ff2ad63e1b8d9f5d85e68",
+      "canvas": [
+        12,
+        35
+      ],
+      "bytes": 3134,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[51].png",
+      "role": "human_hand",
+      "r9_sha256": "d2818718196e85909da9bdc7a59cd4be0a873ee209e24437f51256730032e02b",
+      "r9_canvas": [
+        24,
+        24
+      ],
+      "sha256": "10cd8fa256b9ee71a96ed580f8b999faf51522c5b4e35e1fa75fde95253b5e55",
+      "canvas": [
+        12,
+        12
+      ],
+      "bytes": 3055,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[52].png",
+      "role": "body_limb",
+      "r9_sha256": "05c237f98a06da3fd40a98162d8be376c412427f78643987e5f60c9cd80770ed",
+      "r9_canvas": [
+        26,
+        56
+      ],
+      "sha256": "0672cf16e780e0bfe321250903351e641955801da7a690032b70825f732b34da",
+      "canvas": [
+        13,
+        28
+      ],
+      "bytes": 3140,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[53].png",
+      "role": "body_limb",
+      "r9_sha256": "9b8a53f0d6b1ec73548f793f893b82ef99de0aff6167c3fa9e7be33de6b73373",
+      "r9_canvas": [
+        24,
+        70
+      ],
+      "sha256": "9eaf16a2d90210a550d15293c28bbe54464db67f06f91dfd941076a102ba2ed0",
+      "canvas": [
+        12,
+        35
+      ],
+      "bytes": 3134,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[54].png",
+      "role": "human_hand",
+      "r9_sha256": "d2818718196e85909da9bdc7a59cd4be0a873ee209e24437f51256730032e02b",
+      "r9_canvas": [
+        24,
+        24
+      ],
+      "sha256": "eecf8bed7dd400c7bfa76266e85a91db62b7f1daae779120813bc8b0553897ef",
+      "canvas": [
+        12,
+        12
+      ],
+      "bytes": 3055,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[55].png",
+      "role": "body_limb",
+      "r9_sha256": "05c237f98a06da3fd40a98162d8be376c412427f78643987e5f60c9cd80770ed",
+      "r9_canvas": [
+        26,
+        56
+      ],
+      "sha256": "4f868376c48519c3a2af715ff6f672bc5967b5a0aaf4f4cc1da115c975c99548",
+      "canvas": [
+        13,
+        28
+      ],
+      "bytes": 3140,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[56].png",
+      "role": "body_limb",
+      "r9_sha256": "9b8a53f0d6b1ec73548f793f893b82ef99de0aff6167c3fa9e7be33de6b73373",
+      "r9_canvas": [
+        24,
+        70
+      ],
+      "sha256": "df100f6d1678493f3f87c4aacde7be938a13b276891fb8748218d5fca978be60",
+      "canvas": [
+        12,
+        35
+      ],
+      "bytes": 3134,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[57].png",
+      "role": "human_hand",
+      "r9_sha256": "ac956b11033bd887eea27981c1438cee325dea5023e6996857854ce2de72b7f1",
+      "r9_canvas": [
+        32,
+        26
+      ],
+      "sha256": "fcf5eae914261e87efb1884e3c6a51493e97d5c404c162a71e5c7369156a16f0",
+      "canvas": [
+        16,
+        13
+      ],
+      "bytes": 3085,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[58].png",
+      "role": "human_hand",
+      "r9_sha256": "cbf92d1a93653506379611910abeb1c6a80e91226aae6267d3853318e5d7dbc1",
+      "r9_canvas": [
+        32,
+        32
+      ],
+      "sha256": "4ca75f1324a16c1382274c35f018b20ca72f702f9d724c0c5853b7f593d87f08",
+      "canvas": [
+        16,
+        16
+      ],
+      "bytes": 3073,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[59].png",
+      "role": "body_limb",
+      "r9_sha256": "2522f2eac6f683bccb7ef697270dfa44f97e453271dc0bd22531a6507851b5bd",
+      "r9_canvas": [
+        32,
+        52
+      ],
+      "sha256": "bbc7b3373e6b81d4b1a0b5c6e63fa470b52d46c871f2720a0293ad2bbba3eaf2",
+      "canvas": [
+        16,
+        26
+      ],
+      "bytes": 3139,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[5].png",
+      "role": "body_limb",
+      "r9_sha256": "29e70a0721f79128277ff4b0af820ab7b5bb0f752b618afcf5ebce6dd5eaf521",
+      "r9_canvas": [
+        18,
+        70
+      ],
+      "sha256": "a44e1f2fc8629c5cdf3fa6decb8154b0fc00699c6eb3dae4152635b6704706da",
+      "canvas": [
+        9,
+        35
+      ],
+      "bytes": 3111,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[60].png",
+      "role": "body_limb",
+      "r9_sha256": "2e37357b264d473c00510f8081a93446ca5153e13c3c07a29ead70f0b2666b29",
+      "r9_canvas": [
+        34,
+        58
+      ],
+      "sha256": "0bd54271eede535029e2cb4e7cde5158d1e040e089a8b8544823bdc9014fe387",
+      "canvas": [
+        17,
+        29
+      ],
+      "bytes": 3167,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[61].png",
+      "role": "body_limb",
+      "r9_sha256": "cbe2c648ec656ad4456ff094a1f8978e2f2d562a0b66ac7136c774216f646bb3",
+      "r9_canvas": [
+        32,
+        70
+      ],
+      "sha256": "541412d77190defb191e0b849e4f2bd5b0014f7b6b1ef7b80e618841304dc274",
+      "canvas": [
+        16,
+        35
+      ],
+      "bytes": 3146,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[62].png",
+      "role": "body_limb",
+      "r9_sha256": "75ac1bea77890ebf5bbf55de0fa8813101be74b601189a859b772d2e2cf3a5c9",
+      "r9_canvas": [
+        32,
+        86
+      ],
+      "sha256": "78a8474dd6323d922007e8a13ae299e68702a1dfc068e22466bdc82065ba1494",
+      "canvas": [
+        16,
+        43
+      ],
+      "bytes": 3160,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[63].png",
+      "role": "body_limb",
+      "r9_sha256": "1a13e29f83dcc28e00a87cffe75a29623971087252e30c797a82c1d494364795",
+      "r9_canvas": [
+        32,
+        108
+      ],
+      "sha256": "66f4c6e4d82c5051e0b54b7a4588a95e2172c99ad254d985e9c9f2b8c944d548",
+      "canvas": [
+        16,
+        54
+      ],
+      "bytes": 3258,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[64].png",
+      "role": "body_boot",
+      "r9_sha256": "dc306e1ed7ec3d136a2e3b9cca43981e9ec0220e16805e13ae0b5c2c4849a29b",
+      "r9_canvas": [
+        40,
+        42
+      ],
+      "sha256": "c17a05125499f6553ef81349a767aa955b267c1dfb4b8195946ac4a730e3c885",
+      "canvas": [
+        20,
+        21
+      ],
+      "bytes": 3170,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[65].png",
+      "role": "body_boot",
+      "r9_sha256": "756e8710f48136c1d697b7be5d26268db6e52008c28a9b40d47ac6aecaeb0f2b",
+      "r9_canvas": [
+        40,
+        52
+      ],
+      "sha256": "cc8c6af9a541cfc0708b268c8108a012d1781132fad61b7ebea1db1c5fc20d91",
+      "canvas": [
+        20,
+        26
+      ],
+      "bytes": 3196,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[66].png",
+      "role": "body_boot",
+      "r9_sha256": "0ac4a0227a63dc39c225dca2881fc39d52016edf57a719d0feb98eb77a25ed5d",
+      "r9_canvas": [
+        40,
+        68
+      ],
+      "sha256": "03d320dd8452b94a8539d0f282f8c23357fa43d5c788577fd4afcf68d63ee0fa",
+      "canvas": [
+        20,
+        34
+      ],
+      "bytes": 3236,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[67].png",
+      "role": "body_boot",
+      "r9_sha256": "0fcebaf52ddca6554dfddc687a027145fbb7454dbb22f268a120d0a6df2a5e16",
+      "r9_canvas": [
+        40,
+        82
+      ],
+      "sha256": "ac535e975879a801e476ab4695225ff31d796dfbf61c4f3b9af536b650b2a7ac",
+      "canvas": [
+        20,
+        41
+      ],
+      "bytes": 3312,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[68].png",
+      "role": "body_boot",
+      "r9_sha256": "e27528866d7c0448f579f5e6059aea4700574c8bfc078c366267316e4d1befb2",
+      "r9_canvas": [
+        40,
+        98
+      ],
+      "sha256": "4f5eea1949f1837946c6edc3700aa897ea5b590360ee8c2f56fa8e9f8753da62",
+      "canvas": [
+        20,
+        49
+      ],
+      "bytes": 3309,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[69].png",
+      "role": "human_hand",
+      "r9_sha256": "ac956b11033bd887eea27981c1438cee325dea5023e6996857854ce2de72b7f1",
+      "r9_canvas": [
+        32,
+        26
+      ],
+      "sha256": "a7e3ed0c806a632b140d87e6ad5fed5ef398e2beaadc3031ff157d53341ae900",
+      "canvas": [
+        16,
+        13
+      ],
+      "bytes": 3085,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[6].png",
+      "role": "body_limb",
+      "r9_sha256": "95b4d11589b394c8d7ece58b6b00f0a5dac63309e05983c43e3bc9f6354d8ba2",
+      "r9_canvas": [
+        18,
+        86
+      ],
+      "sha256": "73ce83d52d4b002731687080b56267bcfef7661008bf8ecbe7f827058702506b",
+      "canvas": [
+        9,
+        43
+      ],
+      "bytes": 3121,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[70].png",
+      "role": "body_limb",
+      "r9_sha256": "2e37357b264d473c00510f8081a93446ca5153e13c3c07a29ead70f0b2666b29",
+      "r9_canvas": [
+        34,
+        58
+      ],
+      "sha256": "2be5ed7abc4916c16cb4ca8d3bf551447c680ff16dbee1c5f3656ea72a359b15",
+      "canvas": [
+        17,
+        29
+      ],
+      "bytes": 3167,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[71].png",
+      "role": "body_limb",
+      "r9_sha256": "cbe2c648ec656ad4456ff094a1f8978e2f2d562a0b66ac7136c774216f646bb3",
+      "r9_canvas": [
+        32,
+        70
+      ],
+      "sha256": "4c0232cc567ea4f539f3eef5408d91eea40e787d92cffb9cf75502ee8849541e",
+      "canvas": [
+        16,
+        35
+      ],
+      "bytes": 3146,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[72].png",
+      "role": "body_limb",
+      "r9_sha256": "cbe2c648ec656ad4456ff094a1f8978e2f2d562a0b66ac7136c774216f646bb3",
+      "r9_canvas": [
+        32,
+        70
+      ],
+      "sha256": "15fc91fe0381d3751bde8e459e5fde6ab11719f81aced05c8d9d06e693c28b51",
+      "canvas": [
+        16,
+        35
+      ],
+      "bytes": 3146,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[73].png",
+      "role": "human_hand",
+      "r9_sha256": "ac956b11033bd887eea27981c1438cee325dea5023e6996857854ce2de72b7f1",
+      "r9_canvas": [
+        32,
+        26
+      ],
+      "sha256": "55dc813e730baf9f957b8f769a72372214c16f1d9302b2d13a37542918aaa68c",
+      "canvas": [
+        16,
+        13
+      ],
+      "bytes": 3085,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[74].png",
+      "role": "body_limb",
+      "r9_sha256": "2e37357b264d473c00510f8081a93446ca5153e13c3c07a29ead70f0b2666b29",
+      "r9_canvas": [
+        34,
+        58
+      ],
+      "sha256": "9f3ba39814f74dc654f8b557adbb94319ae9dd66a8dfc29cb5c598b26a5d4518",
+      "canvas": [
+        17,
+        29
+      ],
+      "bytes": 3167,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[75].png",
+      "role": "body_limb",
+      "r9_sha256": "cbe2c648ec656ad4456ff094a1f8978e2f2d562a0b66ac7136c774216f646bb3",
+      "r9_canvas": [
+        32,
+        70
+      ],
+      "sha256": "877a3c7c3f451f84120b02ef1ba74b927a4fa53c4c63fa485e36d6a399e24d6c",
+      "canvas": [
+        16,
+        35
+      ],
+      "bytes": 3146,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[76].png",
+      "role": "human_hand",
+      "r9_sha256": "ac956b11033bd887eea27981c1438cee325dea5023e6996857854ce2de72b7f1",
+      "r9_canvas": [
+        32,
+        26
+      ],
+      "sha256": "b81456807225401d4142bac52dc7eabc423e0643c229a11c82e8caa30ea5f0c1",
+      "canvas": [
+        16,
+        13
+      ],
+      "bytes": 3085,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[77].png",
+      "role": "body_limb",
+      "r9_sha256": "2e37357b264d473c00510f8081a93446ca5153e13c3c07a29ead70f0b2666b29",
+      "r9_canvas": [
+        34,
+        58
+      ],
+      "sha256": "acb0fe50cbedf19d6f54ba2e8b92833ac8cf4ead71098eb1d0c38753e2c75e2a",
+      "canvas": [
+        17,
+        29
+      ],
+      "bytes": 3167,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[78].png",
+      "role": "body_limb",
+      "r9_sha256": "cbe2c648ec656ad4456ff094a1f8978e2f2d562a0b66ac7136c774216f646bb3",
+      "r9_canvas": [
+        32,
+        70
+      ],
+      "sha256": "c7449598f07ef869fab45d27bfe237d53ae8fb1d00783ca3dc2eb885d49884fb",
+      "canvas": [
+        16,
+        35
+      ],
+      "bytes": 3146,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[79].png",
+      "role": "human_hand",
+      "r9_sha256": "ac956b11033bd887eea27981c1438cee325dea5023e6996857854ce2de72b7f1",
+      "r9_canvas": [
+        32,
+        26
+      ],
+      "sha256": "3e6dfc08a37bfc967cfa5570b0bd5212fdf6f97345b28d1611fe07a592f255e3",
+      "canvas": [
+        16,
+        13
+      ],
+      "bytes": 3085,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[7].png",
+      "role": "body_limb",
+      "r9_sha256": "261105b5b0ecc261af87b2cd71d1f4b3008719f1738158dd7dd47e87d2e2cac7",
+      "r9_canvas": [
+        18,
+        106
+      ],
+      "sha256": "368a153992d529a6afe2990b5c27bd6e4dd8375fa67fbf675abe3d7256fdcaea",
+      "canvas": [
+        9,
+        53
+      ],
+      "bytes": 3183,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[80].png",
+      "role": "body_limb",
+      "r9_sha256": "2e37357b264d473c00510f8081a93446ca5153e13c3c07a29ead70f0b2666b29",
+      "r9_canvas": [
+        34,
+        58
+      ],
+      "sha256": "f5446b62e988789e59162e84e254d88d479a6e09382818f800decb90288f0689",
+      "canvas": [
+        17,
+        29
+      ],
+      "bytes": 3167,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[81].png",
+      "role": "body_limb",
+      "r9_sha256": "cbe2c648ec656ad4456ff094a1f8978e2f2d562a0b66ac7136c774216f646bb3",
+      "r9_canvas": [
+        32,
+        70
+      ],
+      "sha256": "036292686a5a2b68ad07b25d7fa47e8682e68fe12db73be338a4587db278ebc2",
+      "canvas": [
+        16,
+        35
+      ],
+      "bytes": 3146,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[82].png",
+      "role": "human_hand",
+      "r9_sha256": "ac956b11033bd887eea27981c1438cee325dea5023e6996857854ce2de72b7f1",
+      "r9_canvas": [
+        32,
+        26
+      ],
+      "sha256": "d843165878508ff3863b70b4e2e29800e2e55bdcdbf26a71a4305f718b0dada3",
+      "canvas": [
+        16,
+        13
+      ],
+      "bytes": 3085,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[83].png",
+      "role": "body_limb",
+      "r9_sha256": "2e37357b264d473c00510f8081a93446ca5153e13c3c07a29ead70f0b2666b29",
+      "r9_canvas": [
+        34,
+        58
+      ],
+      "sha256": "648e039a43906f0824d364f358faa8c53eb7b44492f387c5122a71f0a4e33097",
+      "canvas": [
+        17,
+        29
+      ],
+      "bytes": 3167,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[84].png",
+      "role": "body_limb",
+      "r9_sha256": "cbe2c648ec656ad4456ff094a1f8978e2f2d562a0b66ac7136c774216f646bb3",
+      "r9_canvas": [
+        32,
+        70
+      ],
+      "sha256": "5f07667df352f38c6fd4fd757eb2a05c889a2a55cd4f3182451fb22b6b12ba88",
+      "canvas": [
+        16,
+        35
+      ],
+      "bytes": 3146,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[85].png",
+      "role": "human_hand",
+      "r9_sha256": "cbf92d1a93653506379611910abeb1c6a80e91226aae6267d3853318e5d7dbc1",
+      "r9_canvas": [
+        32,
+        32
+      ],
+      "sha256": "df15bab7dbc7737bea3016877b139d72564b967d2ff18a8e0eb442d972de7166",
+      "canvas": [
+        16,
+        16
+      ],
+      "bytes": 3073,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[86].png",
+      "role": "human_hand",
+      "r9_sha256": "ee9df584fb7aadda161bbfc7b58f092d581f61caa91b7aff26adcfc65e1e534a",
+      "r9_canvas": [
+        44,
+        32
+      ],
+      "sha256": "f9d52cf26cb852f4ec2b91f988efe964bd4870f0e0b3e0b4df28b2bbdeee3a9d",
+      "canvas": [
+        22,
+        16
+      ],
+      "bytes": 3123,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[87].png",
+      "role": "human_hand",
+      "r9_sha256": "f774d123704978c399dfbf89f82d45cfdafa28700f6dbb06a285b4b373d06587",
+      "r9_canvas": [
+        42,
+        52
+      ],
+      "sha256": "d0c4538023a801c3a7012812f9ebd1850cb6835d290fdbaca89aa9ce56dd473f",
+      "canvas": [
+        21,
+        26
+      ],
+      "bytes": 3194,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[88].png",
+      "role": "human_hand",
+      "r9_sha256": "940fc3778aad65edad1be9cb91b4fa5883894a70e6636f0a079d263a92f61855",
+      "r9_canvas": [
+        44,
+        58
+      ],
+      "sha256": "fa23a1affa2eb217a8d80fb1b28134fb70ebdecb7c5e8200eef9078547d0ed29",
+      "canvas": [
+        22,
+        29
+      ],
+      "bytes": 3222,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[89].png",
+      "role": "body_limb",
+      "r9_sha256": "2e2dee063633b66c572eb8ca9b434cd7293f26c703a398f4b122e5e10bac82f8",
+      "r9_canvas": [
+        42,
+        70
+      ],
+      "sha256": "dec92df104e40fafa43548bacf4e3c67cb3f780c9e35f8eeb98cd102017b0d5a",
+      "canvas": [
+        21,
+        35
+      ],
+      "bytes": 3186,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[8].png",
+      "role": "body_boot",
+      "r9_sha256": "e2d01287d725a25b5e0e6cb1bd00dbc1245b33fd809a25e8dcc1435aba96b414",
+      "r9_canvas": [
+        26,
+        42
+      ],
+      "sha256": "85aa0078d60fcfa89fe33ccff9234d6c7d914223a0479e8a24d8e41a751ad3d0",
+      "canvas": [
+        13,
+        21
+      ],
+      "bytes": 3135,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[90].png",
+      "role": "body_limb",
+      "r9_sha256": "625222c35f3616ce46c9191766a9faeca5304f9508498f6006cb3c7d057ee3f4",
+      "r9_canvas": [
+        42,
+        86
+      ],
+      "sha256": "da5668260ea65027bc2106915146d565e2ec8ff185b286d45afc610c4294b7ed",
+      "canvas": [
+        21,
+        43
+      ],
+      "bytes": 3221,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[91].png",
+      "role": "body_limb",
+      "r9_sha256": "66444b64c7fa436c770a29015bdf5edf57052da493cd89de76bddb22914e5875",
+      "r9_canvas": [
+        44,
+        108
+      ],
+      "sha256": "b64e95fe3f21d9694283841efeec563e3375c13b4e9c3e3b3fdabaa392f84d43",
+      "canvas": [
+        22,
+        54
+      ],
+      "bytes": 3390,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[92].png",
+      "role": "body_boot",
+      "r9_sha256": "e9085ebc5e9a6a7467ad5734f6403da4a7aa29e85e67be711718da36cc10b961",
+      "r9_canvas": [
+        52,
+        42
+      ],
+      "sha256": "d215b746d735f402fd7a8594061314cafa2892a35651ca0eafa92bb85007a813",
+      "canvas": [
+        26,
+        21
+      ],
+      "bytes": 3221,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[93].png",
+      "role": "body_boot",
+      "r9_sha256": "ef7d011f53da6367331d0bff2160c15941a22af37904dea7bb9afcdef2225fca",
+      "r9_canvas": [
+        52,
+        52
+      ],
+      "sha256": "e7e177ea4cf1c8dda3f53511381735df7ff03cba83f06456181b2654cd43c68a",
+      "canvas": [
+        26,
+        26
+      ],
+      "bytes": 3269,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[94].png",
+      "role": "body_boot",
+      "r9_sha256": "63f33ce5d0fb9e2e4859f7af4618bbcffa021ef9970bbfcd8093b69ac4b40e49",
+      "r9_canvas": [
+        52,
+        68
+      ],
+      "sha256": "5c07062f3c899764df8cc4673ca7dfc86a9b9a90c4a267e2b7cfee20e3ae8998",
+      "canvas": [
+        26,
+        34
+      ],
+      "bytes": 3340,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[95].png",
+      "role": "body_boot",
+      "r9_sha256": "4669fd853d31913cc63363ef8b9dbeee6186ec99d756c9300a41c6dd498ab7e2",
+      "r9_canvas": [
+        50,
+        82
+      ],
+      "sha256": "5fb4a069231f6d18556ca5cb294ca806d6a22d8735a292c70755da3dff223fa8",
+      "canvas": [
+        25,
+        41
+      ],
+      "bytes": 3394,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[96].png",
+      "role": "body_boot",
+      "r9_sha256": "32e95787253ad86bebde8de6c2d8757f5cc91b127c59056dac1adb917c315ae6",
+      "r9_canvas": [
+        50,
+        98
+      ],
+      "sha256": "1db7cafd3e5ee44d4fb86fcd13f21104da8c9b818f324364d0b7d0718775421b",
+      "canvas": [
+        25,
+        49
+      ],
+      "bytes": 3417,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[97].png",
+      "role": "human_hand",
+      "r9_sha256": "cbf92d1a93653506379611910abeb1c6a80e91226aae6267d3853318e5d7dbc1",
+      "r9_canvas": [
+        32,
+        32
+      ],
+      "sha256": "bd74974583e8e06fc8014a3cb059e1f30dd90770c3f4d5c2dc8ced3f9cb45e67",
+      "canvas": [
+        16,
+        16
+      ],
+      "bytes": 3073,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[98].png",
+      "role": "human_hand",
+      "r9_sha256": "940fc3778aad65edad1be9cb91b4fa5883894a70e6636f0a079d263a92f61855",
+      "r9_canvas": [
+        44,
+        58
+      ],
+      "sha256": "8d783777954b91d5a750a3d3fcae0944d86977f57584919a319297e488573ac1",
+      "canvas": [
+        22,
+        29
+      ],
+      "bytes": 3222,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[99].png",
+      "role": "body_limb",
+      "r9_sha256": "1e807f4c38b6d9ce0dccd98cf61e4e68711ee71b3d0974e1c9e865b21dfe91c6",
+      "r9_canvas": [
+        44,
+        70
+      ],
+      "sha256": "ced40bbd533b799bfddc0fc61a7358fc8356db6de4ecbdc1229fb790206c394e",
+      "canvas": [
+        22,
+        35
+      ],
+      "bytes": 3201,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[9].png",
+      "role": "body_boot",
+      "r9_sha256": "5224f53360939db99ad287c784505dc8ebb11a8fd9e9c868f334ece0e10777e1",
+      "r9_canvas": [
+        24,
+        52
+      ],
+      "sha256": "092553edff503c0e21d796b30bb288fcd320efe1b644245ae6782fddcf357c17",
+      "canvas": [
+        12,
+        26
+      ],
+      "bytes": 3165,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc2/Headimg[10].png",
+      "role": "human_head",
+      "r9_sha256": "317a91b37e9f12fe602517abb2ecca5838b5f1051583a16c285f84a235949ec9",
+      "r9_canvas": [
+        52,
+        56
+      ],
+      "sha256": "41fc9aae5d783a9de946789516f37a53aa9d9abdcebc26b3c20ebc63e347ae25",
+      "canvas": [
+        26,
+        28
+      ],
+      "bytes": 3254,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc2/Headimg[1].png",
+      "role": "human_head",
+      "r9_sha256": "24044abb96f4096fe11e3e1a06b0fc5f6e656cc5d4066ac48d01913789feddc1",
+      "r9_canvas": [
+        44,
+        44
+      ],
+      "sha256": "dd8ed974ae60b7896e087c6389a3e3696dd068c16566af0d252825d2a6b635c7",
+      "canvas": [
+        22,
+        22
+      ],
+      "bytes": 3165,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc2/Headimg[2].png",
+      "role": "human_head",
+      "r9_sha256": "24044abb96f4096fe11e3e1a06b0fc5f6e656cc5d4066ac48d01913789feddc1",
+      "r9_canvas": [
+        44,
+        44
+      ],
+      "sha256": "aac4662ce24234d9a3cf41baf1d2df41a779ad6c398038df7845236b6863b1b5",
+      "canvas": [
+        22,
+        22
+      ],
+      "bytes": 3165,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc2/Headimg[31].png",
+      "role": "human_head",
+      "r9_sha256": "d929f3625b3a8bbeb5eab18684954261a000f6ed77c3c5bac3126d35c5689981",
+      "r9_canvas": [
+        76,
+        56
+      ],
+      "sha256": "fac93e249cc11c48eeed5cf11bd943776e060ee2b28e5a87d927d94b6a409d8f",
+      "canvas": [
+        38,
+        28
+      ],
+      "bytes": 3355,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc2/Headimg[32].png",
+      "role": "human_head",
+      "r9_sha256": "d929f3625b3a8bbeb5eab18684954261a000f6ed77c3c5bac3126d35c5689981",
+      "r9_canvas": [
+        76,
+        56
+      ],
+      "sha256": "fac93e249cc11c48eeed5cf11bd943776e060ee2b28e5a87d927d94b6a409d8f",
+      "canvas": [
+        38,
+        28
+      ],
+      "bytes": 3355,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc2/Headimg[3].png",
+      "role": "human_head",
+      "r9_sha256": "056e4a8c0b6e1c97ceafdc50e7993f4b928ab69a60f6dea49aedb362c20dd34b",
+      "r9_canvas": [
+        56,
+        56
+      ],
+      "sha256": "59c9c2f06355134918c913407d889944fc3c0800fc8827813d54bf31c07ce884",
+      "canvas": [
+        28,
+        28
+      ],
+      "bytes": 3223,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc2/Headimg[4].png",
+      "role": "human_head",
+      "r9_sha256": "056e4a8c0b6e1c97ceafdc50e7993f4b928ab69a60f6dea49aedb362c20dd34b",
+      "r9_canvas": [
+        56,
+        56
+      ],
+      "sha256": "9df3b268c41cc33b0359564d5cb849a96823041e70d1abd2a2c3c980b10e17e2",
+      "canvas": [
+        28,
+        28
+      ],
+      "bytes": 3223,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc2/Headimg[5].png",
+      "role": "human_head",
+      "r9_sha256": "9c1d886772f05af306cc78cc6cd51e939d3d8f00cf4324e5ed46c66ad6142e22",
+      "r9_canvas": [
+        62,
+        64
+      ],
+      "sha256": "dcbcb6b0c36e8e552ba61fd9f0c210fc06e149dfbe945794a76b9ed32de41bc6",
+      "canvas": [
+        31,
+        32
+      ],
+      "bytes": 3276,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc2/Headimg[6].png",
+      "role": "human_head",
+      "r9_sha256": "9c1d886772f05af306cc78cc6cd51e939d3d8f00cf4324e5ed46c66ad6142e22",
+      "r9_canvas": [
+        62,
+        64
+      ],
+      "sha256": "3345d23a648042a7ff74e8ae6e8389581de481cfd5d95bb54ab3ef1771ff624b",
+      "canvas": [
+        31,
+        32
+      ],
+      "bytes": 3276,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc2/Headimg[7].png",
+      "role": "human_head",
+      "r9_sha256": "ec01e930c67fd04b7663cfdbcfb9fe4c1fb6ef11d12dab2a2c23bacd310611fa",
+      "r9_canvas": [
+        40,
+        56
+      ],
+      "sha256": "428c37444474e7b7c529f84224c7ab80dcd48e07a18ab4557cc9f689fbd2df93",
+      "canvas": [
+        20,
+        28
+      ],
+      "bytes": 3203,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc2/Headimg[8].png",
+      "role": "human_head",
+      "r9_sha256": "ec01e930c67fd04b7663cfdbcfb9fe4c1fb6ef11d12dab2a2c23bacd310611fa",
+      "r9_canvas": [
+        40,
+        56
+      ],
+      "sha256": "c110b69cdba1c4537dfe601feae382595c77c7e54fd99c058d0f2c98eea90348",
+      "canvas": [
+        20,
+        28
+      ],
+      "bytes": 3203,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc2/Headimg[9].png",
+      "role": "human_head",
+      "r9_sha256": "317a91b37e9f12fe602517abb2ecca5838b5f1051583a16c285f84a235949ec9",
+      "r9_canvas": [
+        52,
+        56
+      ],
+      "sha256": "bedcbd4304cba7e754dd9a75c956481a529e63da2a184501c9170373f8eb0d4c",
+      "canvas": [
+        26,
+        28
+      ],
+      "bytes": 3254,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/out/ImF[345].png",
+      "role": "body_limb",
+      "r9_sha256": "cbe2c648ec656ad4456ff094a1f8978e2f2d562a0b66ac7136c774216f646bb3",
+      "r9_canvas": [
+        32,
+        70
+      ],
+      "sha256": "036292686a5a2b68ad07b25d7fa47e8682e68fe12db73be338a4587db278ebc2",
+      "canvas": [
+        16,
+        35
+      ],
+      "bytes": 3146,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/out/ImF[48].png",
+      "role": "body_limb",
+      "r9_sha256": "29e70a0721f79128277ff4b0af820ab7b5bb0f752b618afcf5ebce6dd5eaf521",
+      "r9_canvas": [
+        18,
+        70
+      ],
+      "sha256": "a44e1f2fc8629c5cdf3fa6decb8154b0fc00699c6eb3dae4152635b6704706da",
+      "canvas": [
+        9,
+        35
+      ],
+      "bytes": 3111,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/out/ImF[49].png",
+      "role": "body_limb",
+      "r9_sha256": "9b8a53f0d6b1ec73548f793f893b82ef99de0aff6167c3fa9e7be33de6b73373",
+      "r9_canvas": [
+        24,
+        70
+      ],
+      "sha256": "c23a9c797990130122fd3a30d1b8ad550b22998403f7cd973e1926f8aa807dc2",
+      "canvas": [
+        12,
+        35
+      ],
+      "bytes": 3134,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/out/ImF[50].png",
+      "role": "body_limb",
+      "r9_sha256": "cbe2c648ec656ad4456ff094a1f8978e2f2d562a0b66ac7136c774216f646bb3",
+      "r9_canvas": [
+        32,
+        70
+      ],
+      "sha256": "541412d77190defb191e0b849e4f2bd5b0014f7b6b1ef7b80e618841304dc274",
+      "canvas": [
+        16,
+        35
+      ],
+      "bytes": 3146,
+      "source": "original extracted mask; copied byte-for-byte, no bitmap repaint",
+      "alpha_unchanged": true
+    },
+    {
+      "path": "img/npc1/PCimg[294].png",
+      "role": "robot_pilot_silhouette",
+      "r9_sha256": "17aff7456621185f79ead1de4c1a9f4a47735a8c204c13d2c745b6c98d62e5cd",
+      "r9_canvas": [
+        76,
+        100
+      ],
+      "sha256": "97044f8bff177e06347192f5c67d950aa38be0df7c3e6b86e5c7087febd13cb5",
+      "canvas": [
+        38,
+        50
+      ],
+      "bytes": 3698,
+      "source": "original black pilot silhouette copied byte-for-byte; no color remapping",
+      "alpha_unchanged": true
+    }
+  ],
+  "retired": [
+    {
+      "path": "img/gothic/hero_cape.png",
+      "sha256": "8bcfdebbd0ac51abfae627d36e989acf05794c325b12bd03993c12f7a7c551f6",
+      "preserved": "docs/art/stickman_20260929/retired_assets/img/gothic/hero_cape.png",
+      "runtime_removed": true
+    },
+    {
+      "path": "img/gothic/human_torso.png",
+      "sha256": "fce85a36809adbbe615be91c3853bade625e84500f0305c39caaf1db613aa6b2",
+      "preserved": "docs/art/stickman_20260929/retired_assets/img/gothic/human_torso.png",
+      "runtime_removed": true
+    },
+    {
+      "path": "img/gothic/human_limb.png",
+      "sha256": "12528c5701175fa368f368c6afe79bdf7dbf7cca81c02e62afb22bbcd2f18ce8",
+      "preserved": "docs/art/stickman_20260929/retired_assets/img/gothic/human_limb.png",
+      "runtime_removed": true
+    },
+    {
+      "path": "img/gothic/human_boot.png",
+      "sha256": "491078c44adbe0542390f29212ca6c1eda6f5e73dfcd3ee91258be5701e0e4e9",
+      "preserved": "docs/art/stickman_20260929/retired_assets/img/gothic/human_boot.png",
+      "runtime_removed": true
+    }
+  ],
+  "source_reference": "C:/a5/assets_orig",
+  "scope": "131 original masks/silhouette restored. RGB style applies only to 130 basic body/head parts; PC294 remains black pilot silhouette. Individual NPC feature heads, weapons, monsters, robot armor and UI retained."
+}

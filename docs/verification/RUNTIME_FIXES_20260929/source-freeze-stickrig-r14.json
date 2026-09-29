@@ -1,0 +1,96 @@
+{
+  "revision": "stickrig-r14-matte-material",
+  "frozen_at": "2026-09-29T16:51:53.429437",
+  "root": "C:\\Users\\muse0\\Desktop\\AOS5_공동작업_20260929\\aos5-gothic",
+  "notes": [
+    "R12 render logic unchanged",
+    "Repainted material sprites, matching registration and 1.0.5 UI/test version"
+  ],
+  "files": [
+    {
+      "path": "AOS5/CMakeLists.txt",
+      "sha256": "a12359f400a18cbf548fafcf35652276c1b5017778c1effcf8c6f2d0dcc72807",
+      "bytes": 5845
+    },
+    {
+      "path": "AOS5/Content_gothic/aos5core/stickrig.json",
+      "sha256": "7eb1d4769f83581a9973ece52c27a79b2c653d2f51cba85588cff9999a9950ec",
+      "bytes": 1651
+    },
+    {
+      "path": "AOS5/Content_gothic/img/gothic/stickrig/limb.png",
+      "sha256": "6a85996c27da2a756260450575897315043b01556e5f70ab24df21c74c6b7a24",
+      "bytes": 172643
+    },
+    {
+      "path": "AOS5/Content_gothic/img/gothic/stickrig/torso.png",
+      "sha256": "b2889b7bc677cfa96ef78713952f82798440081214fe57ba6bc64db9b543abf0",
+      "bytes": 297648
+    },
+    {
+      "path": "AOS5/proj.android/app/build.gradle",
+      "sha256": "70ac631f6b6f84aedd87b97e0d7a5da331c83e1f09be13cc13ce76c5a1aa01d2",
+      "bytes": 4383
+    },
+    {
+      "path": "recomp/gen/bzStateGame/bzStateGame__LPimg_0041db74.c",
+      "sha256": "41febe4429e1806692bbd5dc31ec2dc6a571cb791733889f8358b7bfcac6a430",
+      "bytes": 49182
+    },
+    {
+      "path": "recomp/rt/rt_engine.cpp",
+      "sha256": "f95734c4cbbf8fa02731c55c0a314a1c32486ae330d5b1448401dcbcc4c1f245",
+      "bytes": 94728
+    },
+    {
+      "path": "recomp/rt/rt_stickman_style.h",
+      "sha256": "d439d91fe2340d501b73ebf48cd5f7aa8f8a9224e289e7c9e4cfe467a80350ac",
+      "bytes": 1611
+    },
+    {
+      "path": "recomp/rt/rt_stickrig_art.h",
+      "sha256": "e1bfc9242f0e815d6669a92c651ac6a2499e5a45fd572a05b0d2ab9dc2025711",
+      "bytes": 11819
+    },
+    {
+      "path": "recomp/rt/rt_stickrig_json.h",
+      "sha256": "4489882ebcdd7641bb1ea25710a48ce7ecc3f33c5bba4ba7935b00277886e6d3",
+      "bytes": 1655
+    },
+    {
+      "path": "recomp/rt/rt_stickrig_roles.h",
+      "sha256": "c47bd2bade9847782b44496837c3b88c638c4e8073cb2e29b8ffe57325195bed",
+      "bytes": 20851
+    },
+    {
+      "path": "recomp/rt/rt_stickrig_runtime.inc",
+      "sha256": "21593e20e4aa3a6c3149a3a5e45ce8bf53ecb05ec3c46e7b81dbf83c0dd00a26",
+      "bytes": 11626
+    },
+    {
+      "path": "recomp/rt/rt_ui_text.h",
+      "sha256": "c50954aa1d4d709be9bc41ec294adb6afac1f98669fda22faa22231f967049a8",
+      "bytes": 16008
+    },
+    {
+      "path": "recomp/tools/restore_human_context.py",
+      "sha256": "775c4e168e6bacf51fac642d2104b04fbaa84ed44ee2195ee0befcd6601f6b58",
+      "bytes": 1853
+    },
+    {
+      "path": "scripts/test_stickman_contract.py",
+      "sha256": "0d81306e5737da50d45cce491e2120b4f300cb583491cdfae3952070c1e206f0",
+      "bytes": 7694
+    },
+    {
+      "path": "tests/stickrig_art_test.cpp",
+      "sha256": "8ece9428bfe77ed0936fca173c6fe4b1684b868d7a58e6f6ed81e2dbd47496c6",
+      "bytes": 6111
+    },
+    {
+      "path": "tests/ui_text_policy_test.cpp",
+      "sha256": "5f7743ed12d5506a9bcafdd91c8a1a74f149d367689d4dd8bdc0b2ecce302d7f",
+      "bytes": 16836
+    }
+  ]
+}

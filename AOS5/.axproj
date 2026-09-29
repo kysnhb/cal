@@ -1,0 +1,7 @@
+engine_version=2.11.5
+package_name=com.kys.testapk11
+project_type=cpp
+# 이 PC 에 있는 NDK(Unity 번들 r27c)로 빌드 — r27 은 API 21 이상만 지원
+ndk=r27c
+min_sdk=21
+cmake=3.31.5

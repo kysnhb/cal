@@ -1,0 +1,17 @@
+{
+  "stage": "validated_development_delivery",
+  "not_final_delivery": false,
+  "original_png_slots": 2096,
+  "redrawn_visible_slots": 2067,
+  "preserved_functional_slots": 29,
+  "new_fx": 7,
+  "new_gothic_assets": 4,
+  "total_png": 2107,
+  "registered_generation_jobs": 512,
+  "technical_validation": "all_png_passed",
+  "runtime_validation": "sampled_windows_and_android_emulator_flows",
+  "android_package": "com.kys.testapk11",
+  "android_signature": "debug",
+  "physical_device_performance_verified": false,
+  "ads_and_live_payments_configured": false
+}

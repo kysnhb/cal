@@ -1,0 +1,44 @@
+{
+  "status": "pre-build static registration review, not gameplay capture",
+  "engine_baker": "recomp/rt/rt_stickrig_art.h",
+  "engine_baker_sha256": "e1bfc9242f0e815d6669a92c651ac6a2499e5a45fd572a05b0d2ab9dc2025711",
+  "frames": [
+    [
+      1,
+      0,
+      false
+    ],
+    [
+      10,
+      0,
+      false
+    ],
+    [
+      11,
+      0,
+      false
+    ],
+    [
+      12,
+      0,
+      true
+    ],
+    [
+      23,
+      1,
+      false
+    ],
+    [
+      34,
+      2,
+      true
+    ]
+  ],
+  "head_id": 31,
+  "registration": "Exact C++ CPU bake; original ROM pivot and pose transforms",
+  "limits": [
+    "Weapon/FX omitted",
+    "Mirrored composite is a static check; native PHead2 tested separately",
+    "Animation speed is not tested by still images"
+  ]
+}

@@ -1,0 +1,342 @@
+## cocos2d__RandomHelper__getEngine_0060b3d4  calls=1195 arity=0 wrapper=
+   pmVar7 = (mersenne_twister_engine *)cocos2d__RandomHelper__getEngine_0060b3d4();
+   pmVar7 = (mersenne_twister_engine *)cocos2d__RandomHelper__getEngine_0060b3d4();
+## std__uniform_int_distribution_int___operator___00477ad0  calls=1195 arity=3 wrapper=Y
+   iVar5 = std__uniform_int_distribution_int___operator___00477ad0(((uniform_int_distribution_int_ *)&local_70), (pmVar7), ((param_type *)&local_70));
+   iVar6 = std__uniform_int_distribution_int___operator___00477ad0(((uniform_int_distribution_int_ *)&local_70), (pmVar7), ((param_type *)&local_70));
+## cocos2d__Color4F__Color4F_0060bc2c  calls=943 arity=5 wrapper=
+   cocos2d__Color4F__Color4F_0060bc2c(((Color4F *)&local_a0), (0.0), (0.0), (0.0), (0.5));
+   cocos2d__Color4F__Color4F_0060bc2c(((Color4F *)&local_c0), (1.0), (1.0), (1.0), (1.0));
+## FUN_009d4eac  calls=695 arity=8 wrapper=
+   FUN_009d4eac((local_58), ("Adata.bz"), (auStack_60), (0), (0), (0), (0), (0));
+   FUN_009d4eac((&local_68), (&DAT_00afe81e), (auStack_70), (0), (0), (0), (0), (0));
+## SoundClip__play_0047e570  calls=259 arity=2 wrapper=Y
+   SoundClip__play_0047e570(((SoundClip *)(this + 0x1368)), (false));
+   SoundClip__play_0047e570(((SoundClip *)(this + 0x1380)), (false));
+## cocos2d__StringUtils__toString_int__003b434c  calls=246 arity=2 wrapper=Y
+   cocos2d__StringUtils__toString_int__003b434c(((StringUtils *)(ulong)*(uint *)pbVar2), (iVar13));
+   cocos2d__StringUtils__toString_int__003b434c(((StringUtils *)(ulong)(uint)(*(int *)(this + 0x32c170) << 1)), (iVar13));
+## FUN_009d7684  calls=207 arity=4 wrapper=
+   plVar8 = (gh_long *)FUN_009d7684((&local_1f8), (0), (&DAT_00afe81e), (0));
+   plVar8 = (gh_long *)FUN_009d7684((&local_1f8), (0), (&DAT_00afe81e), (0));
+## kFont__drawString_0047ae54  calls=159 arity=8 wrapper=Y
+   kFont__drawString_0047ae54((local_a0), (local_a0 >> 0x20), (uStack_98 & 0xffffffff), (uStack_98 >> 0x20), (*(undefined8 *)(this + 0x8da88)), (&local_2c8), (&local_b8), (1));
+   kFont__drawString_0047ae54((local_a0), (local_a0 >> 0x20), (uStack_98 & 0xffffffff), (uStack_98 >> 0x20), (*(undefined8 *)(this + 0x8da88)), (&local_2c8), (&local_b8), (1));
+## kFont__drawDString_0047b574  calls=146 arity=10 wrapper=Y
+   kFont__drawDString_0047b574((local_100), (local_100 >> 0x20), (uStack_f8 & 0xffffffff), (uStack_f8 >> 0x20), (uVar19), (local_e0), (&local_f0), (0x19), (300), (0));
+   kFont__drawDString_0047b574((local_120), (local_120 >> 0x20), (uStack_118 & 0xffffffff), (uStack_118 >> 0x20), (uVar19), (local_e0), (&local_108), (0x19), (300), (0));
+## FUN_009d5908  calls=127 arity=2 wrapper=
+   plVar12 = (gh_long *)FUN_009d5908((&local_2c8), (&lStack_198 + iVar16));
+   plVar12 = (gh_long *)FUN_009d5908((&local_2c0), (&lStack_198 + iVar8));
+## FUN_009d5ac8  calls=123 arity=3 wrapper=
+   GH_SET128(auVar19, FUN_009d5ac8((&local_2c8), (&DAT_00af75b9), (1)));
+   GH_SET128(auVar19, FUN_009d5ac8((&local_2b8), (&DAT_00af75b9), (1)));
+## cocos2d__log_005d21e4  calls=110 arity=5 wrapper=
+   cocos2d__log_005d21e4(("-TEST- adCountCheck: %d"), ((ulong)*(uint *)(this + 0x32c814)), (0), (0), (0));
+   cocos2d__log_005d21e4((&DAT_00a50ac9), ((ulong)*(uint *)(this + 0xb7c)), ((ulong)*(uint *)(this + 0xb80)), ((ulong)*(uint *)(this + 0xb84)), (0));
+## kSprite__drawPos_0047f378  calls=92 arity=8 wrapper=Y
+   kSprite__drawPos_0047f378((local_c0), (local_c0 >> 0x20), (uStack_b8 & 0xffffffff), (uStack_b8 >> 0x20), (0x3f800000), (uVar5), (&local_a8), (0));
+   kSprite__drawPos_0047f378((local_e0), (local_e0 >> 0x20), (uStack_d8 & 0xffffffff), (uStack_d8 >> 0x20), (0x3f800000), (uVar5), (&local_c8), (0));
+## cocos2d__Rect__Rect_005c7150  calls=66 arity=5 wrapper=
+   cocos2d__Rect__Rect_005c7150(((Rect *)local_88), (0.0), (0.0), ((float)*(int *)(this + 0x1158)), ((float)*(int *)(this + 0x115c))) ;
+   cocos2d__Rect__Rect_005c7150(((Rect *)&local_a0), (0.0), (0.0), ((float)*(int *)(this + 0x1158)), ((float)*(int *)(this + 0x115c)));
+## kDraw__drawRect_00479ae8  calls=65 arity=6 wrapper=Y
+   kDraw__drawRect_00479ae8((local_a0), (local_a0 >> 0x20), (uStack_98 & 0xffffffff), (uStack_98 >> 0x20), (uVar5), (local_88));
+   kDraw__drawRect_00479ae8((local_b0), (local_b0 >> 0x20), (uStack_a8 & 0xffffffff), (uStack_a8 >> 0x20), (uVar9), (&local_a0));
+## FUN_009d881c  calls=64 arity=2 wrapper=
+   FUN_009d881c((&local_120), (puVar1));
+   FUN_009d881c((&local_130), (puVar1));
+## FUN_009d899c  calls=55 arity=2 wrapper=
+   FUN_009d899c((param_2), (lVar9 + 0x20));
+   FUN_009d899c((param_1), (lVar7 + lVar5 + 0x30));
+## FUN_009d6cd4  calls=54 arity=2 wrapper=
+   iVar5 = FUN_009d6cd4((&local_a0), (&DAT_00a4d796));
+   iVar5 = FUN_009d6cd4((param_4), (&DAT_00a4d796));
+## kScene__makeSprite_0047d208  calls=53 arity=4 wrapper=Y
+   uVar7 = kScene__makeSprite_0047d208(((kScene *)this), (1), (local_88), (0));
+   uVar7 = kScene__makeSprite_0047d208(((kScene *)this), (1), (local_88), (0));
+## kFont__drawDString2_0047b830  calls=51 arity=11 wrapper=Y
+   kFont__drawDString2_0047b830((local_210), (local_210 >> 0x20), (uStack_208 & 0xffffffff), (uStack_208 >> 0x20), (uVar9), (&local_a0), (&local_1f8), (0x17), (600), (1), (0));
+   kFont__drawDString2_0047b830((local_230), (local_230 >> 0x20), (uStack_228 & 0xffffffff), (uStack_228 >> 0x20), (uVar9), (&local_a0), (&local_218), (0x17), (600), (1), (0));
+## cocos2d__Application__getInstance_00484a3c  calls=37 arity=0 wrapper=
+   cocos2d__Application__getInstance_00484a3c();
+   this_00 = (Application *)cocos2d__Application__getInstance_00484a3c();
+## kFile__kFile_00479ebc  calls=31 arity=1 wrapper=Y
+   kFile__kFile_00479ebc((this_00));
+   kFile__kFile_00479ebc((this_00));
+## kFile__close_00479f64  calls=29 arity=1 wrapper=Y
+   kFile__close_00479f64((this_00));
+   kFile__close_00479f64((this_00));
+## cocos2d__UserDefault__getInstance_00600b04  calls=26 arity=0 wrapper=
+   plVar10 = (gh_long *)cocos2d__UserDefault__getInstance_00600b04();
+   plVar10 = (gh_long *)cocos2d__UserDefault__getInstance_00600b04();
+## kScene__httpPost_0047e198  calls=24 arity=4 wrapper=Y
+   uVar2 = kScene__httpPost_0047e198(((kScene *)this), ((char *)__s), ((char *)__s), (aCStack_48));
+   uVar2 = kScene__httpPost_0047e198(((kScene *)this), ((char *)__s), ((char *)__s), (aCStack_48));
+## kSprite__drawPos_0047ee7c  calls=21 arity=12 wrapper=Y
+   kSprite__drawPos_0047ee7c((local_b0), (local_b0 >> 0x20), (uStack_a8 & 0xffffffff), (uStack_a8 >> 0x20), (CONCAT44(in_register_00005024,param_9)), ((float)param_13 * 0.01), (lVar8), (&local_98), (param_8), (param_10), (param_11), (param_12));
+   kSprite__drawPos_0047ee7c((local_140), (local_140 >> 0x20), (uStack_138 & 0xffffffff), (uStack_138 >> 0x20), (uVar17), ((float)param_15 * 0.01), (lVar11), (&local_128), (0), (param_12), (param_13 + param_3), (param_14));
+## std___Rb_tree_std__string_std__pair_std__string_const_std__string__std___Select1st_std__pair_std__string_const_std__string___std__less_std__string__std__allocator_std__pair_std__string_const_std__string______M_insert_unique_std__pair_std__string_std__string___00478224  calls=21 arity=2 wrapper=Y
+   std___Rb_tree_std__string_std__pair_std__string_const_std__string__std___Select1st_std__pair_std__string_const_std__string___std__less_std__string__std__allocator_std__pair_std__string_const_std__string______M_insert_unique_std__pair_std__string_std__string___00478224(((_Rb_tree_std__string_std__pair_std__string_const_std__string__std___Select1st_std__pair_std__string_const_std__string___std__less_std__string__std__
+   std___Rb_tree_std__string_std__pair_std__string_const_std__string__std___Select1st_std__pair_std__string_const_std__string___std__less_std__string__std__allocator_std__pair_std__string_const_std__string______M_insert_unique_std__pair_std__string_std__string___00478224((this_00), ((pair_conflict *)&local_60));
+## kFile__writeInt_0047aa34  calls=18 arity=2 wrapper=Y
+   kFile__writeInt_0047aa34((this_00), (*(int *)(this + lVar7 + 0x1950)));
+   kFile__writeInt_0047aa34((this_00), (0x1a05));
+## kFile__readInt_0047aacc  calls=17 arity=1 wrapper=Y
+   uVar5 = kFile__readInt_0047aacc((this_00));
+   uVar5 = kFile__readInt_0047aacc((this_00));
+## InterstitialInterface__load_0047fc2c  calls=15 arity=1 wrapper=Y
+   InterstitialInterface__load_0047fc2c((this_01));
+   InterstitialInterface__load_0047fc2c((*(InterstitialInterface **)(this + 0x870)));
+## FUN_009d5ec8  calls=13 arity=2 wrapper=
+   FUN_009d5ec8((&local_b0), (&local_b8));
+   FUN_009d5ec8((lVar5), (lVar5 + 8));
+## kDate__getSingleton_004797f8  calls=12 arity=0 wrapper=Y
+   lVar4 = kDate__getSingleton_004797f8();
+   kDate__getSingleton_004797f8();
+## kFile__rOpenF_0047a2a0  calls=11 arity=3 wrapper=Y
+   uVar6 = kFile__rOpenF_0047a2a0((this_00), ((string *)local_58), ((string *)&local_68));
+   uVar7 = kFile__rOpenF_0047a2a0((this_00), ((string *)&local_68), ((string *)&local_78));
+## kFile__wOpenF_0047a5e8  calls=11 arity=3 wrapper=Y
+   uVar5 = kFile__wOpenF_0047a5e8((this_00), ((string *)local_58), ((string *)&local_68));
+   uVar8 = kFile__wOpenF_0047a5e8((this_00), ((string *)local_68), ((string *)&local_78));
+## kFile__getSize_0047a88c  calls=10 arity=1 wrapper=Y
+   uVar4 = kFile__getSize_0047a88c((this_00));
+   iVar4 = kFile__getSize_0047a88c((pkVar6));
+## kScene__clearResData_0047e310  calls=9 arity=2 wrapper=Y
+   kScene__clearResData_0047e310(((kScene *)this), (aCStack_48));
+   kScene__clearResData_0047e310(((kScene *)this), ((CurlResData *)&local_78));
+## kFile__rOpenR_0047a018  calls=9 arity=3 wrapper=Y
+   uVar7 = kFile__rOpenR_0047a018((pkVar6), ((string *)local_58), ((string *)&local_68));
+   uVar7 = kFile__rOpenR_0047a018((pkVar6), ((string *)local_58), ((string *)&local_68));
+## cocos2d__Application__getNetStatus_004862f4  calls=9 arity=0 wrapper=
+   uVar11 = cocos2d__Application__getNetStatus_004862f4();
+   uVar11 = cocos2d__Application__getNetStatus_004862f4();
+## cocos2d__StringUtils__format_0060c028  calls=9 arity=3 wrapper=
+   cocos2d__StringUtils__format_0060c028(("img/bg/bg_%d.png"), (local_88), ((ulong)(uint)param_1));
+   cocos2d__StringUtils__format_0060c028(("img/bg/bg_%d.png"), (local_88), ((ulong)(uint)param_1));
+## RewardInterface__load_0047fcf4  calls=8 arity=1 wrapper=Y
+   RewardInterface__load_0047fcf4((*(RewardInterface **)(this + 0x828)));
+   RewardInterface__load_0047fcf4((pRVar1));
+## kDate__getIntervalSince1970_0047991c  calls=8 arity=0 wrapper=Y
+   uVar3 = kDate__getIntervalSince1970_0047991c();
+   this_00 = (bzStateGame *)kDate__getIntervalSince1970_0047991c();
+## kFile__read_0047a894  calls=8 arity=3 wrapper=Y
+   kFile__read_0047a894((pkVar6), (pvVar8), (iVar4));
+   kFile__read_0047a894((pkVar6), (pvVar8), (iVar4));
+## cocos2d__UserDefault__getIntegerForKey_005fb92c  calls=7 arity=2 wrapper=
+   uVar2 = cocos2d__UserDefault__getIntegerForKey_005fb92c((pUVar1), ("DailyRewardHistory0"));
+   uVar2 = cocos2d__UserDefault__getIntegerForKey_005fb92c((pUVar1), ("DailyRewardHistory1"));
+## FUN_009d7480  calls=7 arity=3 wrapper=
+   FUN_009d7480((&local_110), (&UNK_00a4e180), (4));
+   FUN_009d7480((param_1), (__s), (sVar1));
+## RewardInterface__RewardInterface_0047fc88  calls=7 arity=2 wrapper=Y
+   RewardInterface__RewardInterface_0047fc88((pRVar1), ((char *)(this + 0x92e)));
+   RewardInterface__RewardInterface_0047fc88((pRVar1), ((char *)(this + 0x960)));
+## RewardInterface__isLoaded_0047fd04  calls=6 arity=1 wrapper=Y
+   uVar2 = RewardInterface__isLoaded_0047fd04((*(RewardInterface **)(this + 0x828)));
+   uVar2 = RewardInterface__isLoaded_0047fd04((*(RewardInterface **)(this + 0x838)));
+## kScene__getSysInfo_0047e070  calls=6 arity=3 wrapper=Y
+   kScene__getSysInfo_0047e070(((kScene *)this), (1), ((char *)__s));
+   kScene__getSysInfo_0047e070(((kScene *)this), (1), ((char *)pbVar13));
+## cocos2d__Device__getDPI_00487800  calls=6 arity=0 wrapper=
+   cocos2d__Device__getDPI_00487800();
+   cocos2d__Device__getDPI_00487800();
+## RewardInterface__show_0047fcfc  calls=5 arity=1 wrapper=Y
+   RewardInterface__show_0047fcfc((pRVar1));
+   RewardInterface__show_0047fcfc((*(RewardInterface **)(in_x0 + (gh_long)iVar19 * 8 + 0x828)));
+## cocos2d__Application__purchase_00485ae8  calls=5 arity=2 wrapper=
+   cocos2d__Application__purchase_00485ae8((this_00), (param_1));
+   cocos2d__Application__purchase_00485ae8((this_00), (iVar8));
+## kScene__makeFont_0047d5c4  calls=5 arity=3 wrapper=Y
+   uVar5 = kScene__makeFont_0047d5c4(((kScene *)this), (local_48), (0x14));
+   uVar5 = kScene__makeFont_0047d5c4(((kScene *)this), (&local_58), (0x18));
+## cocos2d__Director__getInstance_005dff80  calls=4 arity=0 wrapper=
+   lVar2 = cocos2d__Director__getInstance_005dff80();
+   lVar2 = cocos2d__Director__getInstance_005dff80();
+## BannerInterface__hideBannerView_0047fb18  calls=4 arity=0 wrapper=Y
+   BannerInterface__hideBannerView_0047fb18();
+   BannerInterface__hideBannerView_0047fb18();
+## cocos2d__Application__OnInterstitial_00484e24  calls=4 arity=2 wrapper=
+   cocos2d__Application__OnInterstitial_00484e24((this_00), (param_1));
+   cocos2d__Application__OnInterstitial_00484e24((pAVar13), (0x32));
+## FUN_009d719c  calls=4 arity=1 wrapper=
+   FUN_009d719c((param_2));
+   FUN_009d719c((&local_1f0));
+## std___Rb_tree_std__string_std__pair_std__string_const_std__string__std___Select1st_std__pair_std__string_const_std__string___std__less_std__string__std__allocator_std__pair_std__string_const_std__string_____find_00478438  calls=4 arity=2 wrapper=Y
+   lVar19 = std___Rb_tree_std__string_std__pair_std__string_const_std__string__std___Select1st_std__pair_std__string_const_std__string___std__less_std__string__std__allocator_std__pair_std__string_const_std__string_____find_00478438(((_Rb_tree_std__string_std__pair_std__string_const_std__string__std___Select1st_std__pair_std__string_const_std__string___std__less_std__string__std__allocator_std__pair_std__string_const_s
+   lVar4 = std___Rb_tree_std__string_std__pair_std__string_const_std__string__std___Select1st_std__pair_std__string_const_std__string___std__less_std__string__std__allocator_std__pair_std__string_const_std__string_____find_00478438(((_Rb_tree_std__string_std__pair_std__string_const_std__string__std___Select1st_std__pair_std__string_const_std__string___std__less_std__string__std__allocator_std__pair_std__string_const_st
+## kScene__clearSprite_0047daa8  calls=4 arity=3 wrapper=Y
+   kScene__clearSprite_0047daa8(((kScene *)this), (1), ((kSprite **)(this + 0x32a690)));
+   kScene__clearSprite_0047daa8(((kScene *)this), (1), ((kSprite **)(this + 0x32a688)));
+## SoundClip___SoundClip_0047e354  calls=4 arity=1 wrapper=Y
+   SoundClip___SoundClip_0047e354(((SoundClip *)(this + 0x1920)));
+   SoundClip___SoundClip_0047e354(((SoundClip *)(this + 0x1908)));
+## SoundClip__SoundClip_0047e340  calls=4 arity=1 wrapper=Y
+   SoundClip__SoundClip_0047e340(((SoundClip *)(this + lVar6 + 0x11e8)));
+   SoundClip__SoundClip_0047e340(((SoundClip *)(this + 0x18f0)));
+## cocos2d__JniHelper__callStaticVoidMethod___004745b0  calls=3 arity=2 wrapper=Y
+   cocos2d__JniHelper__callStaticVoidMethod___004745b0(((string *)local_38), ((string *)&local_48));
+   cocos2d__JniHelper__callStaticVoidMethod___004745b0(((string *)local_38), ((string *)&local_48));
+## FUN_009d1e68  calls=3 arity=2 wrapper=
+   FUN_009d1e68(("basic_string::at: __n (which is %zu) >= this->size() (which is %zu)"), (uVar12));
+   FUN_009d1e68(("basic_string::at: __n (which is %zu) >= this->size() (which is %zu)"), (uVar9));
+## cocos2d__Application__SkipGameClearBonus_00485dfc  calls=3 arity=0 wrapper=
+   cocos2d__Application__SkipGameClearBonus_00485dfc();
+   cocos2d__Application__SkipGameClearBonus_00485dfc();
+## BannerInterface__load_0047fb10  calls=3 arity=2 wrapper=Y
+   BannerInterface__load_0047fb10(((int)*(undefined8 *)(this + 0x820)), (0));
+   BannerInterface__load_0047fb10(((int)*(undefined8 *)(this + 0x820)), (0));
+## InterstitialInterface__InterstitialInterface_0047fbc0  calls=3 arity=2 wrapper=Y
+   InterstitialInterface__InterstitialInterface_0047fbc0((pIVar1), ((char *)(this + 0x898)));
+   InterstitialInterface__InterstitialInterface_0047fbc0((pIVar1), ((char *)(this + 0x8ca)));
+## InterstitialInterface__setOnLoadCallback_0047fc58  calls=3 arity=2 wrapper=Y
+   InterstitialInterface__setOnLoadCallback_0047fc58((*(InterstitialInterface **)(this + 0x870)), (onInterstitialLoad));
+   InterstitialInterface__setOnLoadCallback_0047fc58((*(InterstitialInterface **)(this + 0x878)), (onInterstitialLoad));
+## InterstitialInterface__setOnShowCallback_0047fc64  calls=3 arity=2 wrapper=Y
+   InterstitialInterface__setOnShowCallback_0047fc64((*(InterstitialInterface **)(this + 0x870)), (onInterstitialShow));
+   InterstitialInterface__setOnShowCallback_0047fc64((*(InterstitialInterface **)(this + 0x878)), (onInterstitialShow));
+## InterstitialInterface__setOnFailCallback_0047fc70  calls=3 arity=2 wrapper=Y
+   InterstitialInterface__setOnFailCallback_0047fc70((*(InterstitialInterface **)(this + 0x870)), (InterstitialFail));
+   InterstitialInterface__setOnFailCallback_0047fc70((*(InterstitialInterface **)(this + 0x878)), (InterstitialFail));
+## InterstitialInterface__setOnCloseCallback_0047fc7c  calls=3 arity=2 wrapper=Y
+   InterstitialInterface__setOnCloseCallback_0047fc7c((*(InterstitialInterface **)(this + 0x870)), (InterstitialClose));
+   InterstitialInterface__setOnCloseCallback_0047fc7c((*(InterstitialInterface **)(this + 0x878)), (InterstitialClose));
+## FUN_009d537c  calls=2 arity=2 wrapper=
+   FUN_009d537c((local_68), (uVar1));
+   FUN_009d537c((param_1), (*(gh_long *)(*param_3 + -0x18) + sVar2));
+## kDate__getMonthEnd_004798b4  calls=2 arity=1 wrapper=Y
+   uVar7 = kDate__getMonthEnd_004798b4((this_00));
+   uVar2 = kDate__getMonthEnd_004798b4((this_00));
+## cocos2d__Application__RequestLoadRewardAd_DailyBonus_00485ebc  calls=2 arity=0 wrapper=
+   cocos2d__Application__RequestLoadRewardAd_DailyBonus_00485ebc();
+   cocos2d__Application__RequestLoadRewardAd_DailyBonus_00485ebc();
+## cocos2d__JniHelper__callStaticVoidMethod_std__string__00474c54  calls=2 arity=3 wrapper=Y
+   cocos2d__JniHelper__callStaticVoidMethod_std__string__00474c54((local_38), (&local_48), (&local_58));
+   cocos2d__JniHelper__callStaticVoidMethod_std__string__00474c54((local_38), (&local_48), (&local_58));
+## cocos2d__Application__getPurchaseList_00485bb0  calls=2 arity=0 wrapper=
+   cocos2d__Application__getPurchaseList_00485bb0();
+   cocos2d__Application__getPurchaseList_00485bb0();
+## SoundClip__stop_0047e6d0  calls=2 arity=1 wrapper=Y
+   SoundClip__stop_0047e6d0((iVar20 + 0x18d8));
+   SoundClip__stop_0047e6d0(((int)this + param_1 * 0x18 + 0x11e8));
+## std___Rb_tree_std__string_std__pair_std__string_const_std__string__std___Select1st_std__pair_std__string_const_std__string___std__less_std__string__std__allocator_std__pair_std__string_const_std__string______M_erase_0047795c  calls=2 arity=2 wrapper=Y
+   std___Rb_tree_std__string_std__pair_std__string_const_std__string__std___Select1st_std__pair_std__string_const_std__string___std__less_std__string__std__allocator_std__pair_std__string_const_std__string______M_erase_0047795c(((_Rb_tree_std__string_std__pair_std__string_const_std__string__std___Select1st_std__pair_std__string_const_std__string___std__less_std__string__std__allocator_std__pair_std__string_const_std__s
+   std___Rb_tree_std__string_std__pair_std__string_const_std__string__std___Select1st_std__pair_std__string_const_std__string___std__less_std__string__std__allocator_std__pair_std__string_const_std__string______M_erase_0047795c(((_Rb_tree_std__string_std__pair_std__string_const_std__string__std___Select1st_std__pair_std__string_const_std__string___std__less_std__string__std__allocator_std__pair_std__string_const_std__s
+## cocos2d__Application__ClearNotificationAll_00484a5c  calls=2 arity=0 wrapper=
+   cocos2d__Application__ClearNotificationAll_00484a5c();
+   cocos2d__Application__ClearNotificationAll_00484a5c();
+## InterstitialInterface__isLoaded_0047fc3c  calls=2 arity=1 wrapper=Y
+   uVar20 = InterstitialInterface__isLoaded_0047fc3c((*(InterstitialInterface **)(in_x0 + (gh_long)iVar19 * 8 + 0x870)));
+   uVar2 = InterstitialInterface__isLoaded_0047fc3c((*(InterstitialInterface **)(this + (gh_long)param_1 * 8 + 0x870)));
+## InterstitialInterface__show_0047fc34  calls=2 arity=1 wrapper=Y
+   InterstitialInterface__show_0047fc34((*(InterstitialInterface **)(in_x0 + (gh_long)iVar19 * 8 + 0x870)));
+   InterstitialInterface__show_0047fc34((*(InterstitialInterface **)(this + (gh_long)param_1 * 8 + 0x870)));
+## cocos2d__ui__Button__create_004e7df4  calls=2 arity=4 wrapper=
+   this_01 = (Button *)cocos2d__ui__Button__create_004e7df4((local_98), (&local_a8), (&local_b8), (0));
+   this_02 = (Button *)cocos2d__ui__Button__create_004e7df4((local_98), (&local_a8), (&local_b8), (0));
+## cocos2d__ui__Button__setTitleText_004e94b4  calls=2 arity=2 wrapper=
+   cocos2d__ui__Button__setTitleText_004e94b4((this_01), ((string *)local_98));
+   cocos2d__ui__Button__setTitleText_004e94b4((this_02), ((string *)local_98));
+## cocos2d__ui__Button__setTitleFontSize_004e9758  calls=2 arity=2 wrapper=
+   cocos2d__ui__Button__setTitleFontSize_004e9758((this_01), (14.0));
+   cocos2d__ui__Button__setTitleFontSize_004e9758((this_02), (14.0));
+## cocos2d__Label__createWithSystemFont_0055a324  calls=2 arity=6 wrapper=
+   plVar7 = (gh_long *)cocos2d__Label__createWithSystemFont_0055a324((0x41c80000), (param_1), (local_98), (&cocos2d__Size__ZERO), (0), (0));
+   plVar8 = (gh_long *)cocos2d__Label__createWithSystemFont_0055a324((0x41a00000), (param_2), (local_98), (&cocos2d__Size__ZERO), (0), (0));
+## __cxa_begin_catch_00991ca8  calls=1 arity=0 wrapper=
+   __cxa_begin_catch_00991ca8();
+## std__terminate_00992aac  calls=1 arity=0 wrapper=
+   std__terminate_00992aac();
+## cocos2d__Director__end_005e3ab0  calls=1 arity=1 wrapper=
+   cocos2d__Director__end_005e3ab0((this));
+## cocos2d__JniHelper__callStaticVoidMethod_std__string_bool__00475dc4  calls=1 arity=4 wrapper=Y
+   cocos2d__JniHelper__callStaticVoidMethod_std__string_bool__00475dc4((local_48), (&local_58), (&local_68), (param_3 & 1));
+## cocos2d__JniHelper__callStaticVoidMethod_std__string_int__004759a8  calls=1 arity=4 wrapper=Y
+   cocos2d__JniHelper__callStaticVoidMethod_std__string_int__004759a8((local_48), (&local_58), (&local_68), (param_3));
+## cocos2d__JniHelper__callStaticBooleanMethod___004748f8  calls=1 arity=2 wrapper=Y
+   bVar5 = cocos2d__JniHelper__callStaticBooleanMethod___004748f8(((string *)local_48), ((string *)&local_58));
+## cocos2d__JniHelper__callStaticVoidMethod_std__string_long__00474fbc  calls=1 arity=4 wrapper=Y
+   cocos2d__JniHelper__callStaticVoidMethod_std__string_long__00474fbc((local_48), (&local_58), (&local_68), (param_3));
+## kSprite__drawPos_0047f88c  calls=1 arity=7 wrapper=Y
+   kSprite__drawPos_0047f88c((pkVar7), (&local_68), (0), (0), (param_12), (param_13), (param_11));
+## FUN_009c084c  calls=1 arity=1 wrapper=
+   lVar9 = FUN_009c084c((lVar9));
+## SoundClip__loadSnd_0047e3fc  calls=1 arity=2 wrapper=Y
+   SoundClip__loadSnd_0047e3fc((this + (gh_long)iVar10 * 0x18 + 0x11e8), (&local_90));
+## std__vector_PurchaseStruct_std__allocator_PurchaseStruct_____M_emplace_back_aux_PurchaseStruct_const___00477d34  calls=1 arity=2 wrapper=Y
+   std__vector_PurchaseStruct_std__allocator_PurchaseStruct_____M_emplace_back_aux_PurchaseStruct_const___00477d34(((vector_PurchaseStruct_std__allocator_PurchaseStruct__ *)(this + 0x388)), ((PurchaseStruct *)&local_a0));
+## cocos2d__Application__Click_AppsFlyerEvent_00485298  calls=1 arity=4 wrapper=
+   cocos2d__Application__Click_AppsFlyerEvent_00485298((pAVar5), (param_1), (local_58), (&local_60));
+## std___Rb_tree_int_std__pair_int_const_kSprite___std___Select1st_std__pair_int_const_kSprite____std__less_int__std__allocator_std__pair_int_const_kSprite_______M_erase_00477a84  calls=1 arity=2 wrapper=Y
+   std___Rb_tree_int_std__pair_int_const_kSprite___std___Select1st_std__pair_int_const_kSprite____std__less_int__std__allocator_std__pair_int_const_kSprite_______M_erase_00477a84(((_Rb_tree_int_std__pair_int_const_kSprite___std___Select1st_std__pair_int_const_kSprite____std__less_int__std__allocator_std__pair_int_const_kSprite____ *)(this + 0x318)), (*(_Rb_tree_node **)(this + 0x328)));
+## cocos2d__Scene___Scene_0058fc84  calls=1 arity=1 wrapper=
+   cocos2d__Scene___Scene_0058fc84(((Scene *)this));
+## BannerInterface__onResume_0047fb28  calls=1 arity=0 wrapper=Y
+   BannerInterface__onResume_0047fb28();
+## BannerInterface__onPause_0047fb24  calls=1 arity=0 wrapper=Y
+   BannerInterface__onPause_0047fb24();
+## cocos2d__Scene__Scene_0058f9c4  calls=1 arity=1 wrapper=
+   cocos2d__Scene__Scene_0058f9c4(((Scene *)this));
+## FUN_009bb5d4  calls=1 arity=2 wrapper=
+   FUN_009bb5d4((&local_1d8), (0x18));
+## FUN_009b469c  calls=1 arity=3 wrapper=
+   FUN_009b469c((&local_1c8), (local_1e4), (1));
+## FUN_009b9be4  calls=1 arity=2 wrapper=
+   FUN_009b9be4((&local_1f8), (local_1c0));
+## FUN_009b02d4  calls=1 arity=1 wrapper=
+   FUN_009b02d4((auStack_188));
+## FUN_00995494  calls=1 arity=1 wrapper=
+   FUN_00995494((appuStack_170));
+## cocos2d__Application__setRestore_00485c70  calls=1 arity=0 wrapper=
+   cocos2d__Application__setRestore_00485c70();
+## BannerInterface__BannerInterface_0047fb04  calls=1 arity=2 wrapper=Y
+   BannerInterface__BannerInterface_0047fb04((this_00), ("4344e7c4-eb4a-41c0-a189-b9b373cd52d4"));
+## BannerInterface__setInterval_0047fb08  calls=1 arity=1 wrapper=Y
+   BannerInterface__setInterval_0047fb08(((int)this_00));
+## BannerInterface__setOnLoadCallback_0047fb40  calls=1 arity=1 wrapper=Y
+   BannerInterface__setOnLoadCallback_0047fb40((*(_func_void_char_ptr **)(this + 0x820)));
+## BannerInterface__setOnFailCallback_0047fb44  calls=1 arity=1 wrapper=Y
+   BannerInterface__setOnFailCallback_0047fb44((*(_func_void_char_ptr **)(this + 0x820)));
+## RewardInterface__setOnLoadCallback_0047fd20  calls=1 arity=2 wrapper=Y
+   RewardInterface__setOnLoadCallback_0047fd20((*(RewardInterface **)(this + lVar3 + 0x828)), (onRewardLoad));
+## RewardInterface__setOnShowCallback_0047fd2c  calls=1 arity=2 wrapper=Y
+   RewardInterface__setOnShowCallback_0047fd2c((*(RewardInterface **)(this + lVar3 + 0x828)), (onRewardShow));
+## RewardInterface__setOnCompleteCallback_0047fd44  calls=1 arity=2 wrapper=Y
+   RewardInterface__setOnCompleteCallback_0047fd44((*(RewardInterface **)(this + lVar3 + 0x828)), (onRewardComplete));
+## RewardInterface__setOnCloseCallback_0047fd5c  calls=1 arity=2 wrapper=Y
+   RewardInterface__setOnCloseCallback_0047fd5c((*(RewardInterface **)(this + lVar3 + 0x828)), (onRewardClose));
+## RewardInterface__setOnFailCallback_0047fd38  calls=1 arity=2 wrapper=Y
+   RewardInterface__setOnFailCallback_0047fd38((*(RewardInterface **)(this + lVar3 + 0x828)), (onRewardFail));
+## RewardInterface__setOnSkipCallback_0047fd50  calls=1 arity=2 wrapper=Y
+   RewardInterface__setOnSkipCallback_0047fd50((*(RewardInterface **)(this + lVar3 + 0x828)), (onRewardSkip));
+## cocos2d__FileUtils__getInstance_00488d1c  calls=1 arity=0 wrapper=
+   plVar6 = (gh_long *)cocos2d__FileUtils__getInstance_00488d1c();
+## cocos2d__Image__Image_005c10e0  calls=1 arity=1 wrapper=
+   cocos2d__Image__Image_005c10e0((this));
+## cocos2d__Image__initWithImageFile_005c12f8  calls=1 arity=2 wrapper=
+   uVar5 = cocos2d__Image__initWithImageFile_005c12f8((this), ((string *)local_48));
+## kScene__makeDraw_0047d650  calls=1 arity=1 wrapper=Y
+   uVar5 = kScene__makeDraw_0047d650(((kScene *)this));
+## kFile__readString_0047aae8  calls=1 arity=1 wrapper=Y
+   __s = (bzStateGame *)kFile__readString_0047aae8((this_00));
+## BannerInterface__removeBanner_0047fb14  calls=1 arity=0 wrapper=Y
+   BannerInterface__removeBanner_0047fb14();
+## kFile__writeString_0047ab60  calls=1 arity=2 wrapper=Y
+   kFile__writeString_0047ab60((this_00), (*(char **)(this + 0x32c960)));
+## BannerInterface__showBannerView_0047fb1c  calls=1 arity=0 wrapper=Y
+   BannerInterface__showBannerView_0047fb1c();
+## cocos2d__Sprite__create_005918a4  calls=1 arity=1 wrapper=
+   uVar6 = cocos2d__Sprite__create_005918a4(((string *)local_98));
+## cocos2d__Color4B__Color4B_0060b934  calls=1 arity=5 wrapper=
+   cocos2d__Color4B__Color4B_0060b934(((Color4B *)local_74), ('\0'), ('\0'), ('\0'), ('\0'));
+## kPopup__create_0047c134  calls=1 arity=2 wrapper=Y
+   this_00 = (kPopup *)kPopup__create_0047c134((uVar6), (local_74[0]));
+## kPopup__setCallback_0047c26c  calls=1 arity=2 wrapper=Y
+   kPopup__setCallback_0047c26c((this_00), ((function *)local_98));
+## CommonInterface__setDebugMode_0047fb48  calls=1 arity=1 wrapper=Y
+   CommonInterface__setDebugMode_0047fb48((true));
+## CommonInterface__reqAdTrackingAuthorization_0047fb58  calls=1 arity=1 wrapper=Y
+   CommonInterface__reqAdTrackingAuthorization_0047fb58((onAdTrackingAuthorizationResponse));
+## CommonInterface__setAdvertiserTrackingEnabled_0047fb4c  calls=1 arity=1 wrapper=Y
+   CommonInterface__setAdvertiserTrackingEnabled_0047fb4c((true));

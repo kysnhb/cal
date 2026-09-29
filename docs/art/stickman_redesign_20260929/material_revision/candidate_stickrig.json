@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "density": 4,
+  "masters": {
+    "head": {
+      "path": "img/gothic/stickrig/head.png",
+      "source_rect": [
+        334,
+        138,
+        875,
+        723
+      ],
+      "anchor_top": [
+        745,
+        480
+      ],
+      "anchor_bottom": [
+        745,
+        826
+      ],
+      "max_width_ratio": 1.18
+    },
+    "limb": {
+      "path": "img/gothic/stickrig/limb.png",
+      "source_rect": [
+        532,
+        186,
+        164,
+        924
+      ],
+      "anchor_top": [
+        614,
+        207
+      ],
+      "anchor_bottom": [
+        614,
+        1089
+      ],
+      "max_width_ratio": 1.08
+    },
+    "torso_upper": {
+      "path": "img/gothic/stickrig/torso.png",
+      "source_rect": [
+        315,
+        312,
+        308,
+        500
+      ],
+      "anchor_top": [
+        469,
+        330
+      ],
+      "anchor_bottom": [
+        469,
+        780
+      ],
+      "max_width_ratio": 1.15
+    },
+    "torso_lower": {
+      "path": "img/gothic/stickrig/torso.png",
+      "source_rect": [
+        315,
+        738,
+        308,
+        511
+      ],
+      "anchor_top": [
+        469,
+        780
+      ],
+      "anchor_bottom": [
+        469,
+        1228
+      ],
+      "max_width_ratio": 1.15
+    },
+    "torso_full": {
+      "path": "img/gothic/stickrig/torso.png",
+      "source_rect": [
+        315,
+        312,
+        308,
+        937
+      ],
+      "anchor_top": [
+        469,
+        330
+      ],
+      "anchor_bottom": [
+        469,
+        1228
+      ],
+      "max_width_ratio": 1.15
+    }
+  }
+}

@@ -1,0 +1,4376 @@
+{
+  "poses": [
+    {
+      "frame": 6,
+      "record": 56,
+      "hide_record": -1,
+      "base_image": 7,
+      "record_xy": [
+        3,
+        -105
+      ],
+      "neck": [
+        3,
+        -105
+      ],
+      "hip": [
+        -3.5,
+        -61.0
+      ],
+      "score": 2.0
+    },
+    {
+      "frame": 9,
+      "record": 87,
+      "hide_record": -1,
+      "base_image": 7,
+      "record_xy": [
+        11,
+        -108
+      ],
+      "neck": [
+        11,
+        -108
+      ],
+      "hip": [
+        -2.5,
+        -64.5
+      ],
+      "score": 5.0990195135927845
+    },
+    {
+      "frame": 10,
+      "record": 98,
+      "hide_record": 99,
+      "base_image": 5,
+      "record_xy": [
+        11,
+        -110
+      ],
+      "neck": [
+        11,
+        -110
+      ],
+      "hip": [
+        1.5,
+        -60.5
+      ],
+      "score": 2.8254191253731005
+    },
+    {
+      "frame": 11,
+      "record": 110,
+      "hide_record": 111,
+      "base_image": 5,
+      "record_xy": [
+        12,
+        -111
+      ],
+      "neck": [
+        12,
+        -111
+      ],
+      "hip": [
+        -0.5,
+        -66.5
+      ],
+      "score": 2.1580007973622157
+    },
+    {
+      "frame": 12,
+      "record": 122,
+      "hide_record": 123,
+      "base_image": 5,
+      "record_xy": [
+        8,
+        -106
+      ],
+      "neck": [
+        8,
+        -106
+      ],
+      "hip": [
+        -1.5,
+        -62.0
+      ],
+      "score": 2.177672719026228
+    },
+    {
+      "frame": 13,
+      "record": 134,
+      "hide_record": -1,
+      "base_image": 7,
+      "record_xy": [
+        7,
+        -106
+      ],
+      "neck": [
+        7,
+        -106
+      ],
+      "hip": [
+        -1.5,
+        -63.5
+      ],
+      "score": 2.23606797749979
+    },
+    {
+      "frame": 14,
+      "record": 144,
+      "hide_record": -1,
+      "base_image": 7,
+      "record_xy": [
+        -2,
+        -108
+      ],
+      "neck": [
+        -2,
+        -108
+      ],
+      "hip": [
+        -4.0,
+        -63.0
+      ],
+      "score": 2.8284271247461903
+    },
+    {
+      "frame": 15,
+      "record": 155,
+      "hide_record": -1,
+      "base_image": 7,
+      "record_xy": [
+        -2,
+        -107
+      ],
+      "neck": [
+        -2,
+        -107
+      ],
+      "hip": [
+        -4.0,
+        -62.0
+      ],
+      "score": 2.8284271247461903
+    },
+    {
+      "frame": 16,
+      "record": 166,
+      "hide_record": -1,
+      "base_image": 7,
+      "record_xy": [
+        -2,
+        -106
+      ],
+      "neck": [
+        -2,
+        -106
+      ],
+      "hip": [
+        -4.5,
+        -62.0
+      ],
+      "score": 2.8284271247461903
+    },
+    {
+      "frame": 17,
+      "record": 175,
+      "hide_record": 176,
+      "base_image": 4,
+      "record_xy": [
+        2,
+        -97
+      ],
+      "neck": [
+        2,
+        -97
+      ],
+      "hip": [
+        -5.0,
+        -57.5
+      ],
+      "score": 3.550072530620488
+    },
+    {
+      "frame": 18,
+      "record": 186,
+      "hide_record": 187,
+      "base_image": 4,
+      "record_xy": [
+        2,
+        -96
+      ],
+      "neck": [
+        2,
+        -96
+      ],
+      "hip": [
+        -5.0,
+        -56.5
+      ],
+      "score": 3.550072530620488
+    },
+    {
+      "frame": 19,
+      "record": 197,
+      "hide_record": 198,
+      "base_image": 4,
+      "record_xy": [
+        2,
+        -95
+      ],
+      "neck": [
+        2,
+        -95
+      ],
+      "hip": [
+        -5.5,
+        -56.0
+      ],
+      "score": 4.050072530620488
+    },
+    {
+      "frame": 20,
+      "record": 208,
+      "hide_record": 209,
+      "base_image": 4,
+      "record_xy": [
+        2,
+        -93
+      ],
+      "neck": [
+        2,
+        -93
+      ],
+      "hip": [
+        -5.5,
+        -58.0
+      ],
+      "score": 3.9861538284984803
+    },
+    {
+      "frame": 21,
+      "record": 219,
+      "hide_record": 220,
+      "base_image": 4,
+      "record_xy": [
+        2,
+        -92
+      ],
+      "neck": [
+        2,
+        -92
+      ],
+      "hip": [
+        -5.5,
+        -58.0
+      ],
+      "score": 4.4362424500694715
+    },
+    {
+      "frame": 22,
+      "record": 230,
+      "hide_record": 231,
+      "base_image": 4,
+      "record_xy": [
+        2,
+        -91
+      ],
+      "neck": [
+        2,
+        -91
+      ],
+      "hip": [
+        -5.5,
+        -56.5
+      ],
+      "score": 4.973667770444111
+    },
+    {
+      "frame": 23,
+      "record": 244,
+      "hide_record": 245,
+      "base_image": 5,
+      "record_xy": [
+        13,
+        -97
+      ],
+      "neck": [
+        13,
+        -97
+      ],
+      "hip": [
+        -6.0,
+        -57.5
+      ],
+      "score": 5.835901813912956
+    },
+    {
+      "frame": 24,
+      "record": 259,
+      "hide_record": -1,
+      "base_image": 7,
+      "record_xy": [
+        1,
+        -61
+      ],
+      "neck": [
+        14.032596203368392,
+        -110.30670782155252
+      ],
+      "hip": [
+        3.0,
+        -69.5
+      ],
+      "score": 6.390682159647948
+    },
+    {
+      "frame": 25,
+      "record": 271,
+      "hide_record": -1,
+      "base_image": 7,
+      "record_xy": [
+        0,
+        -60
+      ],
+      "neck": [
+        15.96577231425148,
+        -108.4364956867183
+      ],
+      "hip": [
+        -1.5,
+        -65.5
+      ],
+      "score": 6.729987928415691
+    },
+    {
+      "frame": 26,
+      "record": 277,
+      "hide_record": 278,
+      "base_image": 5,
+      "record_xy": [
+        13,
+        -101
+      ],
+      "neck": [
+        13,
+        -101
+      ],
+      "hip": [
+        -6.5,
+        -62.0
+      ],
+      "score": 6.417338447019928
+    },
+    {
+      "frame": 29,
+      "record": 312,
+      "hide_record": 313,
+      "base_image": 5,
+      "record_xy": [
+        12,
+        -112
+      ],
+      "neck": [
+        12,
+        -112
+      ],
+      "hip": [
+        -0.5,
+        -67.5
+      ],
+      "score": 2.4541803709854157
+    },
+    {
+      "frame": 33,
+      "record": 338,
+      "hide_record": -1,
+      "base_image": 7,
+      "record_xy": [
+        11,
+        -108
+      ],
+      "neck": [
+        11,
+        -108
+      ],
+      "hip": [
+        -2.5,
+        -64.5
+      ],
+      "score": 5.0990195135927845
+    },
+    {
+      "frame": 34,
+      "record": 349,
+      "hide_record": 350,
+      "base_image": 5,
+      "record_xy": [
+        11,
+        -110
+      ],
+      "neck": [
+        11,
+        -110
+      ],
+      "hip": [
+        1.5,
+        -60.5
+      ],
+      "score": 2.8254191253731005
+    },
+    {
+      "frame": 35,
+      "record": 361,
+      "hide_record": 362,
+      "base_image": 5,
+      "record_xy": [
+        12,
+        -111
+      ],
+      "neck": [
+        12,
+        -111
+      ],
+      "hip": [
+        -0.5,
+        -66.5
+      ],
+      "score": 3.2648993442758325
+    },
+    {
+      "frame": 44,
+      "record": 412,
+      "hide_record": 413,
+      "base_image": 5,
+      "record_xy": [
+        12,
+        -112
+      ],
+      "neck": [
+        12,
+        -112
+      ],
+      "hip": [
+        -0.5,
+        -67.5
+      ],
+      "score": 2.4541803709854157
+    },
+    {
+      "frame": 45,
+      "record": 424,
+      "hide_record": 425,
+      "base_image": 5,
+      "record_xy": [
+        8,
+        -106
+      ],
+      "neck": [
+        8,
+        -106
+      ],
+      "hip": [
+        -1.5,
+        -62.0
+      ],
+      "score": 2.177672719026228
+    },
+    {
+      "frame": 46,
+      "record": 436,
+      "hide_record": -1,
+      "base_image": 7,
+      "record_xy": [
+        7,
+        -106
+      ],
+      "neck": [
+        7,
+        -106
+      ],
+      "hip": [
+        -1.0,
+        -63.5
+      ],
+      "score": 2.23606797749979
+    },
+    {
+      "frame": 47,
+      "record": 445,
+      "hide_record": 446,
+      "base_image": 4,
+      "record_xy": [
+        2,
+        -93
+      ],
+      "neck": [
+        2,
+        -93
+      ],
+      "hip": [
+        -5.5,
+        -58.0
+      ],
+      "score": 3.9861538284984803
+    },
+    {
+      "frame": 78,
+      "record": 562,
+      "hide_record": 563,
+      "base_image": 5,
+      "record_xy": [
+        17,
+        -99
+      ],
+      "neck": [
+        17,
+        -99
+      ],
+      "hip": [
+        -7.5,
+        -56.5
+      ],
+      "score": 6.287270406737141
+    },
+    {
+      "frame": 79,
+      "record": 574,
+      "hide_record": 575,
+      "base_image": 4,
+      "record_xy": [
+        7,
+        -70
+      ],
+      "neck": [
+        7,
+        -70
+      ],
+      "hip": [
+        -16.0,
+        -37.0
+      ],
+      "score": 4.902722859848712
+    },
+    {
+      "frame": 81,
+      "record": 596,
+      "hide_record": 597,
+      "base_image": 5,
+      "record_xy": [
+        17,
+        -99
+      ],
+      "neck": [
+        17,
+        -99
+      ],
+      "hip": [
+        -7.5,
+        -56.5
+      ],
+      "score": 6.287270406737141
+    },
+    {
+      "frame": 82,
+      "record": 607,
+      "hide_record": 608,
+      "base_image": 4,
+      "record_xy": [
+        7,
+        -70
+      ],
+      "neck": [
+        7,
+        -70
+      ],
+      "hip": [
+        -16.0,
+        -37.0
+      ],
+      "score": 4.902722859848712
+    },
+    {
+      "frame": 90,
+      "record": 659,
+      "hide_record": 660,
+      "base_image": 5,
+      "record_xy": [
+        5,
+        -109
+      ],
+      "neck": [
+        5,
+        -109
+      ],
+      "hip": [
+        8.5,
+        -58.0
+      ],
+      "score": 2.605818302697098
+    },
+    {
+      "frame": 91,
+      "record": 671,
+      "hide_record": 672,
+      "base_image": 5,
+      "record_xy": [
+        2,
+        -96
+      ],
+      "neck": [
+        2,
+        -96
+      ],
+      "hip": [
+        5.0,
+        -45.0
+      ],
+      "score": 2.105818302697098
+    },
+    {
+      "frame": 92,
+      "record": 683,
+      "hide_record": 684,
+      "base_image": 5,
+      "record_xy": [
+        5,
+        -83
+      ],
+      "neck": [
+        5,
+        -83
+      ],
+      "hip": [
+        4.0,
+        -31.0
+      ],
+      "score": 2.843353036397887
+    },
+    {
+      "frame": 93,
+      "record": 695,
+      "hide_record": 696,
+      "base_image": 5,
+      "record_xy": [
+        5,
+        -84
+      ],
+      "neck": [
+        5,
+        -84
+      ],
+      "hip": [
+        3.0,
+        -31.0
+      ],
+      "score": 3.8136731107243986
+    },
+    {
+      "frame": 94,
+      "record": 707,
+      "hide_record": 708,
+      "base_image": 5,
+      "record_xy": [
+        16,
+        -79
+      ],
+      "neck": [
+        16,
+        -79
+      ],
+      "hip": [
+        4.0,
+        -30.0
+      ],
+      "score": 2.1700681390927388
+    },
+    {
+      "frame": 98,
+      "record": 753,
+      "hide_record": 754,
+      "base_image": 5,
+      "record_xy": [
+        -47,
+        -100
+      ],
+      "neck": [
+        -47,
+        -100
+      ],
+      "hip": [
+        -15.5,
+        -59.5
+      ],
+      "score": 2.5248340946616885
+    },
+    {
+      "frame": 99,
+      "record": 765,
+      "hide_record": 766,
+      "base_image": 5,
+      "record_xy": [
+        -56,
+        -92
+      ],
+      "neck": [
+        -56,
+        -92
+      ],
+      "hip": [
+        -14.5,
+        -61.0
+      ],
+      "score": 2.776529804077401
+    },
+    {
+      "frame": 100,
+      "record": 777,
+      "hide_record": 778,
+      "base_image": 5,
+      "record_xy": [
+        -53,
+        -97
+      ],
+      "neck": [
+        -53,
+        -97
+      ],
+      "hip": [
+        -12.5,
+        -61.0
+      ],
+      "score": 3.150254654733099
+    },
+    {
+      "frame": 101,
+      "record": 789,
+      "hide_record": 790,
+      "base_image": 5,
+      "record_xy": [
+        -34,
+        -106
+      ],
+      "neck": [
+        -34,
+        -106
+      ],
+      "hip": [
+        -8.0,
+        -61.5
+      ],
+      "score": 2.9734384691565774
+    },
+    {
+      "frame": 102,
+      "record": 801,
+      "hide_record": 802,
+      "base_image": 4,
+      "record_xy": [
+        -35,
+        -96
+      ],
+      "neck": [
+        -35,
+        -96
+      ],
+      "hip": [
+        -18.0,
+        -53.0
+      ],
+      "score": 4.527360857451113
+    },
+    {
+      "frame": 103,
+      "record": 813,
+      "hide_record": 814,
+      "base_image": 4,
+      "record_xy": [
+        -32,
+        -95
+      ],
+      "neck": [
+        -32,
+        -95
+      ],
+      "hip": [
+        -17.0,
+        -51.5
+      ],
+      "score": 2.872310886044784
+    },
+    {
+      "frame": 104,
+      "record": 825,
+      "hide_record": 826,
+      "base_image": 4,
+      "record_xy": [
+        -26,
+        -95
+      ],
+      "neck": [
+        -26,
+        -95
+      ],
+      "hip": [
+        -15.5,
+        -50.5
+      ],
+      "score": 3.983322784620656
+    },
+    {
+      "frame": 105,
+      "record": 837,
+      "hide_record": 838,
+      "base_image": 4,
+      "record_xy": [
+        -20,
+        -95
+      ],
+      "neck": [
+        -20,
+        -95
+      ],
+      "hip": [
+        -10.0,
+        -51.5
+      ],
+      "score": 4.480397626926823
+    },
+    {
+      "frame": 106,
+      "record": 849,
+      "hide_record": 850,
+      "base_image": 4,
+      "record_xy": [
+        -16,
+        -95
+      ],
+      "neck": [
+        -16,
+        -95
+      ],
+      "hip": [
+        -5.0,
+        -51.5
+      ],
+      "score": 3.7040299620545944
+    },
+    {
+      "frame": 107,
+      "record": 861,
+      "hide_record": 862,
+      "base_image": 4,
+      "record_xy": [
+        -11,
+        -95
+      ],
+      "neck": [
+        -11,
+        -95
+      ],
+      "hip": [
+        -6.0,
+        -51.5
+      ],
+      "score": 4.1623126176833924
+    },
+    {
+      "frame": 108,
+      "record": 873,
+      "hide_record": 874,
+      "base_image": 4,
+      "record_xy": [
+        -6,
+        -94
+      ],
+      "neck": [
+        -6,
+        -94
+      ],
+      "hip": [
+        -11.0,
+        -50.0
+      ],
+      "score": 3.793686703720872
+    },
+    {
+      "frame": 109,
+      "record": 885,
+      "hide_record": 886,
+      "base_image": 4,
+      "record_xy": [
+        -3,
+        -94
+      ],
+      "neck": [
+        -3,
+        -94
+      ],
+      "hip": [
+        -11.5,
+        -48.5
+      ],
+      "score": 5.580428968525471
+    },
+    {
+      "frame": 110,
+      "record": 897,
+      "hide_record": 898,
+      "base_image": 4,
+      "record_xy": [
+        -4,
+        -98
+      ],
+      "neck": [
+        -4,
+        -98
+      ],
+      "hip": [
+        -10.0,
+        -50.5
+      ],
+      "score": 4.095664170857013
+    },
+    {
+      "frame": 111,
+      "record": 909,
+      "hide_record": 910,
+      "base_image": 4,
+      "record_xy": [
+        -2,
+        -99
+      ],
+      "neck": [
+        -2,
+        -99
+      ],
+      "hip": [
+        -7.0,
+        -55.0
+      ],
+      "score": 2.8232877563786416
+    },
+    {
+      "frame": 112,
+      "record": 921,
+      "hide_record": 922,
+      "base_image": 4,
+      "record_xy": [
+        -5,
+        -91
+      ],
+      "neck": [
+        -5,
+        -91
+      ],
+      "hip": [
+        -15.0,
+        -50.5
+      ],
+      "score": 6.4729210373976995
+    },
+    {
+      "frame": 113,
+      "record": 932,
+      "hide_record": 933,
+      "base_image": 4,
+      "record_xy": [
+        -14,
+        -76
+      ],
+      "neck": [
+        -14,
+        -76
+      ],
+      "hip": [
+        -13.0,
+        -32.0
+      ],
+      "score": 6.3248413437265745
+    },
+    {
+      "frame": 114,
+      "record": 944,
+      "hide_record": 945,
+      "base_image": 4,
+      "record_xy": [
+        -28,
+        -47
+      ],
+      "neck": [
+        -28,
+        -47
+      ],
+      "hip": [
+        -4.0,
+        -9.0
+      ],
+      "score": 6.268548391702716
+    },
+    {
+      "frame": 115,
+      "record": 956,
+      "hide_record": 957,
+      "base_image": 5,
+      "record_xy": [
+        -34,
+        -39
+      ],
+      "neck": [
+        -34,
+        -39
+      ],
+      "hip": [
+        8.5,
+        -4.0
+      ],
+      "score": 7.463903264147261
+    },
+    {
+      "frame": 116,
+      "record": 968,
+      "hide_record": 969,
+      "base_image": 4,
+      "record_xy": [
+        -45,
+        -13
+      ],
+      "neck": [
+        -45,
+        -13
+      ],
+      "hip": [
+        4.5,
+        -1.0
+      ],
+      "score": 5.205263933971597
+    },
+    {
+      "frame": 117,
+      "record": 980,
+      "hide_record": 981,
+      "base_image": 5,
+      "record_xy": [
+        -47,
+        -9
+      ],
+      "neck": [
+        -47,
+        -9
+      ],
+      "hip": [
+        6.0,
+        -2.0
+      ],
+      "score": 4.928359296415277
+    },
+    {
+      "frame": 119,
+      "record": 1003,
+      "hide_record": 1004,
+      "base_image": 5,
+      "record_xy": [
+        -44,
+        -22
+      ],
+      "neck": [
+        -44,
+        -22
+      ],
+      "hip": [
+        9.5,
+        -26.0
+      ],
+      "score": 3.327582959778142
+    },
+    {
+      "frame": 121,
+      "record": 1025,
+      "hide_record": 1026,
+      "base_image": 4,
+      "record_xy": [
+        -34,
+        -76
+      ],
+      "neck": [
+        -34,
+        -76
+      ],
+      "hip": [
+        4.0,
+        -49.5
+      ],
+      "score": 2.5581353340090525
+    },
+    {
+      "frame": 122,
+      "record": 1037,
+      "hide_record": 1038,
+      "base_image": 4,
+      "record_xy": [
+        -39,
+        -63
+      ],
+      "neck": [
+        -39,
+        -63
+      ],
+      "hip": [
+        7.0,
+        -51.5
+      ],
+      "score": 1.861620670911481
+    },
+    {
+      "frame": 124,
+      "record": 1061,
+      "hide_record": 1062,
+      "base_image": 4,
+      "record_xy": [
+        -40,
+        -8
+      ],
+      "neck": [
+        -40,
+        -8
+      ],
+      "hip": [
+        7.5,
+        -6.0
+      ],
+      "score": 2.432182866952643
+    },
+    {
+      "frame": 125,
+      "record": 1072,
+      "hide_record": 1073,
+      "base_image": 4,
+      "record_xy": [
+        -41,
+        -41
+      ],
+      "neck": [
+        -41,
+        -41
+      ],
+      "hip": [
+        -10.5,
+        -0.5
+      ],
+      "score": 7.698385529654954
+    },
+    {
+      "frame": 126,
+      "record": 1083,
+      "hide_record": 1084,
+      "base_image": 4,
+      "record_xy": [
+        6,
+        -52
+      ],
+      "neck": [
+        6,
+        -52
+      ],
+      "hip": [
+        -8.5,
+        -1.5
+      ],
+      "score": 4.901319119535614
+    },
+    {
+      "frame": 127,
+      "record": 1094,
+      "hide_record": 1095,
+      "base_image": 4,
+      "record_xy": [
+        24,
+        -69
+      ],
+      "neck": [
+        24,
+        -69
+      ],
+      "hip": [
+        -9.0,
+        -27.5
+      ],
+      "score": 4.900576130290913
+    },
+    {
+      "frame": 128,
+      "record": 1105,
+      "hide_record": 1106,
+      "base_image": 4,
+      "record_xy": [
+        26,
+        -88
+      ],
+      "neck": [
+        26,
+        -88
+      ],
+      "hip": [
+        -4.5,
+        -47.0
+      ],
+      "score": 8.02221959653519
+    },
+    {
+      "frame": 129,
+      "record": 1116,
+      "hide_record": 1117,
+      "base_image": 4,
+      "record_xy": [
+        -46,
+        -93
+      ],
+      "neck": [
+        -46,
+        -93
+      ],
+      "hip": [
+        -11.5,
+        -59.5
+      ],
+      "score": 4.038928121438049
+    },
+    {
+      "frame": 130,
+      "record": 1128,
+      "hide_record": 1129,
+      "base_image": 4,
+      "record_xy": [
+        -29,
+        -84
+      ],
+      "neck": [
+        -29,
+        -84
+      ],
+      "hip": [
+        -1.5,
+        -44.5
+      ],
+      "score": 4.031941984691267
+    },
+    {
+      "frame": 131,
+      "record": 1140,
+      "hide_record": 1141,
+      "base_image": 5,
+      "record_xy": [
+        -34,
+        -106
+      ],
+      "neck": [
+        -34,
+        -106
+      ],
+      "hip": [
+        -8.0,
+        -61.5
+      ],
+      "score": 2.9734384691565774
+    },
+    {
+      "frame": 132,
+      "record": 1152,
+      "hide_record": 1153,
+      "base_image": 5,
+      "record_xy": [
+        -47,
+        -100
+      ],
+      "neck": [
+        -47,
+        -100
+      ],
+      "hip": [
+        -15.5,
+        -59.5
+      ],
+      "score": 2.9068001059117936
+    },
+    {
+      "frame": 134,
+      "record": 1175,
+      "hide_record": 1176,
+      "base_image": 4,
+      "record_xy": [
+        39,
+        -45
+      ],
+      "neck": [
+        39,
+        -45
+      ],
+      "hip": [
+        -5.5,
+        -28.0
+      ],
+      "score": 4.06411922981026
+    },
+    {
+      "frame": 135,
+      "record": 1186,
+      "hide_record": 1187,
+      "base_image": 4,
+      "record_xy": [
+        10,
+        -55
+      ],
+      "neck": [
+        10,
+        -55
+      ],
+      "hip": [
+        -16.5,
+        -24.5
+      ],
+      "score": 6.4429386248131735
+    },
+    {
+      "frame": 136,
+      "record": 1197,
+      "hide_record": 1198,
+      "base_image": 4,
+      "record_xy": [
+        10,
+        -101
+      ],
+      "neck": [
+        10,
+        -101
+      ],
+      "hip": [
+        0.5,
+        -58.0
+      ],
+      "score": 5.18591185760865
+    },
+    {
+      "frame": 137,
+      "record": 1208,
+      "hide_record": 1209,
+      "base_image": 4,
+      "record_xy": [
+        25,
+        -101
+      ],
+      "neck": [
+        25,
+        -101
+      ],
+      "hip": [
+        3.0,
+        -58.5
+      ],
+      "score": 4.608078077723112
+    },
+    {
+      "frame": 139,
+      "record": 1231,
+      "hide_record": 1232,
+      "base_image": 4,
+      "record_xy": [
+        18,
+        -97
+      ],
+      "neck": [
+        18,
+        -97
+      ],
+      "hip": [
+        6.5,
+        -61.5
+      ],
+      "score": 2.9787978962508355
+    },
+    {
+      "frame": 140,
+      "record": 1243,
+      "hide_record": 1244,
+      "base_image": 5,
+      "record_xy": [
+        46,
+        -91
+      ],
+      "neck": [
+        46,
+        -91
+      ],
+      "hip": [
+        16.0,
+        -55.5
+      ],
+      "score": 3.325734574213828
+    },
+    {
+      "frame": 141,
+      "record": 1255,
+      "hide_record": 1256,
+      "base_image": 5,
+      "record_xy": [
+        22,
+        -98
+      ],
+      "neck": [
+        22,
+        -98
+      ],
+      "hip": [
+        7.0,
+        -58.5
+      ],
+      "score": 7.3406842558936285
+    },
+    {
+      "frame": 150,
+      "record": 1355,
+      "hide_record": 1356,
+      "base_image": 4,
+      "record_xy": [
+        12,
+        -104
+      ],
+      "neck": [
+        12,
+        -104
+      ],
+      "hip": [
+        3.0,
+        -59.5
+      ],
+      "score": 7.354115407120706
+    },
+    {
+      "frame": 151,
+      "record": 1367,
+      "hide_record": 1368,
+      "base_image": 4,
+      "record_xy": [
+        6,
+        -107
+      ],
+      "neck": [
+        6,
+        -107
+      ],
+      "hip": [
+        -10.0,
+        -61.0
+      ],
+      "score": 4.660212152318282
+    },
+    {
+      "frame": 170,
+      "record": 1571,
+      "hide_record": 1572,
+      "base_image": 4,
+      "record_xy": [
+        -6,
+        -107
+      ],
+      "neck": [
+        -6,
+        -107
+      ],
+      "hip": [
+        9.0,
+        -73.5
+      ],
+      "score": 5.791270139913915
+    },
+    {
+      "frame": 233,
+      "record": 2255,
+      "hide_record": 2256,
+      "base_image": 5,
+      "record_xy": [
+        -33,
+        -5
+      ],
+      "neck": [
+        -33,
+        -5
+      ],
+      "hip": [
+        22.5,
+        -10.5
+      ],
+      "score": 5.909602278908043
+    },
+    {
+      "frame": 239,
+      "record": 2281,
+      "hide_record": 2282,
+      "base_image": 4,
+      "record_xy": [
+        -11,
+        -101
+      ],
+      "neck": [
+        -11,
+        -101
+      ],
+      "hip": [
+        -4.0,
+        -58.0
+      ],
+      "score": 2.7245652804126355
+    },
+    {
+      "frame": 240,
+      "record": 2294,
+      "hide_record": 2295,
+      "base_image": 4,
+      "record_xy": [
+        -15,
+        -101
+      ],
+      "neck": [
+        -15,
+        -101
+      ],
+      "hip": [
+        -2.5,
+        -58.5
+      ],
+      "score": 3.213998217113031
+    },
+    {
+      "frame": 241,
+      "record": 2307,
+      "hide_record": 2308,
+      "base_image": 4,
+      "record_xy": [
+        27,
+        -93
+      ],
+      "neck": [
+        27,
+        -93
+      ],
+      "hip": [
+        -4.0,
+        -58.0
+      ],
+      "score": 4.153417746866269
+    },
+    {
+      "frame": 246,
+      "record": 2350,
+      "hide_record": 2351,
+      "base_image": 4,
+      "record_xy": [
+        38,
+        -50
+      ],
+      "neck": [
+        38,
+        -50
+      ],
+      "hip": [
+        -3.5,
+        -27.5
+      ],
+      "score": 4.378908934507574
+    },
+    {
+      "frame": 247,
+      "record": 2361,
+      "hide_record": 2362,
+      "base_image": 4,
+      "record_xy": [
+        54,
+        -37
+      ],
+      "neck": [
+        54,
+        -37
+      ],
+      "hip": [
+        9.0,
+        -21.5
+      ],
+      "score": 3.996906669160614
+    },
+    {
+      "frame": 248,
+      "record": 2372,
+      "hide_record": 2373,
+      "base_image": 4,
+      "record_xy": [
+        54,
+        -31
+      ],
+      "neck": [
+        54,
+        -31
+      ],
+      "hip": [
+        11.0,
+        -19.5
+      ],
+      "score": 3.7930816574556103
+    },
+    {
+      "frame": 249,
+      "record": 2383,
+      "hide_record": 2384,
+      "base_image": 4,
+      "record_xy": [
+        52,
+        -40
+      ],
+      "neck": [
+        52,
+        -40
+      ],
+      "hip": [
+        7.0,
+        -23.0
+      ],
+      "score": 2.966037099727501
+    },
+    {
+      "frame": 332,
+      "record": 3024,
+      "hide_record": 3025,
+      "base_image": 5,
+      "record_xy": [
+        -28,
+        14
+      ],
+      "neck": [
+        -28,
+        14
+      ],
+      "hip": [
+        -48.0,
+        54.5
+      ],
+      "score": 5.895333055950674
+    },
+    {
+      "frame": 333,
+      "record": 3035,
+      "hide_record": 3036,
+      "base_image": 5,
+      "record_xy": [
+        -16,
+        27
+      ],
+      "neck": [
+        -16,
+        27
+      ],
+      "hip": [
+        -45.5,
+        62.5
+      ],
+      "score": 3.836447751433198
+    },
+    {
+      "frame": 334,
+      "record": 3046,
+      "hide_record": 3047,
+      "base_image": 5,
+      "record_xy": [
+        0,
+        33
+      ],
+      "neck": [
+        0,
+        33
+      ],
+      "hip": [
+        -1.0,
+        78.0
+      ],
+      "score": 4.8917540935944785
+    },
+    {
+      "frame": 335,
+      "record": 3057,
+      "hide_record": 3058,
+      "base_image": 5,
+      "record_xy": [
+        19,
+        34
+      ],
+      "neck": [
+        19,
+        34
+      ],
+      "hip": [
+        45.5,
+        71.0
+      ],
+      "score": 4.730217679331262
+    },
+    {
+      "frame": 336,
+      "record": 3068,
+      "hide_record": 3069,
+      "base_image": 5,
+      "record_xy": [
+        25,
+        34
+      ],
+      "neck": [
+        25,
+        34
+      ],
+      "hip": [
+        55.5,
+        63.5
+      ],
+      "score": 4.390164432057748
+    },
+    {
+      "frame": 337,
+      "record": 3078,
+      "hide_record": 3079,
+      "base_image": 5,
+      "record_xy": [
+        5,
+        33
+      ],
+      "neck": [
+        5,
+        33
+      ],
+      "hip": [
+        22.0,
+        75.5
+      ],
+      "score": 4.1664871060444835
+    },
+    {
+      "frame": 338,
+      "record": 3089,
+      "hide_record": 3090,
+      "base_image": 5,
+      "record_xy": [
+        -7,
+        33
+      ],
+      "neck": [
+        -7,
+        33
+      ],
+      "hip": [
+        -19.0,
+        78.0
+      ],
+      "score": 4.865858999183338
+    },
+    {
+      "frame": 339,
+      "record": 3100,
+      "hide_record": 3101,
+      "base_image": 5,
+      "record_xy": [
+        -11,
+        -2
+      ],
+      "neck": [
+        -11,
+        -2
+      ],
+      "hip": [
+        -5.0,
+        47.5
+      ],
+      "score": 4.744213447342284
+    },
+    {
+      "frame": 340,
+      "record": 3111,
+      "hide_record": 3112,
+      "base_image": 5,
+      "record_xy": [
+        -9,
+        -39
+      ],
+      "neck": [
+        -9,
+        -39
+      ],
+      "hip": [
+        -2.5,
+        10.5
+      ],
+      "score": 5.627782156557625
+    },
+    {
+      "frame": 344,
+      "record": 3152,
+      "hide_record": 3153,
+      "base_image": 5,
+      "record_xy": [
+        22,
+        -57
+      ],
+      "neck": [
+        22,
+        -57
+      ],
+      "hip": [
+        -8.5,
+        -18.0
+      ],
+      "score": 8.279418595281768
+    },
+    {
+      "frame": 345,
+      "record": 3162,
+      "hide_record": 3163,
+      "base_image": 5,
+      "record_xy": [
+        0,
+        35
+      ],
+      "neck": [
+        0,
+        35
+      ],
+      "hip": [
+        -1.0,
+        80.0
+      ],
+      "score": 4.8917540935944785
+    },
+    {
+      "frame": 371,
+      "record": 3320,
+      "hide_record": 3321,
+      "base_image": 3,
+      "record_xy": [
+        5,
+        -90
+      ],
+      "neck": [
+        5,
+        -90
+      ],
+      "hip": [
+        -4.5,
+        -56.0
+      ],
+      "score": 2.4585607140569214
+    },
+    {
+      "frame": 376,
+      "record": 3376,
+      "hide_record": 3377,
+      "base_image": 4,
+      "record_xy": [
+        7,
+        -99
+      ],
+      "neck": [
+        7,
+        -99
+      ],
+      "hip": [
+        -1.5,
+        -56.0
+      ],
+      "score": 5.015198771473942
+    },
+    {
+      "frame": 381,
+      "record": 3432,
+      "hide_record": 3433,
+      "base_image": 3,
+      "record_xy": [
+        9,
+        -80
+      ],
+      "neck": [
+        9,
+        -80
+      ],
+      "hip": [
+        4.5,
+        -41.0
+      ],
+      "score": 5.150704034589372
+    },
+    {
+      "frame": 382,
+      "record": 3443,
+      "hide_record": 3444,
+      "base_image": 3,
+      "record_xy": [
+        -3,
+        -81
+      ],
+      "neck": [
+        -3,
+        -81
+      ],
+      "hip": [
+        -7.0,
+        -42.5
+      ],
+      "score": 4.731037561858151
+    },
+    {
+      "frame": 383,
+      "record": 3456,
+      "hide_record": -1,
+      "base_image": 7,
+      "record_xy": [
+        18,
+        -81
+      ],
+      "neck": [
+        18,
+        -81
+      ],
+      "hip": [
+        22.0,
+        -57.0
+      ],
+      "score": 1.0
+    },
+    {
+      "frame": 385,
+      "record": 3476,
+      "hide_record": 3477,
+      "base_image": 3,
+      "record_xy": [
+        33,
+        -97
+      ],
+      "neck": [
+        33,
+        -97
+      ],
+      "hip": [
+        22.5,
+        -65.5
+      ],
+      "score": 4.786478929792084
+    },
+    {
+      "frame": 386,
+      "record": 3486,
+      "hide_record": 3487,
+      "base_image": 3,
+      "record_xy": [
+        1,
+        -105
+      ],
+      "neck": [
+        1,
+        -105
+      ],
+      "hip": [
+        3.5,
+        -66.5
+      ],
+      "score": 3.2621269130533523
+    },
+    {
+      "frame": 387,
+      "record": 3496,
+      "hide_record": 3497,
+      "base_image": 3,
+      "record_xy": [
+        14,
+        -100
+      ],
+      "neck": [
+        14,
+        -100
+      ],
+      "hip": [
+        1.0,
+        -58.0
+      ],
+      "score": 2.7272947180919003
+    },
+    {
+      "frame": 388,
+      "record": 3507,
+      "hide_record": 3508,
+      "base_image": 3,
+      "record_xy": [
+        12,
+        -88
+      ],
+      "neck": [
+        12,
+        -88
+      ],
+      "hip": [
+        -0.5,
+        -53.0
+      ],
+      "score": 3.264501105575176
+    },
+    {
+      "frame": 389,
+      "record": 3517,
+      "hide_record": 3518,
+      "base_image": 3,
+      "record_xy": [
+        -5,
+        -105
+      ],
+      "neck": [
+        -5,
+        -105
+      ],
+      "hip": [
+        0.0,
+        -62.5
+      ],
+      "score": 2.6501184922323247
+    },
+    {
+      "frame": 390,
+      "record": 3528,
+      "hide_record": 3529,
+      "base_image": 3,
+      "record_xy": [
+        -3,
+        -105
+      ],
+      "neck": [
+        -3,
+        -105
+      ],
+      "hip": [
+        -0.5,
+        -63.0
+      ],
+      "score": 2.5255290764534295
+    },
+    {
+      "frame": 391,
+      "record": 3539,
+      "hide_record": 3540,
+      "base_image": 3,
+      "record_xy": [
+        -3,
+        -102
+      ],
+      "neck": [
+        -3,
+        -102
+      ],
+      "hip": [
+        0.0,
+        -59.5
+      ],
+      "score": 3.9301684159089816
+    },
+    {
+      "frame": 392,
+      "record": 3550,
+      "hide_record": 3551,
+      "base_image": 3,
+      "record_xy": [
+        -7,
+        -103
+      ],
+      "neck": [
+        -7,
+        -103
+      ],
+      "hip": [
+        2.0,
+        -61.0
+      ],
+      "score": 3.63064513241788
+    },
+    {
+      "frame": 393,
+      "record": 3562,
+      "hide_record": 3563,
+      "base_image": 3,
+      "record_xy": [
+        -11,
+        -102
+      ],
+      "neck": [
+        -11,
+        -102
+      ],
+      "hip": [
+        -1.0,
+        -61.5
+      ],
+      "score": 3.180837952565245
+    },
+    {
+      "frame": 394,
+      "record": 3573,
+      "hide_record": 3574,
+      "base_image": 3,
+      "record_xy": [
+        -18,
+        -100
+      ],
+      "neck": [
+        -18,
+        -100
+      ],
+      "hip": [
+        -3.0,
+        -60.5
+      ],
+      "score": 4.01602849952481
+    },
+    {
+      "frame": 395,
+      "record": 3584,
+      "hide_record": 3585,
+      "base_image": 3,
+      "record_xy": [
+        -19,
+        -98
+      ],
+      "neck": [
+        -19,
+        -98
+      ],
+      "hip": [
+        -3.0,
+        -60.0
+      ],
+      "score": 3.2395084520942445
+    },
+    {
+      "frame": 396,
+      "record": 3593,
+      "hide_record": 3594,
+      "base_image": 3,
+      "record_xy": [
+        -22,
+        -97
+      ],
+      "neck": [
+        -22,
+        -97
+      ],
+      "hip": [
+        -3.0,
+        -60.0
+      ],
+      "score": 2.9083736101254685
+    },
+    {
+      "frame": 397,
+      "record": 3603,
+      "hide_record": 3604,
+      "base_image": 3,
+      "record_xy": [
+        -1,
+        -103
+      ],
+      "neck": [
+        -1,
+        -103
+      ],
+      "hip": [
+        4.0,
+        -61.5
+      ],
+      "score": 1.86169265816971
+    },
+    {
+      "frame": 415,
+      "record": 3798,
+      "hide_record": -1,
+      "base_image": 7,
+      "record_xy": [
+        -2,
+        -107
+      ],
+      "neck": [
+        -2,
+        -107
+      ],
+      "hip": [
+        -4.0,
+        -62.0
+      ],
+      "score": 2.8284271247461903
+    },
+    {
+      "frame": 416,
+      "record": 3808,
+      "hide_record": -1,
+      "base_image": 7,
+      "record_xy": [
+        -2,
+        -106
+      ],
+      "neck": [
+        -2,
+        -106
+      ],
+      "hip": [
+        -4.5,
+        -62.0
+      ],
+      "score": 2.8284271247461903
+    },
+    {
+      "frame": 417,
+      "record": 3817,
+      "hide_record": 3818,
+      "base_image": 4,
+      "record_xy": [
+        26,
+        -92
+      ],
+      "neck": [
+        26,
+        -92
+      ],
+      "hip": [
+        -5.0,
+        -57.0
+      ],
+      "score": 3.3070147305393434
+    },
+    {
+      "frame": 418,
+      "record": 3828,
+      "hide_record": 3829,
+      "base_image": 4,
+      "record_xy": [
+        26,
+        -91
+      ],
+      "neck": [
+        26,
+        -91
+      ],
+      "hip": [
+        -5.0,
+        -57.0
+      ],
+      "score": 4.24295469521101
+    },
+    {
+      "frame": 419,
+      "record": 3839,
+      "hide_record": 3840,
+      "base_image": 4,
+      "record_xy": [
+        26,
+        -90
+      ],
+      "neck": [
+        26,
+        -90
+      ],
+      "hip": [
+        -5.0,
+        -56.0
+      ],
+      "score": 4.712649951812137
+    },
+    {
+      "frame": 420,
+      "record": 3849,
+      "hide_record": 3850,
+      "base_image": 4,
+      "record_xy": [
+        2,
+        -93
+      ],
+      "neck": [
+        2,
+        -93
+      ],
+      "hip": [
+        -5.5,
+        -58.0
+      ],
+      "score": 3.9861538284984803
+    },
+    {
+      "frame": 421,
+      "record": 3861,
+      "hide_record": 3862,
+      "base_image": 4,
+      "record_xy": [
+        2,
+        -92
+      ],
+      "neck": [
+        2,
+        -92
+      ],
+      "hip": [
+        -5.5,
+        -58.0
+      ],
+      "score": 4.4362424500694715
+    },
+    {
+      "frame": 422,
+      "record": 3873,
+      "hide_record": 3874,
+      "base_image": 4,
+      "record_xy": [
+        2,
+        -91
+      ],
+      "neck": [
+        2,
+        -91
+      ],
+      "hip": [
+        -5.5,
+        -56.5
+      ],
+      "score": 4.973667770444111
+    },
+    {
+      "frame": 423,
+      "record": 3887,
+      "hide_record": 3888,
+      "base_image": 4,
+      "record_xy": [
+        6,
+        -102
+      ],
+      "neck": [
+        6,
+        -102
+      ],
+      "hip": [
+        -3.5,
+        -58.0
+      ],
+      "score": 3.7921272554127343
+    },
+    {
+      "frame": 424,
+      "record": 3899,
+      "hide_record": 3900,
+      "base_image": 4,
+      "record_xy": [
+        0,
+        -105
+      ],
+      "neck": [
+        0,
+        -105
+      ],
+      "hip": [
+        -3.0,
+        -58.5
+      ],
+      "score": 3.780132604530763
+    },
+    {
+      "frame": 425,
+      "record": 3911,
+      "hide_record": 3912,
+      "base_image": 4,
+      "record_xy": [
+        -8,
+        -107
+      ],
+      "neck": [
+        -8,
+        -107
+      ],
+      "hip": [
+        -3.0,
+        -58.5
+      ],
+      "score": 4.809126294743886
+    },
+    {
+      "frame": 426,
+      "record": 3923,
+      "hide_record": 3924,
+      "base_image": 4,
+      "record_xy": [
+        16,
+        -102
+      ],
+      "neck": [
+        16,
+        -102
+      ],
+      "hip": [
+        2.0,
+        -61.5
+      ],
+      "score": 4.788790805830011
+    },
+    {
+      "frame": 427,
+      "record": 3935,
+      "hide_record": 3936,
+      "base_image": 4,
+      "record_xy": [
+        18,
+        -103
+      ],
+      "neck": [
+        18,
+        -103
+      ],
+      "hip": [
+        2.0,
+        -61.5
+      ],
+      "score": 5.876183820107114
+    },
+    {
+      "frame": 428,
+      "record": 3947,
+      "hide_record": 3948,
+      "base_image": 4,
+      "record_xy": [
+        16,
+        -102
+      ],
+      "neck": [
+        16,
+        -102
+      ],
+      "hip": [
+        2.0,
+        -61.5
+      ],
+      "score": 4.788790805830011
+    },
+    {
+      "frame": 429,
+      "record": 3957,
+      "hide_record": 3958,
+      "base_image": 4,
+      "record_xy": [
+        27,
+        -92
+      ],
+      "neck": [
+        27,
+        -92
+      ],
+      "hip": [
+        -5.0,
+        -57.0
+      ],
+      "score": 4.111249058907694
+    },
+    {
+      "frame": 430,
+      "record": 3969,
+      "hide_record": 3970,
+      "base_image": 4,
+      "record_xy": [
+        16,
+        -100
+      ],
+      "neck": [
+        16,
+        -100
+      ],
+      "hip": [
+        -5.0,
+        -57.0
+      ],
+      "score": 3.491254515728277
+    },
+    {
+      "frame": 439,
+      "record": 3992,
+      "hide_record": 3993,
+      "base_image": 4,
+      "record_xy": [
+        10,
+        -105
+      ],
+      "neck": [
+        10,
+        -105
+      ],
+      "hip": [
+        -0.5,
+        -58.0
+      ],
+      "score": 3.9738063448990495
+    },
+    {
+      "frame": 440,
+      "record": 4003,
+      "hide_record": 4004,
+      "base_image": 4,
+      "record_xy": [
+        25,
+        -102
+      ],
+      "neck": [
+        25,
+        -102
+      ],
+      "hip": [
+        2.0,
+        -58.5
+      ],
+      "score": 4.29583195394372
+    },
+    {
+      "frame": 441,
+      "record": 4014,
+      "hide_record": 4015,
+      "base_image": 4,
+      "record_xy": [
+        46,
+        -90
+      ],
+      "neck": [
+        46,
+        -90
+      ],
+      "hip": [
+        15.0,
+        -54.5
+      ],
+      "score": 4.5311355504591315
+    },
+    {
+      "frame": 443,
+      "record": 4037,
+      "hide_record": 4038,
+      "base_image": 4,
+      "record_xy": [
+        17,
+        -102
+      ],
+      "neck": [
+        17,
+        -102
+      ],
+      "hip": [
+        5.5,
+        -60.5
+      ],
+      "score": 4.767704049120677
+    },
+    {
+      "frame": 444,
+      "record": 4049,
+      "hide_record": 4050,
+      "base_image": 5,
+      "record_xy": [
+        45,
+        -92
+      ],
+      "neck": [
+        45,
+        -92
+      ],
+      "hip": [
+        16.0,
+        -55.5
+      ],
+      "score": 3.3368608247079656
+    },
+    {
+      "frame": 445,
+      "record": 4061,
+      "hide_record": 4062,
+      "base_image": 5,
+      "record_xy": [
+        20,
+        -98
+      ],
+      "neck": [
+        20,
+        -98
+      ],
+      "hip": [
+        5.0,
+        -58.5
+      ],
+      "score": 7.3406842558936285
+    },
+    {
+      "frame": 446,
+      "record": 4071,
+      "hide_record": 4072,
+      "base_image": 4,
+      "record_xy": [
+        -18,
+        -105
+      ],
+      "neck": [
+        -18,
+        -105
+      ],
+      "hip": [
+        1.5,
+        -64.5
+      ],
+      "score": 2.501285075781988
+    },
+    {
+      "frame": 447,
+      "record": 4083,
+      "hide_record": 4084,
+      "base_image": 4,
+      "record_xy": [
+        -11,
+        -105
+      ],
+      "neck": [
+        -11,
+        -105
+      ],
+      "hip": [
+        1.5,
+        -64.5
+      ],
+      "score": 2.688888493213212
+    },
+    {
+      "frame": 454,
+      "record": 4161,
+      "hide_record": 4162,
+      "base_image": 4,
+      "record_xy": [
+        24,
+        -69
+      ],
+      "neck": [
+        24,
+        -69
+      ],
+      "hip": [
+        -6.5,
+        -31.5
+      ],
+      "score": 4.6243218799817924
+    },
+    {
+      "frame": 456,
+      "record": 4182,
+      "hide_record": -1,
+      "base_image": 7,
+      "record_xy": [
+        11,
+        -108
+      ],
+      "neck": [
+        11,
+        -108
+      ],
+      "hip": [
+        -2.5,
+        -64.5
+      ],
+      "score": 5.0990195135927845
+    },
+    {
+      "frame": 457,
+      "record": 4192,
+      "hide_record": 4193,
+      "base_image": 5,
+      "record_xy": [
+        11,
+        -110
+      ],
+      "neck": [
+        11,
+        -110
+      ],
+      "hip": [
+        1.5,
+        -60.5
+      ],
+      "score": 2.8254191253731005
+    },
+    {
+      "frame": 458,
+      "record": 4203,
+      "hide_record": 4204,
+      "base_image": 5,
+      "record_xy": [
+        12,
+        -111
+      ],
+      "neck": [
+        12,
+        -111
+      ],
+      "hip": [
+        -0.5,
+        -66.5
+      ],
+      "score": 2.1580007973622157
+    },
+    {
+      "frame": 459,
+      "record": 4214,
+      "hide_record": 4215,
+      "base_image": 5,
+      "record_xy": [
+        12,
+        -112
+      ],
+      "neck": [
+        12,
+        -112
+      ],
+      "hip": [
+        -0.5,
+        -67.5
+      ],
+      "score": 2.4541803709854157
+    },
+    {
+      "frame": 460,
+      "record": 4225,
+      "hide_record": 4226,
+      "base_image": 5,
+      "record_xy": [
+        8,
+        -106
+      ],
+      "neck": [
+        8,
+        -106
+      ],
+      "hip": [
+        -1.5,
+        -62.0
+      ],
+      "score": 2.177672719026228
+    },
+    {
+      "frame": 461,
+      "record": 4236,
+      "hide_record": -1,
+      "base_image": 7,
+      "record_xy": [
+        7,
+        -106
+      ],
+      "neck": [
+        7,
+        -106
+      ],
+      "hip": [
+        -1.5,
+        -63.5
+      ],
+      "score": 2.23606797749979
+    },
+    {
+      "frame": 502,
+      "record": 4887,
+      "hide_record": 4888,
+      "base_image": 4,
+      "record_xy": [
+        16,
+        -102
+      ],
+      "neck": [
+        16,
+        -102
+      ],
+      "hip": [
+        2.0,
+        -61.5
+      ],
+      "score": 4.788790805830011
+    },
+    {
+      "frame": 503,
+      "record": 4899,
+      "hide_record": 4900,
+      "base_image": 4,
+      "record_xy": [
+        6,
+        -102
+      ],
+      "neck": [
+        6,
+        -102
+      ],
+      "hip": [
+        -3.5,
+        -58.0
+      ],
+      "score": 3.7921272554127343
+    },
+    {
+      "frame": 504,
+      "record": 4911,
+      "hide_record": 4912,
+      "base_image": 4,
+      "record_xy": [
+        0,
+        -105
+      ],
+      "neck": [
+        0,
+        -105
+      ],
+      "hip": [
+        -3.0,
+        -58.5
+      ],
+      "score": 3.780132604530763
+    },
+    {
+      "frame": 505,
+      "record": 4923,
+      "hide_record": 4924,
+      "base_image": 4,
+      "record_xy": [
+        -11,
+        -107
+      ],
+      "neck": [
+        -11,
+        -107
+      ],
+      "hip": [
+        -3.0,
+        -58.5
+      ],
+      "score": 6.157197194720256
+    },
+    {
+      "frame": 527,
+      "record": 5193,
+      "hide_record": 5194,
+      "base_image": 5,
+      "record_xy": [
+        56,
+        -81
+      ],
+      "neck": [
+        56,
+        -81
+      ],
+      "hip": [
+        16.0,
+        -58.0
+      ],
+      "score": 7.747561259356441
+    },
+    {
+      "frame": 534,
+      "record": 5280,
+      "hide_record": 5281,
+      "base_image": 5,
+      "record_xy": [
+        3,
+        -103
+      ],
+      "neck": [
+        3,
+        -103
+      ],
+      "hip": [
+        -3.0,
+        -60.5
+      ],
+      "score": 6.56164715353484
+    },
+    {
+      "frame": 535,
+      "record": 5292,
+      "hide_record": 5293,
+      "base_image": 5,
+      "record_xy": [
+        3,
+        -102
+      ],
+      "neck": [
+        3,
+        -102
+      ],
+      "hip": [
+        -3.0,
+        -60.5
+      ],
+      "score": 5.843585987660152
+    },
+    {
+      "frame": 536,
+      "record": 5304,
+      "hide_record": 5305,
+      "base_image": 5,
+      "record_xy": [
+        3,
+        -101
+      ],
+      "neck": [
+        3,
+        -101
+      ],
+      "hip": [
+        -3.0,
+        -59.5
+      ],
+      "score": 5.843585987660152
+    },
+    {
+      "frame": 564,
+      "record": 5649,
+      "hide_record": 5650,
+      "base_image": 5,
+      "record_xy": [
+        45,
+        -92
+      ],
+      "neck": [
+        45,
+        -92
+      ],
+      "hip": [
+        16.0,
+        -55.5
+      ],
+      "score": 3.36005667381586
+    },
+    {
+      "frame": 565,
+      "record": 5660,
+      "hide_record": 5661,
+      "base_image": 4,
+      "record_xy": [
+        -11,
+        -105
+      ],
+      "neck": [
+        -11,
+        -105
+      ],
+      "hip": [
+        0.5,
+        -60.5
+      ],
+      "score": 3.8193328485898412
+    },
+    {
+      "frame": 576,
+      "record": 5794,
+      "hide_record": 5795,
+      "base_image": 4,
+      "record_xy": [
+        -32,
+        -62
+      ],
+      "neck": [
+        -32,
+        -62
+      ],
+      "hip": [
+        9.5,
+        -66.0
+      ],
+      "score": 9.891216183127584
+    },
+    {
+      "frame": 578,
+      "record": 5824,
+      "hide_record": 5825,
+      "base_image": 4,
+      "record_xy": [
+        -43,
+        -3
+      ],
+      "neck": [
+        -43,
+        -3
+      ],
+      "hip": [
+        -1.0,
+        -4.5
+      ],
+      "score": 4.553031203753
+    },
+    {
+      "frame": 579,
+      "record": 5839,
+      "hide_record": 5840,
+      "base_image": 4,
+      "record_xy": [
+        -43,
+        -3
+      ],
+      "neck": [
+        -43,
+        -3
+      ],
+      "hip": [
+        -1.0,
+        -4.5
+      ],
+      "score": 4.553031203753
+    },
+    {
+      "frame": 597,
+      "record": 6070,
+      "hide_record": 6071,
+      "base_image": 4,
+      "record_xy": [
+        26,
+        -93
+      ],
+      "neck": [
+        26,
+        -93
+      ],
+      "hip": [
+        -5.0,
+        -57.0
+      ],
+      "score": 5.047355025642805
+    },
+    {
+      "frame": 598,
+      "record": 6082,
+      "hide_record": 6083,
+      "base_image": 4,
+      "record_xy": [
+        26,
+        -92
+      ],
+      "neck": [
+        26,
+        -92
+      ],
+      "hip": [
+        -5.0,
+        -56.0
+      ],
+      "score": 5.047355025642805
+    },
+    {
+      "frame": 599,
+      "record": 6094,
+      "hide_record": 6095,
+      "base_image": 4,
+      "record_xy": [
+        26,
+        -91
+      ],
+      "neck": [
+        26,
+        -91
+      ],
+      "hip": [
+        -5.0,
+        -56.0
+      ],
+      "score": 4.612389491531575
+    }
+  ],
+  "ambiguous": [
+    95,
+    96,
+    97,
+    118,
+    120,
+    123,
+    172,
+    173,
+    196,
+    455
+  ],
+  "unmatched": [
+    [
+      1,
+      "leg roots",
+      1
+    ],
+    [
+      2,
+      "leg roots",
+      1
+    ],
+    [
+      3,
+      "leg roots",
+      1
+    ],
+    [
+      4,
+      "hip spread"
+    ],
+    [
+      5,
+      "leg roots",
+      1
+    ],
+    [
+      7,
+      "hip spread"
+    ],
+    [
+      8,
+      "leg roots",
+      1
+    ],
+    [
+      27,
+      "no torso"
+    ],
+    [
+      28,
+      "leg roots",
+      1
+    ],
+    [
+      80,
+      "no torso"
+    ],
+    [
+      83,
+      "no torso"
+    ],
+    [
+      133,
+      "no torso"
+    ],
+    [
+      138,
+      "no torso"
+    ],
+    [
+      142,
+      "leg roots",
+      1
+    ],
+    [
+      143,
+      "leg roots",
+      1
+    ],
+    [
+      144,
+      "no torso"
+    ],
+    [
+      145,
+      "no torso"
+    ],
+    [
+      146,
+      "no torso"
+    ],
+    [
+      147,
+      "leg roots",
+      1
+    ],
+    [
+      148,
+      "no torso"
+    ],
+    [
+      149,
+      "no torso"
+    ],
+    [
+      152,
+      "leg roots",
+      1
+    ],
+    [
+      153,
+      "leg roots",
+      1
+    ],
+    [
+      154,
+      "no torso"
+    ],
+    [
+      155,
+      "hip spread"
+    ],
+    [
+      156,
+      "hip spread"
+    ],
+    [
+      157,
+      "no torso"
+    ],
+    [
+      158,
+      "hip spread"
+    ],
+    [
+      159,
+      "hip spread"
+    ],
+    [
+      160,
+      "hip spread"
+    ],
+    [
+      161,
+      "no torso"
+    ],
+    [
+      162,
+      "no torso"
+    ],
+    [
+      163,
+      "no torso"
+    ],
+    [
+      164,
+      "no torso"
+    ],
+    [
+      165,
+      "no torso"
+    ],
+    [
+      166,
+      "no torso"
+    ],
+    [
+      167,
+      "no torso"
+    ],
+    [
+      168,
+      "no torso"
+    ],
+    [
+      169,
+      "no torso"
+    ],
+    [
+      171,
+      "leg roots",
+      1
+    ],
+    [
+      174,
+      "no torso"
+    ],
+    [
+      175,
+      "no torso"
+    ],
+    [
+      176,
+      "leg roots",
+      1
+    ],
+    [
+      177,
+      "leg roots",
+      1
+    ],
+    [
+      178,
+      "leg roots",
+      1
+    ],
+    [
+      179,
+      "no torso"
+    ],
+    [
+      180,
+      "hip spread"
+    ],
+    [
+      181,
+      "leg roots",
+      1
+    ],
+    [
+      182,
+      "hip spread"
+    ],
+    [
+      183,
+      "hip spread"
+    ],
+    [
+      184,
+      "no torso"
+    ],
+    [
+      185,
+      "no torso"
+    ],
+    [
+      186,
+      "no torso"
+    ],
+    [
+      187,
+      "no torso"
+    ],
+    [
+      188,
+      "no torso"
+    ],
+    [
+      189,
+      "no torso"
+    ],
+    [
+      190,
+      "no torso"
+    ],
+    [
+      191,
+      "no torso"
+    ],
+    [
+      192,
+      "no torso"
+    ],
+    [
+      193,
+      "no torso"
+    ],
+    [
+      194,
+      "no torso"
+    ],
+    [
+      195,
+      "no torso"
+    ],
+    [
+      197,
+      "no torso"
+    ],
+    [
+      198,
+      "no torso"
+    ],
+    [
+      199,
+      "hip spread"
+    ],
+    [
+      200,
+      "hip spread"
+    ],
+    [
+      201,
+      "hip spread"
+    ],
+    [
+      202,
+      "hip spread"
+    ],
+    [
+      203,
+      "no torso"
+    ],
+    [
+      204,
+      "hip spread"
+    ],
+    [
+      205,
+      "hip spread"
+    ],
+    [
+      206,
+      "hip spread"
+    ],
+    [
+      207,
+      "hip spread"
+    ],
+    [
+      208,
+      "hip spread"
+    ],
+    [
+      209,
+      "hip spread"
+    ],
+    [
+      210,
+      "no torso"
+    ],
+    [
+      211,
+      "hip spread"
+    ],
+    [
+      212,
+      "hip spread"
+    ],
+    [
+      213,
+      "hip spread"
+    ],
+    [
+      214,
+      "hip spread"
+    ],
+    [
+      215,
+      "hip spread"
+    ],
+    [
+      216,
+      "leg roots",
+      1
+    ],
+    [
+      217,
+      "hip spread"
+    ],
+    [
+      218,
+      "hip spread"
+    ],
+    [
+      219,
+      "hip spread"
+    ],
+    [
+      220,
+      "hip spread"
+    ],
+    [
+      221,
+      "hip spread"
+    ],
+    [
+      222,
+      "hip spread"
+    ],
+    [
+      223,
+      "hip spread"
+    ],
+    [
+      224,
+      "hip spread"
+    ],
+    [
+      225,
+      "leg roots",
+      1
+    ],
+    [
+      226,
+      "hip spread"
+    ],
+    [
+      227,
+      "no torso"
+    ],
+    [
+      228,
+      "hip spread"
+    ],
+    [
+      229,
+      "no torso"
+    ],
+    [
+      230,
+      "no torso"
+    ],
+    [
+      231,
+      "hip spread"
+    ],
+    [
+      232,
+      "no torso"
+    ],
+    [
+      234,
+      "no torso"
+    ],
+    [
+      242,
+      "no torso"
+    ],
+    [
+      245,
+      "no torso"
+    ],
+    [
+      255,
+      "hip spread"
+    ],
+    [
+      256,
+      "hip spread"
+    ],
+    [
+      257,
+      "hip spread"
+    ],
+    [
+      258,
+      "no torso"
+    ],
+    [
+      259,
+      "no torso"
+    ],
+    [
+      260,
+      "hip spread"
+    ],
+    [
+      261,
+      "hip spread"
+    ],
+    [
+      262,
+      "hip spread"
+    ],
+    [
+      263,
+      "hip spread"
+    ],
+    [
+      264,
+      "no torso"
+    ],
+    [
+      265,
+      "no torso"
+    ],
+    [
+      266,
+      "no torso"
+    ],
+    [
+      267,
+      "no torso"
+    ],
+    [
+      268,
+      "no torso"
+    ],
+    [
+      269,
+      "no torso"
+    ],
+    [
+      270,
+      "hip spread"
+    ],
+    [
+      271,
+      "hip spread"
+    ],
+    [
+      272,
+      "hip spread"
+    ],
+    [
+      273,
+      "hip spread"
+    ],
+    [
+      274,
+      "hip spread"
+    ],
+    [
+      275,
+      "hip spread"
+    ],
+    [
+      276,
+      "hip spread"
+    ],
+    [
+      277,
+      "hip spread"
+    ],
+    [
+      278,
+      "hip spread"
+    ],
+    [
+      279,
+      "hip spread"
+    ],
+    [
+      280,
+      "hip spread"
+    ],
+    [
+      281,
+      "hip spread"
+    ],
+    [
+      282,
+      "leg roots",
+      0
+    ],
+    [
+      283,
+      "leg roots",
+      0
+    ],
+    [
+      284,
+      "leg roots",
+      0
+    ],
+    [
+      285,
+      "leg roots",
+      0
+    ],
+    [
+      286,
+      "leg roots",
+      0
+    ],
+    [
+      287,
+      "leg roots",
+      0
+    ],
+    [
+      288,
+      "leg roots",
+      0
+    ],
+    [
+      289,
+      "leg roots",
+      0
+    ],
+    [
+      290,
+      "leg roots",
+      0
+    ],
+    [
+      291,
+      "leg roots",
+      0
+    ],
+    [
+      292,
+      "leg roots",
+      0
+    ],
+    [
+      293,
+      "leg roots",
+      0
+    ],
+    [
+      294,
+      "leg roots",
+      0
+    ],
+    [
+      295,
+      "leg roots",
+      0
+    ],
+    [
+      296,
+      "leg roots",
+      0
+    ],
+    [
+      297,
+      "leg roots",
+      0
+    ],
+    [
+      298,
+      "leg roots",
+      0
+    ],
+    [
+      299,
+      "leg roots",
+      0
+    ],
+    [
+      300,
+      "leg roots",
+      0
+    ],
+    [
+      301,
+      "leg roots",
+      0
+    ],
+    [
+      302,
+      "leg roots",
+      0
+    ],
+    [
+      303,
+      "leg roots",
+      0
+    ],
+    [
+      304,
+      "leg roots",
+      0
+    ],
+    [
+      305,
+      "leg roots",
+      0
+    ],
+    [
+      306,
+      "leg roots",
+      0
+    ],
+    [
+      307,
+      "leg roots",
+      0
+    ],
+    [
+      308,
+      "leg roots",
+      0
+    ],
+    [
+      309,
+      "leg roots",
+      0
+    ],
+    [
+      310,
+      "no torso"
+    ],
+    [
+      311,
+      "no torso"
+    ],
+    [
+      312,
+      "no torso"
+    ],
+    [
+      341,
+      "no torso"
+    ],
+    [
+      342,
+      "no torso"
+    ],
+    [
+      343,
+      "no torso"
+    ],
+    [
+      346,
+      "leg roots",
+      1
+    ],
+    [
+      360,
+      "hip spread"
+    ],
+    [
+      361,
+      "hip spread"
+    ],
+    [
+      362,
+      "hip spread"
+    ],
+    [
+      363,
+      "hip spread"
+    ],
+    [
+      364,
+      "hip spread"
+    ],
+    [
+      365,
+      "hip spread"
+    ],
+    [
+      366,
+      "hip spread"
+    ],
+    [
+      367,
+      "hip spread"
+    ],
+    [
+      368,
+      "hip spread"
+    ],
+    [
+      369,
+      "hip spread"
+    ],
+    [
+      370,
+      "no torso"
+    ],
+    [
+      372,
+      "no torso"
+    ],
+    [
+      373,
+      "hip spread"
+    ],
+    [
+      374,
+      "hip spread"
+    ],
+    [
+      375,
+      "hip spread"
+    ],
+    [
+      377,
+      "no torso"
+    ],
+    [
+      378,
+      "no torso"
+    ],
+    [
+      379,
+      "no torso"
+    ],
+    [
+      380,
+      "no torso"
+    ],
+    [
+      384,
+      "leg roots",
+      1
+    ],
+    [
+      398,
+      "hip spread"
+    ],
+    [
+      399,
+      "hip spread"
+    ],
+    [
+      401,
+      "leg roots",
+      1
+    ],
+    [
+      402,
+      "no torso"
+    ],
+    [
+      403,
+      "leg roots",
+      1
+    ],
+    [
+      404,
+      "leg roots",
+      1
+    ],
+    [
+      405,
+      "leg roots",
+      1
+    ],
+    [
+      406,
+      "no torso"
+    ],
+    [
+      407,
+      "no torso"
+    ],
+    [
+      408,
+      "leg roots",
+      1
+    ],
+    [
+      409,
+      "no torso"
+    ],
+    [
+      410,
+      "no torso"
+    ],
+    [
+      411,
+      "no torso"
+    ],
+    [
+      412,
+      "no torso"
+    ],
+    [
+      413,
+      "no torso"
+    ],
+    [
+      414,
+      "no torso"
+    ],
+    [
+      442,
+      "no torso"
+    ],
+    [
+      448,
+      "no torso"
+    ],
+    [
+      449,
+      "no torso"
+    ],
+    [
+      450,
+      "no torso"
+    ],
+    [
+      451,
+      "no torso"
+    ],
+    [
+      452,
+      "no torso"
+    ],
+    [
+      453,
+      "no torso"
+    ],
+    [
+      496,
+      "no torso"
+    ],
+    [
+      497,
+      "no torso"
+    ],
+    [
+      498,
+      "no torso"
+    ],
+    [
+      499,
+      "no torso"
+    ],
+    [
+      500,
+      "no torso"
+    ],
+    [
+      506,
+      "no torso"
+    ],
+    [
+      507,
+      "no torso"
+    ],
+    [
+      508,
+      "no torso"
+    ],
+    [
+      509,
+      "no torso"
+    ],
+    [
+      510,
+      "no torso"
+    ],
+    [
+      511,
+      "no torso"
+    ],
+    [
+      512,
+      "no torso"
+    ],
+    [
+      513,
+      "no torso"
+    ],
+    [
+      514,
+      "no torso"
+    ],
+    [
+      515,
+      "no torso"
+    ],
+    [
+      516,
+      "no torso"
+    ],
+    [
+      517,
+      "no torso"
+    ],
+    [
+      518,
+      "no torso"
+    ],
+    [
+      519,
+      "no torso"
+    ],
+    [
+      520,
+      "no torso"
+    ],
+    [
+      521,
+      "no torso"
+    ],
+    [
+      522,
+      "no torso"
+    ],
+    [
+      523,
+      "no torso"
+    ],
+    [
+      524,
+      "no torso"
+    ],
+    [
+      525,
+      "no torso"
+    ],
+    [
+      526,
+      "no torso"
+    ],
+    [
+      528,
+      "no torso"
+    ],
+    [
+      529,
+      "no torso"
+    ],
+    [
+      530,
+      "no torso"
+    ],
+    [
+      531,
+      "no torso"
+    ],
+    [
+      532,
+      "no torso"
+    ],
+    [
+      533,
+      "no torso"
+    ],
+    [
+      537,
+      "no torso"
+    ],
+    [
+      538,
+      "no torso"
+    ],
+    [
+      539,
+      "no torso"
+    ],
+    [
+      540,
+      "no torso"
+    ],
+    [
+      541,
+      "no torso"
+    ],
+    [
+      542,
+      "no torso"
+    ],
+    [
+      543,
+      "no torso"
+    ],
+    [
+      544,
+      "no torso"
+    ],
+    [
+      545,
+      "no torso"
+    ],
+    [
+      546,
+      "hip spread"
+    ],
+    [
+      547,
+      "hip spread"
+    ],
+    [
+      548,
+      "hip spread"
+    ],
+    [
+      549,
+      "hip spread"
+    ],
+    [
+      550,
+      "hip spread"
+    ],
+    [
+      551,
+      "hip spread"
+    ],
+    [
+      552,
+      "hip spread"
+    ],
+    [
+      553,
+      "hip spread"
+    ],
+    [
+      554,
+      "leg roots",
+      1
+    ],
+    [
+      555,
+      "leg roots",
+      1
+    ],
+    [
+      556,
+      "leg roots",
+      1
+    ],
+    [
+      557,
+      "no torso"
+    ],
+    [
+      558,
+      "no torso"
+    ],
+    [
+      559,
+      "no torso"
+    ],
+    [
+      560,
+      "no torso"
+    ],
+    [
+      561,
+      "no torso"
+    ],
+    [
+      562,
+      "leg roots",
+      1
+    ],
+    [
+      563,
+      "leg roots",
+      1
+    ],
+    [
+      566,
+      "no torso"
+    ],
+    [
+      567,
+      "no torso"
+    ],
+    [
+      568,
+      "no torso"
+    ],
+    [
+      569,
+      "no torso"
+    ],
+    [
+      570,
+      "leg roots",
+      0
+    ],
+    [
+      571,
+      "leg roots",
+      0
+    ],
+    [
+      572,
+      "leg roots",
+      1
+    ],
+    [
+      573,
+      "leg roots",
+      0
+    ],
+    [
+      574,
+      "hip spread"
+    ],
+    [
+      575,
+      "no torso"
+    ],
+    [
+      577,
+      "no torso"
+    ],
+    [
+      580,
+      "no torso"
+    ],
+    [
+      581,
+      "no torso"
+    ],
+    [
+      582,
+      "no torso"
+    ],
+    [
+      583,
+      "no torso"
+    ],
+    [
+      584,
+      "no torso"
+    ],
+    [
+      585,
+      "no torso"
+    ],
+    [
+      586,
+      "no torso"
+    ],
+    [
+      587,
+      "no torso"
+    ],
+    [
+      588,
+      "no torso"
+    ],
+    [
+      589,
+      "leg roots",
+      1
+    ],
+    [
+      590,
+      "no torso"
+    ],
+    [
+      591,
+      "leg roots",
+      1
+    ],
+    [
+      592,
+      "leg roots",
+      1
+    ],
+    [
+      593,
+      "leg roots",
+      1
+    ],
+    [
+      594,
+      "no torso"
+    ],
+    [
+      595,
+      "no torso"
+    ],
+    [
+      596,
+      "leg roots",
+      1
+    ],
+    [
+      606,
+      "hip spread"
+    ],
+    [
+      607,
+      "no torso"
+    ],
+    [
+      611,
+      "hip spread"
+    ],
+    [
+      612,
+      "hip spread"
+    ],
+    [
+      613,
+      "hip spread"
+    ],
+    [
+      614,
+      "no torso"
+    ],
+    [
+      615,
+      "no torso"
+    ],
+    [
+      623,
+      "no torso"
+    ],
+    [
+      624,
+      "no torso"
+    ]
+  ],
+  "method": "Offline conservative candidates: one head; two limb roots immediately preceding boots; roots within 12 logical pixels; direct PC7 nearest head or consecutive neck/waist limbs aligned to the hip axis. Ambiguous/unmatched frames keep existing rig. Candidate map needs static art review and runtime QA.",
+  "data_sha256": {
+    "imgdata1.txt": "7fa8a868e8b97195ca6bb2464b0a4e33fac25229361dc0a3e19994f968ee09b3",
+    "imgdata2.txt": "f94fe1346d4304956a0be2455bb1838345280995c885f13351df9054da29a176"
+  }
+}

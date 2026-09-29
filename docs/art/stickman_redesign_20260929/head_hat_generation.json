@@ -1,0 +1,26 @@
+{
+  "tool": "built-in image_gen",
+  "status": "R12 selected head",
+  "prompt": "Use case: stylized-concept. Asset type: one transparent modular head sprite for a gothic side-scrolling action game, designed to read clearly when the head is only about 25 pixels tall. Create a single right-facing strict side-profile head of a mysterious human hunter wearing a compact low-crowned worn charcoal-brown leather hunting hat with a short broad downward brim. The hat is practical and medieval-gothic, with a single muted burgundy band, no tall crown. Face beneath brim mostly in deep shadow; readable small human nose, jaw and chin, warm muted skin on lower face, eye hidden in shadow, no facial hair. Short dark hair at the nape. Tiny plain neck stump only, no shoulders, no clothes below neck. The skull is round and compact. Crisp deliberately simplified hand-painted 2D game art with bold clean silhouette, broad controlled shading shapes, restrained edge highlights; NOT photoreal, no soft focus, no glow. Faded charcoal, dark umber, subtle burgundy, muted warm grey skin. Center the complete hat/head with generous transparent margin. Pure transparent background, genuine alpha. Absolutely no metallic face mask, no helmet, no glowing eyes, no lenses, no visor, no robot or Ultraman features, no sci-fi, no cape, no scarf, no feather, no horns, no oversized giant hat, no text, no frame. Single complete head only.",
+  "source": "head_hat_candidate.png",
+  "runtime": "AOS5/Content_gothic/img/gothic/stickrig/head.png",
+  "source_rect": [
+    334,
+    138,
+    875,
+    723
+  ],
+  "anchor_top": [
+    745,
+    480
+  ],
+  "anchor_bottom": [
+    745,
+    826
+  ],
+  "notes": [
+    "Original skeleton, ROM pivots and animation preserved",
+    "Replaces R11 metallic mask and lens",
+    "No cape"
+  ]
+}

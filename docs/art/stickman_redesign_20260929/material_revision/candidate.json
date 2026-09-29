@@ -1,0 +1,13 @@
+{
+  "status": "Applied in R14 / 1.0.5",
+  "exe_sha256": "7b525915b8110aadce9685d28650f2a37e4c06be3aa280c7c0f4bba63ddce28d",
+  "exe_matches_R12": true,
+  "changes": [
+    "Removed metal panels and cylindrical gradients",
+    "Matte fabric drawn in broad flat planes",
+    "Reduced limb central width from1.25 to1.08 and torso to1.15; original joints and lengths unchanged"
+  ],
+  "runtime": "AOS5/Content_gothic",
+  "android_review": "mobile/",
+  "user_style_approval": "not claimed"
+}

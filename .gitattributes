@@ -1,0 +1,18 @@
+# Preserve the verified snapshot byte-for-byte across Windows clones.
+* -text
+*.c diff
+*.cpp diff
+*.h diff
+*.py diff
+*.ps1 diff
+*.md diff
+*.json diff
+*.tsv diff
+*.gradle diff
+*.cmake diff
+*.png binary
+*.bin binary
+*.jar binary
+*.ttf binary
+*.ogg binary
+*.mp3 binary
